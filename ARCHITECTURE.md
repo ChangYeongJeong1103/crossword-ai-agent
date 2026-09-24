@@ -71,6 +71,7 @@ flowchart LR
   JOINT -->|"All answers confirmed"| DONE["DONE"]
   JOINT -->|"Grid remains full<br/>but review is pending"| REVIEW
   JOINT -->|"Pruning removes<br/>an answer"| FILL
+  REVIEW -->|"Some answers not<br/>yet confirmed"| REVIEW
   REVIEW -->|"All answers confirmed"| DONE
 
   classDef phase fill:#fff4d6,stroke:#d97706,color:#0f172a;

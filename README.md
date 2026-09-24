@@ -62,7 +62,7 @@ Every result shows clue accuracy, cell accuracy, exact-solve status, calls, repo
 
 1. **Load the puzzle.** Python validates the rectangular grid and builds Across and Down entries, lengths, cells and crossings.
 2. **Fill missing entries.** The model receives small batches containing each clue, required length and any letters already supplied by crossings.
-3. **Validate proposals.** Python normalizes punctuation and spaces, rejects wrong lengths or pattern violations, and removes answers that create crossing conflicts.
+3. **Validate proposals.** Python strips spaces, apostrophes and hyphens, rejects wrong lengths or pattern violations, and removes answers that create crossing conflicts.
 4. **Retry efficiently.** Missing IDs and unparseable responses are retried without restarting the puzzle. Answers with invalid characters, lengths or patterns are rejected and reconsidered in a later round. An empty length-limited batch is retried directly as individual clues.
 5. **Repair blocked regions.** When progress stalls, the model reconsiders difficult entries together with their crossing clues. Existing letters remain tentative during repair.
 6. **Review meaning.** After the grid is full, the model checks every answer against its clue. A grid is not accepted merely because all letters cross consistently.
@@ -80,7 +80,7 @@ Benchmark selection required a 15×15 grid, 180° block symmetry, connected whit
 
 I included **By George!** and **Gino (The Manager)** in the development set from the start as difficult themed stress tests. They contain creator-specific catchphrases, repeated words and invented name-based wordplay rather than only ordinary fill.
 
-The agent still receives only the clue, length and crossing letters. The recorded runs solved both stress tests exactly, which is the main evidence that the clue-and-crossing loop can recover unconventional themed answers without exposing gold.
+The model receives only puzzle-visible and solver-state context: clue text, required length, puzzle title, current letter patterns, relevant crossing and long-clue context, and explicit cross-references. It never receives gold answers. The recorded runs solved both stress tests exactly, which is the main evidence that the clue-and-crossing loop can recover unconventional themed answers without exposing gold.
 
 The synthetic fixture is used only for deterministic tests. The five development puzzles were used while designing the strategy, while the two evaluation puzzles were run after the configuration was finalized. I did not tune the controller from their completed results.
 
