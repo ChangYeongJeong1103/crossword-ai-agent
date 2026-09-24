@@ -1,0 +1,91 @@
+{
+  "source": "Crossword Nexus",
+  "license": "CC BY 4.0",
+  "selection_rule": "Five standard American 15x15 puzzles satisfying the documented structural and source requirements.",
+  "acceptance_rules": [
+    "downloadable solution-bearing JPZ or iPuz source",
+    "exactly 15 rows and 15 columns",
+    "180-degree rotational block symmetry",
+    "one connected playable-cell region",
+    "every playable cell belongs to one Across and one Down entry",
+    "every entry contains at least three letters",
+    "standard row-major clue numbering",
+    "single A-Z character per solution cell",
+    "non-cryptic English clues",
+    "no rebus, image clue, barred grid, coded puzzle, or special grid transformation"
+  ],
+  "selected": [
+    {
+      "selection_index": 1,
+      "post_number": 9,
+      "puzzle_id": "crossword_nexus_what_a_fool_believes",
+      "title": "What A Fool Believes",
+      "author": "Alex Boisvert",
+      "published": "2021-08-13",
+      "page_url": "https://crosswordnexus.com/blog/2021/08/13/puzzle-9-what-a-fool-believes/",
+      "source_url": "https://crosswordnexus.com/downloads/site_puzzles/WhatAFoolBelieves.jpz",
+      "source_format": "jpz",
+      "source_sha256": "d4930adb40cade49daff6ee1a9def22d1e54d9b61e8a0515799ead5fdad1b5cf",
+      "clue_count": 78,
+      "playable_cell_count": 185
+    },
+    {
+      "selection_index": 2,
+      "post_number": 31,
+      "puzzle_id": "crossword_nexus_im_alright",
+      "title": "I'm Alright",
+      "author": "Alex Boisvert",
+      "published": "2022-02-25",
+      "page_url": "https://crosswordnexus.com/blog/2022/02/25/puzzle-31-im-alright/",
+      "source_url": "https://crosswordnexus.com/downloads/site_puzzles/ImAlright.jpz",
+      "source_format": "jpz",
+      "source_sha256": "794b958164b7d3dc19e8aba3be679dbef187939ddecb87ef45a2f6d67e7d3c17",
+      "clue_count": 78,
+      "playable_cell_count": 189
+    },
+    {
+      "selection_index": 3,
+      "post_number": 34,
+      "puzzle_id": "crossword_nexus_gino_the_manager",
+      "title": "Gino (The Manager)",
+      "author": "Alex Boisvert",
+      "published": "2022-03-18",
+      "page_url": "https://crosswordnexus.com/blog/2022/03/18/puzzle-34-gino-the-manager/",
+      "source_url": "https://crosswordnexus.com/downloads/site_puzzles/Gino.jpz",
+      "source_format": "jpz",
+      "source_sha256": "a665c38479f501e2832b84b9ec9953b0e38220e9965102813f2a9c1b42245f88",
+      "clue_count": 80,
+      "playable_cell_count": 189
+    },
+    {
+      "selection_index": 4,
+      "post_number": 50,
+      "puzzle_id": "crossword_nexus_garden_party",
+      "title": "Garden Party",
+      "author": "Alex Boisvert",
+      "published": "2022-07-29",
+      "page_url": "https://crosswordnexus.com/blog/2022/07/29/puzzle-50-garden-party/",
+      "source_url": "https://crosswordnexus.com/downloads/site_puzzles/GardenParty.ipuz",
+      "source_format": "ipuz",
+      "source_sha256": "dd52b3a9246db25119bb037ff993bbe33873bc060bfa025f70e37c5c997725d3",
+      "clue_count": 78,
+      "playable_cell_count": 187
+    },
+    {
+      "selection_index": 5,
+      "post_number": 54,
+      "puzzle_id": "crossword_nexus_by_george",
+      "title": "By George!",
+      "author": "Frisco and Alex Boisvert",
+      "published": "2022-08-26",
+      "page_url": "https://crosswordnexus.com/blog/2022/08/26/puzzle-54-by-george-with-frisco/",
+      "source_url": "https://crosswordnexus.com/downloads/site_puzzles/ByGeorge.ipuz",
+      "source_format": "ipuz",
+      "source_sha256": "d56f3d2b1a0d8359fca5d8140fcb180f666e75e6ff4a9b245bf937c914ae062d",
+      "clue_count": 78,
+      "playable_cell_count": 191
+    }
+  ],
+  "selected_puzzle_count": 5,
+  "solver_source_sha256": "a542fd543d2ede631a0ee957d7f159ddda3d194c01b6d781025d2a4c017e1423"
+}

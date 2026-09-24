@@ -1,0 +1,818 @@
+{
+  "puzzle_id": "crossword_nexus_garden_party",
+  "rows": 15,
+  "columns": 15,
+  "grid": [
+    ".....#....#....",
+    ".....#....#....",
+    "...............",
+    "...#...#...#...",
+    "###.....#...###",
+    "...............",
+    "....###...#....",
+    "....#.....#....",
+    "....#...###....",
+    "...............",
+    "###...#.....###",
+    "...#...#...#...",
+    "...............",
+    "....#....#.....",
+    "....#....#....."
+  ],
+  "metadata": {
+    "type": "standard_american_15x15",
+    "title": "Garden Party",
+    "author": "Alex Boisvert",
+    "source": "Crossword Nexus",
+    "source_page": "https://crosswordnexus.com/blog/2022/07/29/puzzle-50-garden-party/",
+    "source_url": "https://crosswordnexus.com/downloads/site_puzzles/GardenParty.ipuz",
+    "source_format": "ipuz",
+    "source_license": "CC BY 4.0",
+    "source_sha256": "dd52b3a9246db25119bb037ff993bbe33873bc060bfa025f70e37c5c997725d3",
+    "published": "2022-07-29",
+    "selection_index": 4,
+    "post_number": 50
+  },
+  "clues": [
+    {
+      "id": "1A",
+      "direction": "across",
+      "text": "Make subpar use of",
+      "length": 5,
+      "start": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "1D",
+      "direction": "down",
+      "text": "App formerly known as FreeMap Israel",
+      "length": 4,
+      "start": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "2D",
+      "direction": "down",
+      "text": "Off in the distance",
+      "length": 4,
+      "start": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "3D",
+      "direction": "down",
+      "text": "Move around a bit",
+      "length": 4,
+      "start": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "4D",
+      "direction": "down",
+      "text": "___ Aviv",
+      "length": 3,
+      "start": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "5D",
+      "direction": "down",
+      "text": "Rubs out",
+      "length": 6,
+      "start": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "6A",
+      "direction": "across",
+      "text": "Suburb of Pittsburgh named for a volcano",
+      "length": 4,
+      "start": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "6D",
+      "direction": "down",
+      "text": "Looked up to, but slightly creepier",
+      "length": 6,
+      "start": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "7D",
+      "direction": "down",
+      "text": "Chai, literally",
+      "length": 3,
+      "start": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "8D",
+      "direction": "down",
+      "text": "Pitching feat accomplished seven times by Nolan Ryan, colloquially",
+      "length": 4,
+      "start": [
+        0,
+        8
+      ]
+    },
+    {
+      "id": "9D",
+      "direction": "down",
+      "text": "Colony keepers",
+      "length": 8,
+      "start": [
+        0,
+        9
+      ]
+    },
+    {
+      "id": "10A",
+      "direction": "across",
+      "text": "___ Spoke Zarathustra",
+      "length": 4,
+      "start": [
+        0,
+        11
+      ]
+    },
+    {
+      "id": "10D",
+      "direction": "down",
+      "text": "[Clue forthcoming]",
+      "length": 3,
+      "start": [
+        0,
+        11
+      ]
+    },
+    {
+      "id": "11D",
+      "direction": "down",
+      "text": "Good name for a gardener",
+      "length": 4,
+      "start": [
+        0,
+        12
+      ]
+    },
+    {
+      "id": "12D",
+      "direction": "down",
+      "text": "Ctrl-Z",
+      "length": 4,
+      "start": [
+        0,
+        13
+      ]
+    },
+    {
+      "id": "13D",
+      "direction": "down",
+      "text": "Get real mad all by yourself",
+      "length": 4,
+      "start": [
+        0,
+        14
+      ]
+    },
+    {
+      "id": "14A",
+      "direction": "across",
+      "text": "Ensuing",
+      "length": 5,
+      "start": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "15A",
+      "direction": "across",
+      "text": "It's a gas!",
+      "length": 4,
+      "start": [
+        1,
+        6
+      ]
+    },
+    {
+      "id": "16A",
+      "direction": "across",
+      "text": "Tendency",
+      "length": 4,
+      "start": [
+        1,
+        11
+      ]
+    },
+    {
+      "id": "17A",
+      "direction": "across",
+      "text": "2021 Scripps Spelling Bee winner",
+      "length": 15,
+      "start": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "18D",
+      "direction": "down",
+      "text": "Unit of measurement about the size of a football field",
+      "length": 4,
+      "start": [
+        2,
+        5
+      ]
+    },
+    {
+      "id": "19D",
+      "direction": "down",
+      "text": "Component of a tennis match",
+      "length": 4,
+      "start": [
+        2,
+        10
+      ]
+    },
+    {
+      "id": "20A",
+      "direction": "across",
+      "text": "To ___ is human",
+      "length": 3,
+      "start": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "21A",
+      "direction": "across",
+      "text": "Poli ___",
+      "length": 3,
+      "start": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "22A",
+      "direction": "across",
+      "text": "\"Son ___ gun!\"",
+      "length": 3,
+      "start": [
+        3,
+        8
+      ]
+    },
+    {
+      "id": "23A",
+      "direction": "across",
+      "text": "Stern's opposite",
+      "length": 3,
+      "start": [
+        3,
+        12
+      ]
+    },
+    {
+      "id": "24A",
+      "direction": "across",
+      "text": "Baseball Hall-of-Famer Jeter",
+      "length": 5,
+      "start": [
+        4,
+        3
+      ]
+    },
+    {
+      "id": "24D",
+      "direction": "down",
+      "text": "Treasure trove for a stats nerd",
+      "length": 7,
+      "start": [
+        4,
+        3
+      ]
+    },
+    {
+      "id": "25D",
+      "direction": "down",
+      "text": "___ energy",
+      "length": 7,
+      "start": [
+        4,
+        7
+      ]
+    },
+    {
+      "id": "26A",
+      "direction": "across",
+      "text": "Bit of equipment for a roadie",
+      "length": 3,
+      "start": [
+        4,
+        9
+      ]
+    },
+    {
+      "id": "27D",
+      "direction": "down",
+      "text": "Sports authority with emerging rival LIV",
+      "length": 7,
+      "start": [
+        4,
+        11
+      ]
+    },
+    {
+      "id": "28A",
+      "direction": "across",
+      "text": "\"Oops, I didn't mean to send that last email\"",
+      "length": 15,
+      "start": [
+        5,
+        0
+      ]
+    },
+    {
+      "id": "28D",
+      "direction": "down",
+      "text": "Like lips with implants",
+      "length": 5,
+      "start": [
+        5,
+        0
+      ]
+    },
+    {
+      "id": "29D",
+      "direction": "down",
+      "text": "\"New ___ Can Really Handle Its Scotch\" (The Onion headline)",
+      "length": 5,
+      "start": [
+        5,
+        1
+      ]
+    },
+    {
+      "id": "30D",
+      "direction": "down",
+      "text": "Supreme Court Justice Kagan",
+      "length": 5,
+      "start": [
+        5,
+        2
+      ]
+    },
+    {
+      "id": "31D",
+      "direction": "down",
+      "text": "Grass carpet, basically",
+      "length": 3,
+      "start": [
+        5,
+        8
+      ]
+    },
+    {
+      "id": "32D",
+      "direction": "down",
+      "text": "Lexus : Toyota :: ___ : Honda",
+      "length": 5,
+      "start": [
+        5,
+        12
+      ]
+    },
+    {
+      "id": "33D",
+      "direction": "down",
+      "text": "More scarce",
+      "length": 5,
+      "start": [
+        5,
+        13
+      ]
+    },
+    {
+      "id": "34D",
+      "direction": "down",
+      "text": "Had a fancy supper",
+      "length": 5,
+      "start": [
+        5,
+        14
+      ]
+    },
+    {
+      "id": "35A",
+      "direction": "across",
+      "text": "Light vocal cadence",
+      "length": 4,
+      "start": [
+        6,
+        0
+      ]
+    },
+    {
+      "id": "36A",
+      "direction": "across",
+      "text": "___ de plume",
+      "length": 3,
+      "start": [
+        6,
+        7
+      ]
+    },
+    {
+      "id": "37A",
+      "direction": "across",
+      "text": "Berry with borderline magical powers, supposedly",
+      "length": 4,
+      "start": [
+        6,
+        11
+      ]
+    },
+    {
+      "id": "38A",
+      "direction": "across",
+      "text": "Eye part whose name comes from the Latin for \"grape\"",
+      "length": 4,
+      "start": [
+        7,
+        0
+      ]
+    },
+    {
+      "id": "39A",
+      "direction": "across",
+      "text": "Proofs of ownership",
+      "length": 5,
+      "start": [
+        7,
+        5
+      ]
+    },
+    {
+      "id": "39D",
+      "direction": "down",
+      "text": "Vaccine denier Novak who's also really good at tennis",
+      "length": 8,
+      "start": [
+        7,
+        5
+      ]
+    },
+    {
+      "id": "40D",
+      "direction": "down",
+      "text": "Guinevere (/ˈɡwɪnɪvɪər/ GWIN-iv-___; Welsh: Gwenhwyfar; Breton: Gwenivar, Cornish: Gwynnever)",
+      "length": 3,
+      "start": [
+        7,
+        6
+      ]
+    },
+    {
+      "id": "41A",
+      "direction": "across",
+      "text": "Hook a right, say",
+      "length": 4,
+      "start": [
+        7,
+        11
+      ]
+    },
+    {
+      "id": "42A",
+      "direction": "across",
+      "text": "TJ Maxx section",
+      "length": 4,
+      "start": [
+        8,
+        0
+      ]
+    },
+    {
+      "id": "43A",
+      "direction": "across",
+      "text": "Purchase for the super-wealthy",
+      "length": 3,
+      "start": [
+        8,
+        5
+      ]
+    },
+    {
+      "id": "44A",
+      "direction": "across",
+      "text": "Willie who broke the NHL's color barrier",
+      "length": 4,
+      "start": [
+        8,
+        11
+      ]
+    },
+    {
+      "id": "45A",
+      "direction": "across",
+      "text": "Ancient Roman bad-asses",
+      "length": 15,
+      "start": [
+        9,
+        0
+      ]
+    },
+    {
+      "id": "46D",
+      "direction": "down",
+      "text": "Pulls to safety, or maybe to an impound lot",
+      "length": 4,
+      "start": [
+        9,
+        4
+      ]
+    },
+    {
+      "id": "47D",
+      "direction": "down",
+      "text": "Matches up",
+      "length": 6,
+      "start": [
+        9,
+        8
+      ]
+    },
+    {
+      "id": "48D",
+      "direction": "down",
+      "text": "Hawaiian goose with a repetitive name",
+      "length": 4,
+      "start": [
+        9,
+        9
+      ]
+    },
+    {
+      "id": "49D",
+      "direction": "down",
+      "text": "Reacted to eating onions, if you're me",
+      "length": 6,
+      "start": [
+        9,
+        10
+      ]
+    },
+    {
+      "id": "50A",
+      "direction": "across",
+      "text": "Tik ___ (Ke$ha hit)",
+      "length": 3,
+      "start": [
+        10,
+        3
+      ]
+    },
+    {
+      "id": "51A",
+      "direction": "across",
+      "text": "Cloudless, as a sky",
+      "length": 5,
+      "start": [
+        10,
+        7
+      ]
+    },
+    {
+      "id": "52A",
+      "direction": "across",
+      "text": "Fun/scary thing to slide into",
+      "length": 3,
+      "start": [
+        11,
+        0
+      ]
+    },
+    {
+      "id": "52D",
+      "direction": "down",
+      "text": "Played some tunes for, as a bar mitzvah",
+      "length": 4,
+      "start": [
+        11,
+        0
+      ]
+    },
+    {
+      "id": "53D",
+      "direction": "down",
+      "text": "Bring your little horsey from a white spot to a black spot not too far away",
+      "length": 4,
+      "start": [
+        11,
+        1
+      ]
+    },
+    {
+      "id": "54D",
+      "direction": "down",
+      "text": "The greatest video game console of all time, don't @ me",
+      "length": 4,
+      "start": [
+        11,
+        2
+      ]
+    },
+    {
+      "id": "55A",
+      "direction": "across",
+      "text": "\"That thing I'm looking at is amazing\"",
+      "length": 3,
+      "start": [
+        11,
+        4
+      ]
+    },
+    {
+      "id": "56D",
+      "direction": "down",
+      "text": "What crypto ads imply that you are if you don't invest in crypto",
+      "length": 4,
+      "start": [
+        11,
+        6
+      ]
+    },
+    {
+      "id": "57A",
+      "direction": "across",
+      "text": "Gerund suffix",
+      "length": 3,
+      "start": [
+        11,
+        8
+      ]
+    },
+    {
+      "id": "58A",
+      "direction": "across",
+      "text": "\"Brat Pack\" actor Lowe",
+      "length": 3,
+      "start": [
+        11,
+        12
+      ]
+    },
+    {
+      "id": "58D",
+      "direction": "down",
+      "text": "Staircase part",
+      "length": 4,
+      "start": [
+        11,
+        12
+      ]
+    },
+    {
+      "id": "59D",
+      "direction": "down",
+      "text": "Animal known in German as \"Mörderwal\" (literally, \"murder whale\")",
+      "length": 4,
+      "start": [
+        11,
+        13
+      ]
+    },
+    {
+      "id": "60D",
+      "direction": "down",
+      "text": "Annual celebration, for short",
+      "length": 4,
+      "start": [
+        11,
+        14
+      ]
+    },
+    {
+      "id": "61A",
+      "direction": "across",
+      "text": "2022 Tour de France winner",
+      "length": 15,
+      "start": [
+        12,
+        0
+      ]
+    },
+    {
+      "id": "62D",
+      "direction": "down",
+      "text": "___ of bulrushes (craft that carried baby Moses)",
+      "length": 3,
+      "start": [
+        12,
+        3
+      ]
+    },
+    {
+      "id": "63D",
+      "direction": "down",
+      "text": "Vardalos of My Big Fat Greek Wedding",
+      "length": 3,
+      "start": [
+        12,
+        7
+      ]
+    },
+    {
+      "id": "64D",
+      "direction": "down",
+      "text": "Earth Girls ___ Easy",
+      "length": 3,
+      "start": [
+        12,
+        11
+      ]
+    },
+    {
+      "id": "65A",
+      "direction": "across",
+      "text": "Penultimate word in many a fairy tale",
+      "length": 4,
+      "start": [
+        13,
+        0
+      ]
+    },
+    {
+      "id": "66A",
+      "direction": "across",
+      "text": "\"You can count on me!\"",
+      "length": 4,
+      "start": [
+        13,
+        5
+      ]
+    },
+    {
+      "id": "67A",
+      "direction": "across",
+      "text": "___ Kane (Susan Lucci's All My Children character)",
+      "length": 5,
+      "start": [
+        13,
+        10
+      ]
+    },
+    {
+      "id": "68A",
+      "direction": "across",
+      "text": "\"Why is a raven like a writing ___?\" (Alice's Adventures in Wonderland riddle with no answer — put your best answer in the comments!)",
+      "length": 4,
+      "start": [
+        14,
+        0
+      ]
+    },
+    {
+      "id": "69A",
+      "direction": "across",
+      "text": "April hotshots: Abbr.",
+      "length": 4,
+      "start": [
+        14,
+        5
+      ]
+    },
+    {
+      "id": "70A",
+      "direction": "across",
+      "text": "Brief stoppage",
+      "length": 5,
+      "start": [
+        14,
+        10
+      ]
+    }
+  ]
+}

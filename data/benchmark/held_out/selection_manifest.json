@@ -1,0 +1,51 @@
+{
+  "status": "evaluation_set_finalized",
+  "selection_rule": "Two standard American 15x15 puzzles with explicit CC BY 4.0 source licenses; no model runs were used to choose between completed results.",
+  "selected": [
+    {
+      "selection_index": 1,
+      "post_number": 61,
+      "puzzle_id": "crossword_nexus_jesus_children_of_america",
+      "title": "Jesus Children of America",
+      "author": "Jayne and Alex Boisvert",
+      "published": "2022-10-14",
+      "page_url": "https://crosswordnexus.com/blog/2022/10/14/puzzle-61-jesus-children-of-america-feat-jayne-boisvert/",
+      "source_url": "https://crosswordnexus.com/downloads/site_puzzles/JesusChildrenOfAmerica.ipuz",
+      "source_format": "ipuz",
+      "source_sha256": "025f43bd1acbe88e2d8e095fa2078e0d10f8087f0ad5101611711a8cf31274f8",
+      "source_copyright": "© 2022 Crossword Nexus. CC BY 4.0 License.",
+      "clue_count": 78,
+      "playable_cell_count": 183
+    },
+    {
+      "selection_index": 2,
+      "post_number": 69,
+      "puzzle_id": "crossword_nexus_the_cocoanuts",
+      "title": "The Cocoanuts",
+      "author": "Alex Boisvert",
+      "published": "2022-12-09",
+      "page_url": "https://crosswordnexus.com/blog/2022/12/09/puzzle-69-the-cocoanuts-marx-brothers-puzzle-1/",
+      "source_url": "https://crosswordnexus.com/downloads/site_puzzles/TheCocoanuts.ipuz",
+      "source_format": "ipuz",
+      "source_sha256": "e511543c7517fb6383cf5d384f5d029ac125030fe127a1d5ec2a4290677f9ae4",
+      "source_copyright": "© 2022 Crossword Nexus. CC BY 4.0 License.",
+      "clue_count": 78,
+      "playable_cell_count": 190
+    }
+  ],
+  "solver_source_sha256": "a542fd543d2ede631a0ee957d7f159ddda3d194c01b6d781025d2a4c017e1423",
+  "config": {
+    "model": "zai-org/GLM-5.3-Flash",
+    "max_rounds": 12,
+    "max_tokens": 6000,
+    "max_calls": 200,
+    "token_budget": 400000,
+    "temperature": 0.2,
+    "reasoning_effort": "low",
+    "batch_size": 4,
+    "concurrent_calls_per_puzzle": 4,
+    "singleton_retry_max_tokens": 12000
+  },
+  "evaluated_puzzle_count": 2,
+  "protocol": "The two selected evaluation puzzles were each rerun once with the final source and settings. The reported artifacts are those completed reruns. Puzzle selection was unchanged, and no further tuning was performed from the rerun results. Gold is opened by the evaluator only after solving."
+}

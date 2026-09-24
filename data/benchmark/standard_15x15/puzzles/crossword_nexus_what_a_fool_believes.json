@@ -1,0 +1,818 @@
+{
+  "puzzle_id": "crossword_nexus_what_a_fool_believes",
+  "rows": 15,
+  "columns": 15,
+  "grid": [
+    "....#....#....#",
+    "....#....#.....",
+    "...............",
+    "####...##......",
+    "..........#....",
+    "....##...#.....",
+    "......#....####",
+    "...............",
+    "####....#......",
+    ".....#...##....",
+    "....#..........",
+    "......##...####",
+    "...............",
+    ".....#....#....",
+    "#....#....#...."
+  ],
+  "metadata": {
+    "type": "standard_american_15x15",
+    "title": "What A Fool Believes",
+    "author": "Alex Boisvert",
+    "source": "Crossword Nexus",
+    "source_page": "https://crosswordnexus.com/blog/2021/08/13/puzzle-9-what-a-fool-believes/",
+    "source_url": "https://crosswordnexus.com/downloads/site_puzzles/WhatAFoolBelieves.jpz",
+    "source_format": "jpz",
+    "source_license": "CC BY 4.0",
+    "source_sha256": "d4930adb40cade49daff6ee1a9def22d1e54d9b61e8a0515799ead5fdad1b5cf",
+    "published": "2021-08-13",
+    "selection_index": 1,
+    "post_number": 9
+  },
+  "clues": [
+    {
+      "id": "1A",
+      "direction": "across",
+      "text": "Super Trouper quartet",
+      "length": 4,
+      "start": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "5A",
+      "direction": "across",
+      "text": "\"Listen here!\", more subtly",
+      "length": 4,
+      "start": [
+        0,
+        5
+      ]
+    },
+    {
+      "id": "9A",
+      "direction": "across",
+      "text": "Alum",
+      "length": 4,
+      "start": [
+        0,
+        10
+      ]
+    },
+    {
+      "id": "13A",
+      "direction": "across",
+      "text": "___ and proud",
+      "length": 4,
+      "start": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "14A",
+      "direction": "across",
+      "text": "Common programming interview topic",
+      "length": 4,
+      "start": [
+        1,
+        5
+      ]
+    },
+    {
+      "id": "15A",
+      "direction": "across",
+      "text": "Positive replies",
+      "length": 5,
+      "start": [
+        1,
+        10
+      ]
+    },
+    {
+      "id": "17A",
+      "direction": "across",
+      "text": "Start of a quote by Oscar Wilde",
+      "length": 15,
+      "start": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "20A",
+      "direction": "across",
+      "text": "Help",
+      "length": 3,
+      "start": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "21A",
+      "direction": "across",
+      "text": "Ignatius of ___",
+      "length": 6,
+      "start": [
+        3,
+        9
+      ]
+    },
+    {
+      "id": "22A",
+      "direction": "across",
+      "text": "Quote, part 2",
+      "length": 10,
+      "start": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": "28A",
+      "direction": "across",
+      "text": "Predator's target",
+      "length": 4,
+      "start": [
+        4,
+        11
+      ]
+    },
+    {
+      "id": "29A",
+      "direction": "across",
+      "text": "Like much Goodwill merchandise",
+      "length": 4,
+      "start": [
+        5,
+        0
+      ]
+    },
+    {
+      "id": "30A",
+      "direction": "across",
+      "text": "Fill your belly",
+      "length": 3,
+      "start": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": "31A",
+      "direction": "across",
+      "text": "Mocks",
+      "length": 5,
+      "start": [
+        5,
+        10
+      ]
+    },
+    {
+      "id": "32A",
+      "direction": "across",
+      "text": "Sprinter Thompson-Herah who won the 100 and 200 meter gold in Tokyo",
+      "length": 6,
+      "start": [
+        6,
+        0
+      ]
+    },
+    {
+      "id": "35A",
+      "direction": "across",
+      "text": "crosswordnexus.com, for one",
+      "length": 4,
+      "start": [
+        6,
+        7
+      ]
+    },
+    {
+      "id": "37A",
+      "direction": "across",
+      "text": "Quote, part 3",
+      "length": 15,
+      "start": [
+        7,
+        0
+      ]
+    },
+    {
+      "id": "43A",
+      "direction": "across",
+      "text": "___ the line (conformed)",
+      "length": 4,
+      "start": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": "44A",
+      "direction": "across",
+      "text": "Dozing",
+      "length": 6,
+      "start": [
+        8,
+        9
+      ]
+    },
+    {
+      "id": "45A",
+      "direction": "across",
+      "text": "Some files",
+      "length": 5,
+      "start": [
+        9,
+        0
+      ]
+    },
+    {
+      "id": "49A",
+      "direction": "across",
+      "text": "Cook up a whopper",
+      "length": 3,
+      "start": [
+        9,
+        6
+      ]
+    },
+    {
+      "id": "51A",
+      "direction": "across",
+      "text": "Willie who broke the NHL's color barrier",
+      "length": 4,
+      "start": [
+        9,
+        11
+      ]
+    },
+    {
+      "id": "52A",
+      "direction": "across",
+      "text": "Airport south of Paris",
+      "length": 4,
+      "start": [
+        10,
+        0
+      ]
+    },
+    {
+      "id": "53A",
+      "direction": "across",
+      "text": "Quote, part 4",
+      "length": 10,
+      "start": [
+        10,
+        5
+      ]
+    },
+    {
+      "id": "56A",
+      "direction": "across",
+      "text": "\"Loss is not as bad as wanting more\" philosopher",
+      "length": 6,
+      "start": [
+        11,
+        0
+      ]
+    },
+    {
+      "id": "58A",
+      "direction": "across",
+      "text": "Fish with an elongated body",
+      "length": 3,
+      "start": [
+        11,
+        8
+      ]
+    },
+    {
+      "id": "59A",
+      "direction": "across",
+      "text": "Quote, part 5",
+      "length": 15,
+      "start": [
+        12,
+        0
+      ]
+    },
+    {
+      "id": "66A",
+      "direction": "across",
+      "text": "Beauty parlor",
+      "length": 5,
+      "start": [
+        13,
+        0
+      ]
+    },
+    {
+      "id": "67A",
+      "direction": "across",
+      "text": "Cuisine with lots of fish sauce",
+      "length": 4,
+      "start": [
+        13,
+        6
+      ]
+    },
+    {
+      "id": "68A",
+      "direction": "across",
+      "text": "Calculus class calculation",
+      "length": 4,
+      "start": [
+        13,
+        11
+      ]
+    },
+    {
+      "id": "69A",
+      "direction": "across",
+      "text": "Daly of Spider-Man: Homecoming",
+      "length": 4,
+      "start": [
+        14,
+        1
+      ]
+    },
+    {
+      "id": "70A",
+      "direction": "across",
+      "text": "Source's opposite, in differential equations",
+      "length": 4,
+      "start": [
+        14,
+        6
+      ]
+    },
+    {
+      "id": "71A",
+      "direction": "across",
+      "text": "Kelly Kapowski's kicks",
+      "length": 4,
+      "start": [
+        14,
+        11
+      ]
+    },
+    {
+      "id": "1D",
+      "direction": "down",
+      "text": "\"Prince ___, fabulous he, ___ Ababwa\"",
+      "length": 3,
+      "start": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "2D",
+      "direction": "down",
+      "text": "Snake that can grow up to 14 feet long",
+      "length": 3,
+      "start": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "3D",
+      "direction": "down",
+      "text": "Acquire, as a cigarette",
+      "length": 3,
+      "start": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "4D",
+      "direction": "down",
+      "text": "Internet annoyances",
+      "length": 3,
+      "start": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "5D",
+      "direction": "down",
+      "text": "Extremely limited character encoding",
+      "length": 5,
+      "start": [
+        0,
+        5
+      ]
+    },
+    {
+      "id": "6D",
+      "direction": "down",
+      "text": "\"I'm scared [or possibly pretending to be because I am in desperate need of human contact]\"",
+      "length": 6,
+      "start": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "7D",
+      "direction": "down",
+      "text": "Passé palindromic preposition",
+      "length": 3,
+      "start": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "8D",
+      "direction": "down",
+      "text": "Floribama Shore network",
+      "length": 3,
+      "start": [
+        0,
+        8
+      ]
+    },
+    {
+      "id": "9D",
+      "direction": "down",
+      "text": "Greek dish for which I will not be taking a side in the \"is it a sandwich?\" debate",
+      "length": 4,
+      "start": [
+        0,
+        10
+      ]
+    },
+    {
+      "id": "10D",
+      "direction": "down",
+      "text": "Key in again",
+      "length": 6,
+      "start": [
+        0,
+        11
+      ]
+    },
+    {
+      "id": "11D",
+      "direction": "down",
+      "text": "Where Michael rows the boat, or where we want him to? Not sure, those are the only words of the song I know",
+      "length": 6,
+      "start": [
+        0,
+        12
+      ]
+    },
+    {
+      "id": "12D",
+      "direction": "down",
+      "text": "She holds all the cards",
+      "length": 6,
+      "start": [
+        0,
+        13
+      ]
+    },
+    {
+      "id": "16D",
+      "direction": "down",
+      "text": "Remains",
+      "length": 5,
+      "start": [
+        1,
+        14
+      ]
+    },
+    {
+      "id": "18D",
+      "direction": "down",
+      "text": "Granola bit",
+      "length": 3,
+      "start": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "19D",
+      "direction": "down",
+      "text": "Inventor Whitney",
+      "length": 3,
+      "start": [
+        2,
+        9
+      ]
+    },
+    {
+      "id": "22D",
+      "direction": "down",
+      "text": "Took to court, in a way",
+      "length": 4,
+      "start": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": "23D",
+      "direction": "down",
+      "text": "City in which you'd find the Vikingskipshuset på Bygdøy",
+      "length": 4,
+      "start": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "24D",
+      "direction": "down",
+      "text": "Statistics calculation",
+      "length": 4,
+      "start": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "25D",
+      "direction": "down",
+      "text": "Make some changes to Wikipedia",
+      "length": 4,
+      "start": [
+        4,
+        3
+      ]
+    },
+    {
+      "id": "26D",
+      "direction": "down",
+      "text": "Entered gracefully",
+      "length": 7,
+      "start": [
+        4,
+        7
+      ]
+    },
+    {
+      "id": "27D",
+      "direction": "down",
+      "text": "Start to wake up",
+      "length": 4,
+      "start": [
+        4,
+        8
+      ]
+    },
+    {
+      "id": "31D",
+      "direction": "down",
+      "text": "Winnipeg athletes",
+      "length": 4,
+      "start": [
+        5,
+        10
+      ]
+    },
+    {
+      "id": "33D",
+      "direction": "down",
+      "text": "\"God gives the ___, but he does not crack them.\" -Franz Kafka",
+      "length": 4,
+      "start": [
+        6,
+        4
+      ]
+    },
+    {
+      "id": "34D",
+      "direction": "down",
+      "text": "Brian who composed the Windows 95 startup sound",
+      "length": 3,
+      "start": [
+        6,
+        5
+      ]
+    },
+    {
+      "id": "36D",
+      "direction": "down",
+      "text": "Branch of the DHS",
+      "length": 3,
+      "start": [
+        6,
+        9
+      ]
+    },
+    {
+      "id": "38D",
+      "direction": "down",
+      "text": "Place to find a reuben",
+      "length": 4,
+      "start": [
+        7,
+        6
+      ]
+    },
+    {
+      "id": "39D",
+      "direction": "down",
+      "text": "At ___ point (ebbing)",
+      "length": 4,
+      "start": [
+        7,
+        11
+      ]
+    },
+    {
+      "id": "40D",
+      "direction": "down",
+      "text": "___ Claudius Caesar Augustus Germanicus",
+      "length": 4,
+      "start": [
+        7,
+        12
+      ]
+    },
+    {
+      "id": "41D",
+      "direction": "down",
+      "text": "Doe's partner",
+      "length": 4,
+      "start": [
+        7,
+        13
+      ]
+    },
+    {
+      "id": "42D",
+      "direction": "down",
+      "text": "Mimicked",
+      "length": 4,
+      "start": [
+        7,
+        14
+      ]
+    },
+    {
+      "id": "45D",
+      "direction": "down",
+      "text": "Caramel-chocolate treats",
+      "length": 5,
+      "start": [
+        9,
+        0
+      ]
+    },
+    {
+      "id": "46D",
+      "direction": "down",
+      "text": "Abbas's predecessor",
+      "length": 6,
+      "start": [
+        9,
+        1
+      ]
+    },
+    {
+      "id": "47D",
+      "direction": "down",
+      "text": "In a lackadaisical manner",
+      "length": 6,
+      "start": [
+        9,
+        2
+      ]
+    },
+    {
+      "id": "48D",
+      "direction": "down",
+      "text": "Common programming language for data scientists",
+      "length": 6,
+      "start": [
+        9,
+        3
+      ]
+    },
+    {
+      "id": "50D",
+      "direction": "down",
+      "text": "Dr. Robotnik's nickname, based (one assumes) on his ovoid body",
+      "length": 6,
+      "start": [
+        9,
+        8
+      ]
+    },
+    {
+      "id": "53D",
+      "direction": "down",
+      "text": "\"Game, ___, match\"",
+      "length": 3,
+      "start": [
+        10,
+        5
+      ]
+    },
+    {
+      "id": "54D",
+      "direction": "down",
+      "text": "Procedure I got in 2002 and it was some of the best money I ever spent",
+      "length": 5,
+      "start": [
+        10,
+        9
+      ]
+    },
+    {
+      "id": "55D",
+      "direction": "down",
+      "text": "Pitching stat largely deprecated in favor of FIP, in sabermetric circles",
+      "length": 3,
+      "start": [
+        10,
+        10
+      ]
+    },
+    {
+      "id": "57D",
+      "direction": "down",
+      "text": "Actor Billy who was probably always called last during roll at school",
+      "length": 4,
+      "start": [
+        11,
+        4
+      ]
+    },
+    {
+      "id": "60D",
+      "direction": "down",
+      "text": "Word heard before The Liberty Bell March plays, on '70s British TV",
+      "length": 3,
+      "start": [
+        12,
+        6
+      ]
+    },
+    {
+      "id": "61D",
+      "direction": "down",
+      "text": "Thunnus albacares, on menus",
+      "length": 3,
+      "start": [
+        12,
+        7
+      ]
+    },
+    {
+      "id": "62D",
+      "direction": "down",
+      "text": "Incorrect guess I gave on Jeopardy! to the prompt \"In Tibetan, this word means 'person-animal'\"",
+      "length": 3,
+      "start": [
+        12,
+        11
+      ]
+    },
+    {
+      "id": "63D",
+      "direction": "down",
+      "text": "Wrath",
+      "length": 3,
+      "start": [
+        12,
+        12
+      ]
+    },
+    {
+      "id": "64D",
+      "direction": "down",
+      "text": "Flanders of \"Stupid Flanders\"",
+      "length": 3,
+      "start": [
+        12,
+        13
+      ]
+    },
+    {
+      "id": "65D",
+      "direction": "down",
+      "text": "Neon, but not trees",
+      "length": 3,
+      "start": [
+        12,
+        14
+      ]
+    }
+  ]
+}

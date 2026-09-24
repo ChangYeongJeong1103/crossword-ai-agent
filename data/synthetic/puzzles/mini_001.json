@@ -1,0 +1,88 @@
+{
+  "puzzle_id": "mini_001",
+  "rows": 5,
+  "columns": 5,
+  "grid": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "metadata": {
+    "type": "synthetic_fixture",
+    "notes": "Controlled fixture with clues authored for deterministic development."
+  },
+  "clues": [
+    {
+      "id": "1A",
+      "direction": "across",
+      "text": "Wetland dominated by trees",
+      "length": 5,
+      "start": [0, 0]
+    },
+    {
+      "id": "6A",
+      "direction": "across",
+      "text": "Socially prohibited",
+      "length": 5,
+      "start": [1, 0]
+    },
+    {
+      "id": "7A",
+      "direction": "across",
+      "text": "Banded gemstone",
+      "length": 5,
+      "start": [2, 0]
+    },
+    {
+      "id": "8A",
+      "direction": "across",
+      "text": "Return to an initial state",
+      "length": 5,
+      "start": [3, 0]
+    },
+    {
+      "id": "9A",
+      "direction": "across",
+      "text": "Lock of hair",
+      "length": 5,
+      "start": [4, 0]
+    },
+    {
+      "id": "1D",
+      "direction": "down",
+      "text": "Begin",
+      "length": 5,
+      "start": [0, 0]
+    },
+    {
+      "id": "2D",
+      "direction": "down",
+      "text": "Bet",
+      "length": 5,
+      "start": [0, 1]
+    },
+    {
+      "id": "3D",
+      "direction": "down",
+      "text": "Humiliate or degrade",
+      "length": 5,
+      "start": [0, 2]
+    },
+    {
+      "id": "4D",
+      "direction": "down",
+      "text": "Tiny particles",
+      "length": 5,
+      "start": [0, 3]
+    },
+    {
+      "id": "5D",
+      "direction": "down",
+      "text": "Writers of verse",
+      "length": 5,
+      "start": [0, 4]
+    }
+  ]
+}

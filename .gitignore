@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.DS_Store
+.env
+.env.*
+.streamlit/secrets.toml
+.coverage
+htmlcov/
+build/
+prev/
+live_runs/
+dist/
+*.zip
+video/

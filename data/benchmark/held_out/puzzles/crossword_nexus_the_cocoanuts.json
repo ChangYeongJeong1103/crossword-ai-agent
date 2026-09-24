@@ -1,0 +1,818 @@
+{
+  "puzzle_id": "crossword_nexus_the_cocoanuts",
+  "rows": 15,
+  "columns": 15,
+  "grid": [
+    "....#....#.....",
+    "....#....#.....",
+    "...............",
+    "###....#.......",
+    "...#....#...###",
+    "..........#....",
+    ".....##....#...",
+    ".......#.......",
+    "...#....##.....",
+    "....#..........",
+    "###...#....#...",
+    ".......#....###",
+    "...............",
+    ".....#....#....",
+    ".....#....#...."
+  ],
+  "metadata": {
+    "type": "standard_american_15x15",
+    "title": "The Cocoanuts",
+    "author": "Alex Boisvert",
+    "source": "Crossword Nexus",
+    "source_page": "https://crosswordnexus.com/blog/2022/12/09/puzzle-69-the-cocoanuts-marx-brothers-puzzle-1/",
+    "source_url": "https://crosswordnexus.com/downloads/site_puzzles/TheCocoanuts.ipuz",
+    "source_format": "ipuz",
+    "source_license": "CC BY 4.0",
+    "source_sha256": "e511543c7517fb6383cf5d384f5d029ac125030fe127a1d5ec2a4290677f9ae4",
+    "published": "2022-12-09",
+    "selection_index": 2,
+    "post_number": 69
+  },
+  "clues": [
+    {
+      "id": "1A",
+      "direction": "across",
+      "text": "Bird closely related to the emu, but way smaller",
+      "length": 4,
+      "start": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "1D",
+      "direction": "down",
+      "text": "Kit ___ (Halloween treat)",
+      "length": 3,
+      "start": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "2D",
+      "direction": "down",
+      "text": "401(k) alternative",
+      "length": 3,
+      "start": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "3D",
+      "direction": "down",
+      "text": "Stir-frying kitchen tool",
+      "length": 3,
+      "start": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "4D",
+      "direction": "down",
+      "text": "Light bulb over your head, in the comics",
+      "length": 4,
+      "start": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "5A",
+      "direction": "across",
+      "text": "Not feeling upbeat",
+      "length": 4,
+      "start": [
+        0,
+        5
+      ]
+    },
+    {
+      "id": "5D",
+      "direction": "down",
+      "text": "Moolah",
+      "length": 6,
+      "start": [
+        0,
+        5
+      ]
+    },
+    {
+      "id": "6D",
+      "direction": "down",
+      "text": "Says yes",
+      "length": 6,
+      "start": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "7D",
+      "direction": "down",
+      "text": "🎵 I’d like to coo with my baby tonight / And pitch the ___ with my baby tonight 🎵 (Cole Porter, Too Darn Hot)",
+      "length": 3,
+      "start": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "8D",
+      "direction": "down",
+      "text": "Down-low docs",
+      "length": 4,
+      "start": [
+        0,
+        8
+      ]
+    },
+    {
+      "id": "9A",
+      "direction": "across",
+      "text": "Channel whose programming for today includes \"U.S. Postal Service Officials Testify on Holiday Preparations\"",
+      "length": 5,
+      "start": [
+        0,
+        10
+      ]
+    },
+    {
+      "id": "9D",
+      "direction": "down",
+      "text": "Common sightings in Joshua Tree National Park",
+      "length": 5,
+      "start": [
+        0,
+        10
+      ]
+    },
+    {
+      "id": "10D",
+      "direction": "down",
+      "text": "Get rid of",
+      "length": 6,
+      "start": [
+        0,
+        11
+      ]
+    },
+    {
+      "id": "11D",
+      "direction": "down",
+      "text": "Serve, as a drink",
+      "length": 4,
+      "start": [
+        0,
+        12
+      ]
+    },
+    {
+      "id": "12D",
+      "direction": "down",
+      "text": "___ of Green Gables",
+      "length": 4,
+      "start": [
+        0,
+        13
+      ]
+    },
+    {
+      "id": "13D",
+      "direction": "down",
+      "text": "Brooklyn hoopsters",
+      "length": 4,
+      "start": [
+        0,
+        14
+      ]
+    },
+    {
+      "id": "14A",
+      "direction": "across",
+      "text": "Nickname shared by a Yankees third baseman, a Packers quarterback, and a tennis star",
+      "length": 4,
+      "start": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "15A",
+      "direction": "across",
+      "text": "Product that no one nicknamed 14-Across has ever advertised, despite the obvious possibilities",
+      "length": 4,
+      "start": [
+        1,
+        5
+      ]
+    },
+    {
+      "id": "16A",
+      "direction": "across",
+      "text": "With nary a soul around",
+      "length": 5,
+      "start": [
+        1,
+        10
+      ]
+    },
+    {
+      "id": "17A",
+      "direction": "across",
+      "text": "Consider",
+      "length": 15,
+      "start": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "18D",
+      "direction": "down",
+      "text": "Constant refrain from my kids despite the presence of smart phones and the internet",
+      "length": 7,
+      "start": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "19D",
+      "direction": "down",
+      "text": "Reined in",
+      "length": 6,
+      "start": [
+        2,
+        9
+      ]
+    },
+    {
+      "id": "20A",
+      "direction": "across",
+      "text": "Blanche ___ ___ (suffragette who coincidentally married someone with her maiden name)",
+      "length": 4,
+      "start": [
+        3,
+        3
+      ]
+    },
+    {
+      "id": "21A",
+      "direction": "across",
+      "text": "Evidence of surgery",
+      "length": 7,
+      "start": [
+        3,
+        8
+      ]
+    },
+    {
+      "id": "22A",
+      "direction": "across",
+      "text": "Number of MLB players who played all 162 games in 2022",
+      "length": 3,
+      "start": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": "22D",
+      "direction": "down",
+      "text": "Mendelian features",
+      "length": 6,
+      "start": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": "23D",
+      "direction": "down",
+      "text": "Smack but good",
+      "length": 6,
+      "start": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "24D",
+      "direction": "down",
+      "text": "Eight-legged freaks (let's all ignore that this clue is wrong and disparaging to some of nature's miracles)",
+      "length": 6,
+      "start": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "25A",
+      "direction": "across",
+      "text": "Cheese that is pasteurized in America, so why even bother",
+      "length": 4,
+      "start": [
+        4,
+        4
+      ]
+    },
+    {
+      "id": "26D",
+      "direction": "down",
+      "text": "The Name of the Rose author Umberto",
+      "length": 3,
+      "start": [
+        4,
+        7
+      ]
+    },
+    {
+      "id": "27A",
+      "direction": "across",
+      "text": "Expensive gaming computer",
+      "length": 3,
+      "start": [
+        4,
+        9
+      ]
+    },
+    {
+      "id": "28A",
+      "direction": "across",
+      "text": "Cute lil trash panda",
+      "length": 10,
+      "start": [
+        5,
+        0
+      ]
+    },
+    {
+      "id": "29D",
+      "direction": "down",
+      "text": "Cleveland hoopster",
+      "length": 3,
+      "start": [
+        5,
+        3
+      ]
+    },
+    {
+      "id": "30D",
+      "direction": "down",
+      "text": "\"más loco que ___ cabra\" (totally nuts, in Spanish)",
+      "length": 3,
+      "start": [
+        5,
+        8
+      ]
+    },
+    {
+      "id": "31A",
+      "direction": "across",
+      "text": "The ___ U Give",
+      "length": 4,
+      "start": [
+        5,
+        11
+      ]
+    },
+    {
+      "id": "32D",
+      "direction": "down",
+      "text": "Manages to prevent",
+      "length": 6,
+      "start": [
+        5,
+        12
+      ]
+    },
+    {
+      "id": "33D",
+      "direction": "down",
+      "text": "Tall tent style",
+      "length": 6,
+      "start": [
+        5,
+        13
+      ]
+    },
+    {
+      "id": "34D",
+      "direction": "down",
+      "text": "Molson ___ (alternative to Molson Canadian)",
+      "length": 6,
+      "start": [
+        5,
+        14
+      ]
+    },
+    {
+      "id": "35A",
+      "direction": "across",
+      "text": "Word that is used when discussing weddings, and at basically no other time",
+      "length": 5,
+      "start": [
+        6,
+        0
+      ]
+    },
+    {
+      "id": "36A",
+      "direction": "across",
+      "text": "Strip club's supply",
+      "length": 4,
+      "start": [
+        6,
+        7
+      ]
+    },
+    {
+      "id": "37D",
+      "direction": "down",
+      "text": "One who studies",
+      "length": 7,
+      "start": [
+        6,
+        10
+      ]
+    },
+    {
+      "id": "38A",
+      "direction": "across",
+      "text": "Bother greatly",
+      "length": 3,
+      "start": [
+        6,
+        12
+      ]
+    },
+    {
+      "id": "39A",
+      "direction": "across",
+      "text": "Song that plays at Dodger Stadium after a victory",
+      "length": 7,
+      "start": [
+        7,
+        0
+      ]
+    },
+    {
+      "id": "40D",
+      "direction": "down",
+      "text": "\"Yay, I did a good thing in the sport I'm playing\"",
+      "length": 6,
+      "start": [
+        7,
+        5
+      ]
+    },
+    {
+      "id": "41D",
+      "direction": "down",
+      "text": "League for the Omaha Storm Chasers",
+      "length": 3,
+      "start": [
+        7,
+        6
+      ]
+    },
+    {
+      "id": "42A",
+      "direction": "across",
+      "text": "Actual billboards showing up inside video games, e.g.",
+      "length": 7,
+      "start": [
+        7,
+        8
+      ]
+    },
+    {
+      "id": "43D",
+      "direction": "down",
+      "text": "Spit some rhymes like Cardi B",
+      "length": 3,
+      "start": [
+        7,
+        11
+      ]
+    },
+    {
+      "id": "44A",
+      "direction": "across",
+      "text": "Apex",
+      "length": 3,
+      "start": [
+        8,
+        0
+      ]
+    },
+    {
+      "id": "45A",
+      "direction": "across",
+      "text": "\"I agree to your terms\"",
+      "length": 4,
+      "start": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": "46D",
+      "direction": "down",
+      "text": "___ Soundsystem (\"Losing My Edge\" group)",
+      "length": 3,
+      "start": [
+        8,
+        7
+      ]
+    },
+    {
+      "id": "47A",
+      "direction": "across",
+      "text": "The silent Marx brother",
+      "length": 5,
+      "start": [
+        8,
+        10
+      ]
+    },
+    {
+      "id": "48A",
+      "direction": "across",
+      "text": "Hock a loogie",
+      "length": 4,
+      "start": [
+        9,
+        0
+      ]
+    },
+    {
+      "id": "49D",
+      "direction": "down",
+      "text": "Motorcycle-racing video game series",
+      "length": 6,
+      "start": [
+        9,
+        3
+      ]
+    },
+    {
+      "id": "50A",
+      "direction": "across",
+      "text": "Bay Area food delivery service",
+      "length": 10,
+      "start": [
+        9,
+        5
+      ]
+    },
+    {
+      "id": "51D",
+      "direction": "down",
+      "text": "Khakis and a t-shirt, basically every day, for your humble puzzle author",
+      "length": 6,
+      "start": [
+        9,
+        8
+      ]
+    },
+    {
+      "id": "52D",
+      "direction": "down",
+      "text": "Christmas ditties",
+      "length": 6,
+      "start": [
+        9,
+        9
+      ]
+    },
+    {
+      "id": "53A",
+      "direction": "across",
+      "text": "Toys ___",
+      "length": 3,
+      "start": [
+        10,
+        3
+      ]
+    },
+    {
+      "id": "54D",
+      "direction": "down",
+      "text": "\"Please stop, that hurts\"",
+      "length": 5,
+      "start": [
+        10,
+        4
+      ]
+    },
+    {
+      "id": "55A",
+      "direction": "across",
+      "text": "___ wield (hold a pair of pistols, in a video game)",
+      "length": 4,
+      "start": [
+        10,
+        7
+      ]
+    },
+    {
+      "id": "56A",
+      "direction": "across",
+      "text": "Holder of the Guinness World Record for \"English word with the most meanings\" (it's a real thing, look it up)",
+      "length": 3,
+      "start": [
+        10,
+        12
+      ]
+    },
+    {
+      "id": "57A",
+      "direction": "across",
+      "text": "Baseball game subdivisions",
+      "length": 7,
+      "start": [
+        11,
+        0
+      ]
+    },
+    {
+      "id": "57D",
+      "direction": "down",
+      "text": "Erstwhile appointment-keeping software from Apple",
+      "length": 4,
+      "start": [
+        11,
+        0
+      ]
+    },
+    {
+      "id": "58D",
+      "direction": "down",
+      "text": "Musical bit",
+      "length": 4,
+      "start": [
+        11,
+        1
+      ]
+    },
+    {
+      "id": "59D",
+      "direction": "down",
+      "text": "Org. for the UCLA Bruins",
+      "length": 4,
+      "start": [
+        11,
+        2
+      ]
+    },
+    {
+      "id": "60D",
+      "direction": "down",
+      "text": "Whole bunch",
+      "length": 4,
+      "start": [
+        11,
+        6
+      ]
+    },
+    {
+      "id": "61A",
+      "direction": "across",
+      "text": "College dining hall accessory",
+      "length": 4,
+      "start": [
+        11,
+        8
+      ]
+    },
+    {
+      "id": "62D",
+      "direction": "down",
+      "text": "Song that hasn't been as fun since it was co-opted by the 45th president",
+      "length": 4,
+      "start": [
+        11,
+        11
+      ]
+    },
+    {
+      "id": "63A",
+      "direction": "across",
+      "text": "Possibly the world's most tightly-guarded trade secret",
+      "length": 15,
+      "start": [
+        12,
+        0
+      ]
+    },
+    {
+      "id": "64D",
+      "direction": "down",
+      "text": "Ancient Roman salute",
+      "length": 3,
+      "start": [
+        12,
+        7
+      ]
+    },
+    {
+      "id": "65D",
+      "direction": "down",
+      "text": "Decorative storage vessel",
+      "length": 3,
+      "start": [
+        12,
+        12
+      ]
+    },
+    {
+      "id": "66D",
+      "direction": "down",
+      "text": "Chair judge's cry, in tennis",
+      "length": 3,
+      "start": [
+        12,
+        13
+      ]
+    },
+    {
+      "id": "67D",
+      "direction": "down",
+      "text": "Reverence",
+      "length": 3,
+      "start": [
+        12,
+        14
+      ]
+    },
+    {
+      "id": "68A",
+      "direction": "across",
+      "text": "In any way",
+      "length": 5,
+      "start": [
+        13,
+        0
+      ]
+    },
+    {
+      "id": "69A",
+      "direction": "across",
+      "text": "Word meaning \"heinous\" that reverses to a word meaning \"survive\"",
+      "length": 4,
+      "start": [
+        13,
+        6
+      ]
+    },
+    {
+      "id": "70A",
+      "direction": "across",
+      "text": "People assembled to pull off a jewel heist",
+      "length": 4,
+      "start": [
+        13,
+        11
+      ]
+    },
+    {
+      "id": "71A",
+      "direction": "across",
+      "text": "Car-buying alternative? Or maybe it is buying a car? Like rent-to-own, kinda? I can't be bothered to check",
+      "length": 5,
+      "start": [
+        14,
+        0
+      ]
+    },
+    {
+      "id": "72A",
+      "direction": "across",
+      "text": "Word meaning \"moistens\" that reverses to a word meaning \"soup\"",
+      "length": 4,
+      "start": [
+        14,
+        6
+      ]
+    },
+    {
+      "id": "73A",
+      "direction": "across",
+      "text": "Pay to play",
+      "length": 4,
+      "start": [
+        14,
+        11
+      ]
+    }
+  ]
+}
