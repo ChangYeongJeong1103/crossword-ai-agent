@@ -19,7 +19,7 @@ flowchart TD
 
   G --> H["5. Send batches of 4 clues<br/>Up to 4 calls in parallel"]
   H --> I["6. GLM returns JSON answers"]
-  I --> J["7. Validate each proposal<br/>A-Z only · exact length<br/>pattern match in fill mode"]
+  I --> J["7. Validate each proposal<br/>normalize spaces, apostrophes and hyphens<br/>A-Z · exact length · fill-pattern match"]
 
   J -->|"Missing ID or<br/>unparseable JSON"| K["Retry only failed clue IDs<br/>Empty length-limited batch → single clues<br/>Larger retry only for original singleton"]
   K --> I
@@ -65,12 +65,17 @@ flowchart LR
   FILL -->|"No progress or<br/>fully blocked pattern"| REPAIR
   FILL -->|"Grid becomes complete"| REVIEW
   REPAIR -->|"Grid becomes complete"| REVIEW
-  REVIEW -->|"Correction creates<br/>a crossing conflict"| REPAIR
-  REVIEW -->|"All answers confirmed"| DONE["DONE"]
+  REPAIR -->|"Progress with<br/>gaps remaining"| FILL
+  REPAIR -->|"No progress"| REPAIR
+  REVIEW -->|"Correction creates<br/>a crossing conflict"| JOINT["JOINT RECHECK<br/>Check the correction with<br/>its conflicting crossing"]
+  JOINT -->|"All answers confirmed"| DONE["DONE"]
+  JOINT -->|"Grid remains full<br/>but review is pending"| REVIEW
+  JOINT -->|"Pruning removes<br/>an answer"| FILL
+  REVIEW -->|"All answers confirmed"| DONE
 
   classDef phase fill:#fff4d6,stroke:#d97706,color:#0f172a;
   classDef done fill:#dcfce7,stroke:#16a34a,color:#0f172a;
-  class FILL,REPAIR,REVIEW phase;
+  class FILL,REPAIR,REVIEW,JOINT phase;
   class DONE done;
 ```
 
@@ -86,13 +91,15 @@ flowchart LR
 - Sends difficult missing entries together with their crossing clues.
 - Treats existing letters as tentative so an earlier wrong answer can be replaced.
 - Jointly rechecks a semantic correction and any answer that conflicts with it.
+- Returns to fill after making progress with gaps remaining; stays in repair after no progress.
 
 ### Review
 
 - Runs after the grid has an answer for every clue.
 - Asks the model to confirm clue meaning instead of trusting crossings alone.
 - Prevents a rejected answer from immediately returning through fill mode.
-- Returns to repair if a correction breaks a crossing.
+- Immediately rechecks a semantic correction with any conflicting crossing answer.
+- If pruning removes an answer, the next round fills the resulting gap.
 
 ### Retry and budget control
 
@@ -101,7 +108,8 @@ flowchart LR
 - Retries an empty length-limited batch directly as individual clues instead of recursively creating intermediate batches.
 - Does not give a split-generated singleton another 12,000-token attempt.
 - Preserves one larger retry for a request that started as a singleton.
-- Records every returned response, error and provider usage report in the solve trace.
+- Records each returned response, final error and provider usage report in the solve trace.
+- Summarizes transient HTTP retries with `http_attempts` rather than storing each intermediate HTTP error.
 
 ## Prompt context sent to the model
 
@@ -112,7 +120,7 @@ flowchart LR
   C["Current letter pattern"] --> P
   D["Crossing clues and answers<br/>during repair/review"] --> P
   E["Referenced clues<br/>such as See 12-Down"] --> P
-  F["Other long clues and answers<br/>as theme context"] --> P
+  F["Other long clues and answers<br/>when a requested clue has 10+ letters"] --> P
   P --> G["JSON answers only"]
 ```
 
@@ -144,4 +152,4 @@ flowchart LR
 | Demo | `app.py` | Show live solving or replay a recorded run |
 | CLI | `run_eval.py` | Run one puzzle, optionally evaluate it and save the full result |
 
-The controller allows at most 12 rounds, 200 HTTP attempts and 400,000 reported tokens per puzzle. It uses no answer retrieval, candidate beam or constraint-satisfaction solver. A structurally complete grid can still be semantically wrong, so only the separate evaluator can establish an exact solve.
+The reported app and CLI configuration uses 12 rounds, up to 200 HTTP attempts and a 400,000 reported-token threshold per puzzle. The round limit is configurable up to 30, and concurrent in-flight requests can take reported usage slightly above the token threshold. The controller uses no answer retrieval, candidate beam or constraint-satisfaction solver. A structurally complete grid can still be semantically wrong, so only the separate evaluator can establish an exact solve.
