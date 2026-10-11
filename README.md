@@ -67,7 +67,7 @@ For a visual walkthrough of Fill → Repair → Review → Crosscheck and the go
 
 ## Puzzles
 
-**Development set (10 puzzles).** I designed and tuned the controller on eight Crossword Nexus puzzles (CC BY 4.0, included with gold files) and two Crosshare puzzles. Two of the Crossword Nexus puzzles, *By George!* and *Gino (The Manager)*, are deliberately hard themed puzzles built on catchphrases and invented wordplay.
+**Development set (10 puzzles).** I designed and tuned the controller on eight Crossword Nexus puzzles (CC BY 4.0, included with gold files) and two Crosshare puzzles, *I'm Walkin' Here!* and *Themeless 136*. Two of the Crossword Nexus puzzles, *By George!* and *Gino (The Manager)*, are deliberately hard themed puzzles built on catchphrases and invented wordplay.
 
 **Evaluation set (50 puzzles).** Standard American 15×15 puzzles from Crosshare's curated featured list, taken newest-first by fixed rules: a symmetric, connected and fully checked grid; no circled, shaded or colored cells; no rebus, meta, cryptic or variety puzzles; and a review of theme entries that excludes answer-transforming themes and news-recap themes that need knowledge of recent events. Crosshare puzzles are "all rights reserved", so they are not included in this repository. The list records which puzzles were evaluated.
 
@@ -176,7 +176,7 @@ crossword-ai-agent/
 │   ├── benchmark/
 │   │   ├── standard_15x15/        # Development puzzles and gold (Crossword Nexus)
 │   │   ├── held_out/              # Development puzzles and gold (Crossword Nexus)
-│   │   └── crosshare_heldout/     # Evaluation-set manifest (puzzles not included)
+│   │   └── crosshare_heldout/     # Crosshare manifest: evaluation and development puzzles
 │   └── synthetic/                 # Small deterministic test fixture
 └── results/
     ├── benchmark/
