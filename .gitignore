@@ -15,3 +15,18 @@ live_runs/
 dist/
 *.zip
 video/
+data/benchmark/crosshare_heldout/raw/
+data/benchmark/crosshare_heldout/puzzles/
+data/benchmark/crosshare_heldout/gold/
+results/benchmark/runs/
+results/benchmark/probe/
+results/benchmark/pilot/
+data/benchmark/crosshare_dev/
+results/benchmark/excluded_runs/
+# Crosshare puzzles are all rights reserved; Crossword Nexus runs (CC BY) are committed.
+results/benchmark/development/runs/*/crosshare_*/
+# Personal-use Crosshare tooling stays local.
+scripts/fetch_crosshare.py
+results/benchmark/logs/
+results/benchmark/**/runs_reruns/
+results/benchmark/runs_reruns/

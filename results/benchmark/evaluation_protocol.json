@@ -1,0 +1,352 @@
+{
+  "frozen_on": "2026-10-10",
+  "model": "zai-org/GLM-5.3-Flash",
+  "source_sha256": "a4057725624f17118435a3234de67c95cdab97a90f33b9dc8a55bd71547b913e",
+  "runner_sha256": "7757c4983a4b1e01649c2d369752e922935f62960e1a8fe10a44a72d2fa21e36",
+  "runs_per_puzzle": 5,
+  "commands": {
+    "evaluation": "python run_benchmark.py --runs 5 --workers 10",
+    "infrastructure_reruns": "python run_benchmark.py --runs 5 --workers 10 --rerun-infra-errors (repeated until it archives no run)",
+    "analysis": "python analyze_benchmark.py"
+  },
+  "configurations": {
+    "L0_single_pass": {
+      "max_rounds": 1,
+      "batch_size": 4,
+      "repair": false,
+      "review": false,
+      "crosscheck": false,
+      "max_tokens": 6000,
+      "max_calls": 200,
+      "token_budget": 400000
+    },
+    "L1_fill_loop": {
+      "max_rounds": 15,
+      "batch_size": 4,
+      "repair": false,
+      "review": false,
+      "crosscheck": false,
+      "max_tokens": 6000,
+      "max_calls": 200,
+      "token_budget": 400000
+    },
+    "L2_fill_repair": {
+      "max_rounds": 15,
+      "batch_size": 4,
+      "repair": true,
+      "review": false,
+      "crosscheck": false,
+      "max_tokens": 6000,
+      "max_calls": 200,
+      "token_budget": 400000
+    },
+    "L3_full": {
+      "max_rounds": 15,
+      "batch_size": 4,
+      "repair": true,
+      "review": true,
+      "crosscheck": true,
+      "max_tokens": 6000,
+      "max_calls": 200,
+      "token_budget": 400000
+    },
+    "L3_no_crosscheck": {
+      "max_rounds": 15,
+      "batch_size": 4,
+      "repair": true,
+      "review": true,
+      "crosscheck": false,
+      "max_tokens": 6000,
+      "max_calls": 200,
+      "token_budget": 400000
+    },
+    "L3_batch1": {
+      "max_rounds": 15,
+      "batch_size": 1,
+      "repair": true,
+      "review": true,
+      "crosscheck": true,
+      "max_tokens": 6000,
+      "max_calls": 800,
+      "token_budget": 400000
+    },
+    "L3_batch_all": {
+      "max_rounds": 15,
+      "batch_size": null,
+      "repair": true,
+      "review": true,
+      "crosscheck": true,
+      "max_tokens": 6000,
+      "max_calls": 200,
+      "token_budget": 400000
+    }
+  },
+  "evaluation_puzzles": [
+    {
+      "puzzle_id": "crosshare_2611sUM7irDbvVzsqHJm",
+      "puzzle_sha256": "0acae50b444ad3ebc5196f4a2b9be5daf3e1fbd60e90a55028cff159af2c08c2"
+    },
+    {
+      "puzzle_id": "crosshare_2TDCb2vrPjfnF9DpZAIt",
+      "puzzle_sha256": "fb3990a13ecab318e827c79f6d30ca81d7c8e0438e500bef21fac505ef6b4edf"
+    },
+    {
+      "puzzle_id": "crosshare_38WSnHVDDBSZaLHE9zkH",
+      "puzzle_sha256": "cca6b7a321ce7fc9fda58a08bb9fc619cc8dd340bb0736f44dea15817b3a7d8d"
+    },
+    {
+      "puzzle_id": "crosshare_3OtijHE5IddDkmQ66hQW",
+      "puzzle_sha256": "99d287e5a6e8b7c152b7e4306ba7106b8ffc7011e83beeefd78428ba685f95fc"
+    },
+    {
+      "puzzle_id": "crosshare_3hP6JNKMyKSdaYdcrvJG",
+      "puzzle_sha256": "46062259f222e3bb893334f11cf12f3f31f1b87bfbf431d73bebcc9c7d301dc4"
+    },
+    {
+      "puzzle_id": "crosshare_4bNxlP8fUltvTdhTTEoK",
+      "puzzle_sha256": "691bd09e957f7154350cac19ffcff7ddba9f3d091dca0f0ff8ca19694f36364a"
+    },
+    {
+      "puzzle_id": "crosshare_5vNf02sCzBMhgwq0JbgN",
+      "puzzle_sha256": "46c9de02edea25feb32123544bd146d266381f52537cb04ed12f42c33bbee8dd"
+    },
+    {
+      "puzzle_id": "crosshare_9cxdtDBHx94ejvHpc8tE",
+      "puzzle_sha256": "6d3e2f43c8213d733e279b5f0d89bd0152244fb58b6aa218e28443eb8ed1d1d8"
+    },
+    {
+      "puzzle_id": "crosshare_AX9mYrlSCkBCS3dySePx",
+      "puzzle_sha256": "1d8201bd7e8a9bb1f20f2ac7828a684c01fd12dede35a884c376669ea75edb0c"
+    },
+    {
+      "puzzle_id": "crosshare_BQSM8Jl1zPEKa5xC5fbs",
+      "puzzle_sha256": "d3b85646c247c7974afce4f178cc4013c6b585cfb99d60487cca6e04b4fff1e7"
+    },
+    {
+      "puzzle_id": "crosshare_F4h3Z1ADMuXzWODI34Pd",
+      "puzzle_sha256": "db2ef42d2fe2522e3254f3a27e4b1cce3c717e284a5a3a46ad03f02c7e780571"
+    },
+    {
+      "puzzle_id": "crosshare_FsXwUAHTThc3yLd7g11e",
+      "puzzle_sha256": "00ae0f3f3f8e7b67f23a23ee2b088ecd1888baef8311d13d674dc157f544d47e"
+    },
+    {
+      "puzzle_id": "crosshare_HrWzJJLLYz75nFVFJtu1",
+      "puzzle_sha256": "3b2cd84d233a27dbd1f0cbd8829ff0db903e5e1d34568522859870288265bc9c"
+    },
+    {
+      "puzzle_id": "crosshare_I1tiafCevmdJKjug0wXI",
+      "puzzle_sha256": "c77cdf51c207f3438521c01a40a3c2775cc27bd44eee4d36cab14b5bf21d50dc"
+    },
+    {
+      "puzzle_id": "crosshare_I45iFumRQqyrkoTbLH34",
+      "puzzle_sha256": "976c54d198c81a7924767094ea1a3eef076c911e443b8e1cc71bc30f3d41a24e"
+    },
+    {
+      "puzzle_id": "crosshare_IxFrwllGnFQbuAqywLuy",
+      "puzzle_sha256": "795bb4f5c719eb29d2a14411611ca0f467576a577e60efea1780dd6338beefda"
+    },
+    {
+      "puzzle_id": "crosshare_JKOhW5Oxk1qXNHRMpz0X",
+      "puzzle_sha256": "3dcd2f245f34b347a54068f839c2501152beae4d17c8de10ec13c87f6d74c098"
+    },
+    {
+      "puzzle_id": "crosshare_JjM8LtnHATgVNUbr3uzU",
+      "puzzle_sha256": "c4e1f9758bdd8c11ed145141fd86f5a2059fdc6821afba2087b9082bce08e2c0"
+    },
+    {
+      "puzzle_id": "crosshare_KaErsAaTMOURSGNnAPky",
+      "puzzle_sha256": "86ff1e8a29aad9925c04ff963b75498a6b572c608f1abd35fbf93b7ebfb89414"
+    },
+    {
+      "puzzle_id": "crosshare_MvSrn2yKtMh97gcp7EN8",
+      "puzzle_sha256": "6fa8dcb32b39cacf92fad2755361733e2808ef444b6bec84f0686c9c6f6e5b91"
+    },
+    {
+      "puzzle_id": "crosshare_OeRu1jTTpnFWnUW79BW8",
+      "puzzle_sha256": "9aa2f4889eacdd53f1f0e418778fca1445866bdf1404a111eab0787b0831303e"
+    },
+    {
+      "puzzle_id": "crosshare_PcI2RV1pHWNLvNjNgdS7",
+      "puzzle_sha256": "05528865f1ba9332f59cb45973f20cc3f2c373bcbcf35db0dedd1c60efdcbe31"
+    },
+    {
+      "puzzle_id": "crosshare_PoQ5Eai2SuIUjBdSapkN",
+      "puzzle_sha256": "a36d270edeef7747e057fad896def98323d9d51b21664c005e67d21e158cfc5b"
+    },
+    {
+      "puzzle_id": "crosshare_Q0ZKSI2FvAm8ieyuzdkD",
+      "puzzle_sha256": "02804bf469f80415ff85cbaa94ace4ac2141e4049ffc44da41949d3b1a2772d5"
+    },
+    {
+      "puzzle_id": "crosshare_SQXiQ3ClGEt3UvYuErN6",
+      "puzzle_sha256": "1486cc6d2f543cf565b1880df44647ba5cfe5121deb9c9eb94f603ac03dbafe2"
+    },
+    {
+      "puzzle_id": "crosshare_SVMrAouNIcD42X1gNPYp",
+      "puzzle_sha256": "475af0e77233d917626dc783dc1c45fdd5051823ed2ff3fb34bbe0fa828451a0"
+    },
+    {
+      "puzzle_id": "crosshare_SjQFbZIsBhgIeE2OovGk",
+      "puzzle_sha256": "53c4d6fbd32ffb5ae1e777c5807e958523ad0db9e365f70bedee556aca462d06"
+    },
+    {
+      "puzzle_id": "crosshare_UdFK2ioptD6GARNdR6E4",
+      "puzzle_sha256": "edcfcf0e37801ec71e99d1ad062afe1f4c4b1c6d0eb82e0f47606f4b3b339d4a"
+    },
+    {
+      "puzzle_id": "crosshare_V3vUBf1TSD4CFVlBFndR",
+      "puzzle_sha256": "982ebdf629aff964090e2f07d2158aa8536394d989c4301410688398fe2145cb"
+    },
+    {
+      "puzzle_id": "crosshare_WubIcuAOpI5z509UWVqq",
+      "puzzle_sha256": "baee0d41e04dd90975e5144b7aa869a8b78a79c034b5a3b3660c0ab2bbc95b7e"
+    },
+    {
+      "puzzle_id": "crosshare_YoMXTvPVKcJmXBAe3Ljt",
+      "puzzle_sha256": "46acea3fe74e5b546e9cd73eb2c743008c7800d636b6f4650aa74d9831294748"
+    },
+    {
+      "puzzle_id": "crosshare_ZPqisnPkDTHlm3KLcPEH",
+      "puzzle_sha256": "2c71dc6961dd0226af45ab806e006333db68d1837ec562fd8e3ffa72528cd538"
+    },
+    {
+      "puzzle_id": "crosshare_aAluOf1mksk1ZIZmdjY2",
+      "puzzle_sha256": "7b9d92fd7fe2259e9f3d3904b1f63c8fa220fbcf76375a163b93a4aa7672202a"
+    },
+    {
+      "puzzle_id": "crosshare_c3lGlRzHZ8Si29lZpAg5",
+      "puzzle_sha256": "964bec55fde6583217aa8b3aa0d1d37e5f3b72d74206f32fcf2351a992a153ae"
+    },
+    {
+      "puzzle_id": "crosshare_cyvaRcL2FnMeiYXlFGo9",
+      "puzzle_sha256": "ff19f1e74645a95f46fff9dac3b98805318e69994a0bed319e8e893668095f7d"
+    },
+    {
+      "puzzle_id": "crosshare_hKQEt9xVfGMT8OUH5k0E",
+      "puzzle_sha256": "7db59dcab79aedb535b408e715dc6bae0ad96aa7983f366f5390b8fee6b11417"
+    },
+    {
+      "puzzle_id": "crosshare_hpvIR05lnptSmPBBM62w",
+      "puzzle_sha256": "34bbfbfb3f2c954258956b0c12ba7f6eb3e2978577485541c1218d5526b63216"
+    },
+    {
+      "puzzle_id": "crosshare_iQUCPjBfH1rivm5LBrsm",
+      "puzzle_sha256": "1f72bac5a23dfe2bd822d5875d266ab3225bba20dba185f2159de268f4a2c818"
+    },
+    {
+      "puzzle_id": "crosshare_itBzKpOzVRtWBDJcFZMq",
+      "puzzle_sha256": "31199cd8bef72e20e67c5af466a3587bbd5a96b775326ffe39c7bccb57ac4540"
+    },
+    {
+      "puzzle_id": "crosshare_jNj7hHHfZdqmYdH2t1rE",
+      "puzzle_sha256": "b32939d41d014a894a9a75242247ac2ee34f9ab7a8878cf13e77a688a897dd28"
+    },
+    {
+      "puzzle_id": "crosshare_nC4FAvya5ytCQbckejB6",
+      "puzzle_sha256": "65ad663b1118035fef49a09b9865660116c635055a7cc002ad9401d2ecbe0ea1"
+    },
+    {
+      "puzzle_id": "crosshare_nh3BToabM0zRkDh7cXLd",
+      "puzzle_sha256": "2c6c504ac376c47cbe0ea988dd97053b6edbf7419d9327cd0d117319549f908f"
+    },
+    {
+      "puzzle_id": "crosshare_qB4zC5LPVOZrPsBd0Hqb",
+      "puzzle_sha256": "b12b22b2687fc68d842431f6e7e9b1f865cf54ee3e8aba212c782618246a46e5"
+    },
+    {
+      "puzzle_id": "crosshare_qrOGVlW41oaQ7eByCBZz",
+      "puzzle_sha256": "0727a2bea1dd7273a171f3e0a36ad4a29dfd3d03ce563f186b6c34d1ad0dfc12"
+    },
+    {
+      "puzzle_id": "crosshare_rP9JWa3119Mua2ib6MKP",
+      "puzzle_sha256": "12ad7c04769c115c2b7d1b2c5c7627ee48b0d3cda7ccb7f35881387a14f6c252"
+    },
+    {
+      "puzzle_id": "crosshare_uk0VO8JBu2ECzvLgFVzg",
+      "puzzle_sha256": "05ad6cfffcc4ddba23d94c6871ed5b2a871335b799d9f47dbaa91998e810d47d"
+    },
+    {
+      "puzzle_id": "crosshare_usFpIboAR3KWzQLZqMQK",
+      "puzzle_sha256": "46cbefbc4f929396e9fff23b72a3aab7b16803cc1911844687f756bf8712c6b1"
+    },
+    {
+      "puzzle_id": "crosshare_vj4fP4ctx6MEIHZVBDee",
+      "puzzle_sha256": "ad98517db78f6845b63a56f18638cec01b0e8918fdf705fbfc27dbc9d6912740"
+    },
+    {
+      "puzzle_id": "crosshare_xHmCEsOubBqFf8TiszIS",
+      "puzzle_sha256": "9ee98cb2e3c199325de2cf63d224e4d04ce07b78ed4338d559b8fce4039f3ce4"
+    },
+    {
+      "puzzle_id": "crosshare_yV02VXz9Y8UOuuFlvYBT",
+      "puzzle_sha256": "9a815122eb1eb5abb6ca990359804024bcbce6a0acebd00502bb03953202a4d3"
+    }
+  ],
+  "development_puzzles": [
+    {
+      "puzzle_id": "crossword_nexus_by_george",
+      "puzzle_sha256": "9254beeccd8bbbf9179d370904bd278b68d60ba4f550265c54a3e83765071d5f"
+    },
+    {
+      "puzzle_id": "crossword_nexus_fm",
+      "puzzle_sha256": "4bff3087a83629c2c0d8372caa00995b533d7acb48b6aa1517f04cff28cc8e08"
+    },
+    {
+      "puzzle_id": "crossword_nexus_garden_party",
+      "puzzle_sha256": "5eadcdee82a1b0f3645af60442431c9609d9a65adffb1832f5922bd7cfd99e1f"
+    },
+    {
+      "puzzle_id": "crossword_nexus_gino_the_manager",
+      "puzzle_sha256": "19568108f56d86d691a8a744114cfb81a1c23da9ab48672cb51073c4255484cf"
+    },
+    {
+      "puzzle_id": "crossword_nexus_im_alright",
+      "puzzle_sha256": "1ee04a8085b4d45da3e8928821392d5414d373b205abf71cf5d7552cd02208f6"
+    },
+    {
+      "puzzle_id": "crossword_nexus_what_a_fool_believes",
+      "puzzle_sha256": "e4e7705b27d4a04dfdea73309363945bef66e978e0c55eb9226c35ae95b74655"
+    },
+    {
+      "puzzle_id": "crossword_nexus_jesus_children_of_america",
+      "puzzle_sha256": "e8990872e7e939b748e102d270ccec9e7d6d14ed3d682e5ab8326a2c99d99d5e"
+    },
+    {
+      "puzzle_id": "crossword_nexus_the_cocoanuts",
+      "puzzle_sha256": "3e2cad4fcbace7f77111b653822703b661aeb836eba14d601f1fd7686a6b5a57"
+    },
+    {
+      "puzzle_id": "crosshare_1HxAk8NuE2bIaHO84OGL",
+      "puzzle_sha256": "8f9132e6299238ad28a36d93d3753a60cea62f6cc597271acd3070b4f905e0b2"
+    },
+    {
+      "puzzle_id": "crosshare_1l0JEDYJnJiOX011A84x",
+      "puzzle_sha256": "f459f7076c01776846fa4a6acc6fbd761914c38b5873ab21fac4432c0f674b2a"
+    }
+  ],
+  "frozen": "Solver code, prompts, configurations, budgets and puzzles are fixed before the evaluation runs, and results are reported as observed. Crosscheck settings were chosen on the development set; the evaluation set was not used for tuning.",
+  "completion": "1,750 evaluated runs (7 configurations x 50 puzzles x 5 runs) with no missing, duplicate or pending puzzle; every run with infrastructure errors handled under the rerun policy, with residual errors flagged and counted; every response served by the requested model; puzzle and source hashes match this protocol.",
+  "rerun_policy": [
+    "A run whose result was not saved (process stopped or crashed) is resumed with the same command; this is not an extra attempt.",
+    "An infrastructure error is a request that still failed after the client's HTTP retries ('Token Factory HTTP ...' or 'request failed after three attempts'). Budget limits, invalid model output and wrong answers are not infrastructure errors.",
+    "A saved run with an infrastructure error is archived and run again regardless of its outcome. Each run has at most three attempts: the first attempt plus at most two reruns.",
+    "The kept attempt is the first one without infrastructure errors; if all three attempts have them, the third attempt is kept and flagged. Attempts are never chosen by correctness.",
+    "Saved runs that are wrong, out of budget or out of rounds are kept as they are.",
+    "Every archived attempt is recorded in a ledger with its errors and tokens."
+  ],
+  "reporting": "Performance is reported on the 1,750 kept runs. Operating cost (tokens and infrastructure errors) is reported over all attempts.",
+  "analysis_plan": {
+    "primary": "Solved-puzzle rate: a puzzle is solved when at least 3 of its 5 runs are exact solves. 95% CI by the Wilson score interval over the 50 puzzles.",
+    "comparisons": "Each configuration against L3_full on paired puzzle outcomes: exact McNemar test (two-sided binomial test on discordant puzzles) and a 95% CI for the difference in solved rates by Newcombe's hybrid score method for paired proportions.",
+    "secondary": "Exact solves per run: mean over puzzles of each puzzle's exact rate, with a 95% CI from a puzzle-cluster bootstrap (10,000 resamples of puzzles, the five runs of a puzzle kept together, seed 0); paired difference against L3_full as the per-puzzle difference in exact rate, with a paired cluster bootstrap CI and an exact sign test over puzzles.",
+    "descriptive": [
+      "clue and cell accuracy",
+      "false accepts: a submitted verified grid that is wrong",
+      "submissions of a verified grid and termination reasons",
+      "crosscheck status, coverage (clues answered, clues with a non-blank second opinion) and runs/clues fixed or broken against gold",
+      "tokens (median, p90, total; the 400k budget stops new requests and in-flight requests can exceed it), HTTP calls, latency, request and batch statistics",
+      "infrastructure-error runs and reruns"
+    ]
+  }
+}

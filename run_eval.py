@@ -5,6 +5,7 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
+from src import config
 from src.evaluator import evaluate
 from src.llm_client import Client
 from src.puzzle import Puzzle
@@ -17,10 +18,10 @@ def main():
     parser.add_argument("--puzzle", required=True, type=Path)
     parser.add_argument("--gold", type=Path)
     parser.add_argument("--model")
-    parser.add_argument("--max-rounds", type=int, default=12)
-    parser.add_argument("--max-tokens", type=int, default=6000)
-    parser.add_argument("--max-calls", type=int, default=200)
-    parser.add_argument("--token-budget", type=int, default=400000)
+    parser.add_argument("--max-rounds", type=int, default=config.MAX_ROUNDS)
+    parser.add_argument("--max-tokens", type=int, default=config.MAX_TOKENS)
+    parser.add_argument("--max-calls", type=int, default=config.MAX_CALLS)
+    parser.add_argument("--token-budget", type=int, default=config.TOKEN_BUDGET)
     parser.add_argument(
         "--output", type=Path, default=Path("live_runs/latest.json")
     )
@@ -55,6 +56,10 @@ def main():
     result["created_at"] = datetime.now(timezone.utc).isoformat()
     result["config"] = {
         "max_rounds": args.max_rounds,
+        "batch_size": config.BATCH_SIZE,
+        "repair": True,
+        "review": True,
+        "crosscheck": True,
         "max_tokens": args.max_tokens,
         "max_calls": args.max_calls,
         "token_budget": args.token_budget,

@@ -1,0 +1,4533 @@
+{
+  "puzzle_id": "crossword_nexus_garden_party",
+  "model": "zai-org/GLM-5.3-Flash",
+  "answers": {
+    "1D": "WAZE",
+    "2D": "AFAR",
+    "3D": "STIR",
+    "4D": "TEL",
+    "5D": "ERASES",
+    "6A": "ETNA",
+    "7D": "TEA",
+    "8D": "NONO",
+    "10A": "THUS",
+    "12D": "UNDO",
+    "14A": "AFTER",
+    "15A": "NEON",
+    "16A": "BENT",
+    "17A": "ZAILAAVANTGARDE",
+    "18D": "ACRE",
+    "20A": "ERR",
+    "21A": "SCI",
+    "22A": "OFA",
+    "24A": "DEREK",
+    "25D": "KINETIC",
+    "26A": "AMP",
+    "27D": "PGATOUR",
+    "28A": "PLEASEDISREGARD",
+    "28D": "PLUMP",
+    "30D": "ELENA",
+    "31D": "SOD",
+    "32D": "ACURA",
+    "33D": "RARER",
+    "34D": "DINED",
+    "35A": "LILT",
+    "36A": "NOM",
+    "37A": "ACAI",
+    "38A": "UVEA",
+    "39A": "DEEDS",
+    "39D": "DJOKOVIC",
+    "42A": "MENS",
+    "43A": "JET",
+    "44A": "OREE",
+    "46D": "TOWS",
+    "48D": "NENE",
+    "50A": "TOK",
+    "51A": "CLEAR",
+    "52A": "DMS",
+    "52D": "DJED",
+    "53D": "MOVE",
+    "57A": "ING",
+    "58A": "ROB",
+    "59D": "ORCA",
+    "60D": "BDAY",
+    "61A": "JONASVINGEGAARD",
+    "62D": "ARK",
+    "63D": "NIA",
+    "64D": "ARE",
+    "65A": "EVER",
+    "67A": "ERICA",
+    "68A": "DESK",
+    "1A": "WASTE",
+    "6D": "ENVIED",
+    "9D": "ANTFARMS",
+    "11D": "HERB",
+    "13D": "STEW",
+    "19D": "GAME",
+    "23A": "BOW",
+    "24D": "DATASET",
+    "29D": "LIVER",
+    "40D": "EER",
+    "41A": "TURN",
+    "45A": "PRAETORIANGUARD",
+    "47D": "ALIGNS",
+    "54D": "SNES",
+    "55A": "WOW",
+    "58D": "RAIL",
+    "69A": "CPAS",
+    "70A": "DELAY",
+    "10D": "TBA",
+    "49D": "GAGGED",
+    "56D": "WIMP",
+    "66A": "IMIN"
+  },
+  "grid": [
+    "WASTE#ETNA#THUS",
+    "AFTER#NEON#BENT",
+    "ZAILAAVANTGARDE",
+    "ERR#SCI#OFA#BOW",
+    "###DEREK#AMP###",
+    "PLEASEDISREGARD",
+    "LILT###NOM#ACAI",
+    "UVEA#DEEDS#TURN",
+    "MENS#JET###OREE",
+    "PRAETORIANGUARD",
+    "###TOK#CLEAR###",
+    "DMS#WOW#ING#ROB",
+    "JONASVINGEGAARD",
+    "EVER#IMIN#ERICA",
+    "DESK#CPAS#DELAY"
+  ],
+  "termination": "complete_consistent_grid",
+  "trace": [
+    {
+      "round": 1,
+      "phase": "fill",
+      "answered": 56,
+      "conflicts": 53,
+      "changes": {
+        "1D": {
+          "before": null,
+          "after": "WAZE"
+        },
+        "2D": {
+          "before": null,
+          "after": "AFAR"
+        },
+        "3D": {
+          "before": null,
+          "after": "STIR"
+        },
+        "4D": {
+          "before": null,
+          "after": "TEL"
+        },
+        "5D": {
+          "before": null,
+          "after": "ERASES"
+        },
+        "6A": {
+          "before": null,
+          "after": "ETNA"
+        },
+        "7D": {
+          "before": null,
+          "after": "TEA"
+        },
+        "8D": {
+          "before": null,
+          "after": "NONO"
+        },
+        "10A": {
+          "before": null,
+          "after": "THUS"
+        },
+        "12D": {
+          "before": null,
+          "after": "UNDO"
+        },
+        "14A": {
+          "before": null,
+          "after": "AFTER"
+        },
+        "15A": {
+          "before": null,
+          "after": "NEON"
+        },
+        "16A": {
+          "before": null,
+          "after": "BENT"
+        },
+        "17A": {
+          "before": null,
+          "after": "ZAILAAVANTGARDE"
+        },
+        "18D": {
+          "before": null,
+          "after": "ACRE"
+        },
+        "20A": {
+          "before": null,
+          "after": "ERR"
+        },
+        "21A": {
+          "before": null,
+          "after": "SCI"
+        },
+        "22A": {
+          "before": null,
+          "after": "OFA"
+        },
+        "24A": {
+          "before": null,
+          "after": "DEREK"
+        },
+        "25D": {
+          "before": null,
+          "after": "KINETIC"
+        },
+        "26A": {
+          "before": null,
+          "after": "AMP"
+        },
+        "27D": {
+          "before": null,
+          "after": "PGATOUR"
+        },
+        "28A": {
+          "before": null,
+          "after": "PLEASEDISREGARD"
+        },
+        "28D": {
+          "before": null,
+          "after": "PLUMP"
+        },
+        "30D": {
+          "before": null,
+          "after": "ELENA"
+        },
+        "31D": {
+          "before": null,
+          "after": "SOD"
+        },
+        "32D": {
+          "before": null,
+          "after": "ACURA"
+        },
+        "33D": {
+          "before": null,
+          "after": "RARER"
+        },
+        "34D": {
+          "before": null,
+          "after": "DINED"
+        },
+        "35A": {
+          "before": null,
+          "after": "LILT"
+        },
+        "36A": {
+          "before": null,
+          "after": "NOM"
+        },
+        "37A": {
+          "before": null,
+          "after": "ACAI"
+        },
+        "38A": {
+          "before": null,
+          "after": "UVEA"
+        },
+        "39A": {
+          "before": null,
+          "after": "DEEDS"
+        },
+        "39D": {
+          "before": null,
+          "after": "DJOKOVIC"
+        },
+        "42A": {
+          "before": null,
+          "after": "MENS"
+        },
+        "43A": {
+          "before": null,
+          "after": "JET"
+        },
+        "44A": {
+          "before": null,
+          "after": "OREE"
+        },
+        "46D": {
+          "before": null,
+          "after": "TOWS"
+        },
+        "48D": {
+          "before": null,
+          "after": "NENE"
+        },
+        "50A": {
+          "before": null,
+          "after": "TOK"
+        },
+        "51A": {
+          "before": null,
+          "after": "CLEAR"
+        },
+        "52A": {
+          "before": null,
+          "after": "DMS"
+        },
+        "52D": {
+          "before": null,
+          "after": "DJED"
+        },
+        "53D": {
+          "before": null,
+          "after": "MOVE"
+        },
+        "57A": {
+          "before": null,
+          "after": "ING"
+        },
+        "58A": {
+          "before": null,
+          "after": "ROB"
+        },
+        "59D": {
+          "before": null,
+          "after": "ORCA"
+        },
+        "60D": {
+          "before": null,
+          "after": "BDAY"
+        },
+        "61A": {
+          "before": null,
+          "after": "JONASVINGEGAARD"
+        },
+        "62D": {
+          "before": null,
+          "after": "ARK"
+        },
+        "63D": {
+          "before": null,
+          "after": "NIA"
+        },
+        "64D": {
+          "before": null,
+          "after": "ARE"
+        },
+        "65A": {
+          "before": null,
+          "after": "EVER"
+        },
+        "67A": {
+          "before": null,
+          "after": "ERICA"
+        },
+        "68A": {
+          "before": null,
+          "after": "DESK"
+        }
+      },
+      "removed": {
+        "9D": "APIARIST",
+        "13D": "FUME",
+        "29D": "HAMPS",
+        "41A": "VEER",
+        "45A": "ROMANGLADIATORS",
+        "49D": "SOBBED",
+        "54D": "WIIU",
+        "55A": "DAT",
+        "56D": "FOMO",
+        "58D": "STEP",
+        "66A": "ONIT",
+        "69A": "MVPS",
+        "70A": "PAUSE"
+      },
+      "proposed_answers": {
+        "1D": "WAZE",
+        "2D": "AFAR",
+        "3D": "STIR",
+        "4D": "TEL",
+        "5D": "ERASES",
+        "6A": "ETNA",
+        "7D": "TEA",
+        "8D": "NONO",
+        "9D": "APIARIST",
+        "10A": "THUS",
+        "12D": "UNDO",
+        "13D": "FUME",
+        "14A": "AFTER",
+        "15A": "NEON",
+        "16A": "BENT",
+        "17A": "ZAILAAVANTGARDE",
+        "18D": "ACRE",
+        "20A": "ERR",
+        "21A": "SCI",
+        "22A": "OFA",
+        "24A": "DEREK",
+        "25D": "KINETIC",
+        "26A": "AMP",
+        "27D": "PGATOUR",
+        "28A": "PLEASEDISREGARD",
+        "28D": "PLUMP",
+        "29D": "HAMPS",
+        "30D": "ELENA",
+        "31D": "SOD",
+        "32D": "ACURA",
+        "33D": "RARER",
+        "34D": "DINED",
+        "35A": "LILT",
+        "36A": "NOM",
+        "37A": "ACAI",
+        "38A": "UVEA",
+        "39A": "DEEDS",
+        "39D": "DJOKOVIC",
+        "41A": "VEER",
+        "42A": "MENS",
+        "43A": "JET",
+        "44A": "OREE",
+        "45A": "ROMANGLADIATORS",
+        "46D": "TOWS",
+        "48D": "NENE",
+        "49D": "SOBBED",
+        "50A": "TOK",
+        "51A": "CLEAR",
+        "52A": "DMS",
+        "52D": "DJED",
+        "53D": "MOVE",
+        "54D": "WIIU",
+        "55A": "DAT",
+        "56D": "FOMO",
+        "57A": "ING",
+        "58A": "ROB",
+        "58D": "STEP",
+        "59D": "ORCA",
+        "60D": "BDAY",
+        "61A": "JONASVINGEGAARD",
+        "62D": "ARK",
+        "63D": "NIA",
+        "64D": "ARE",
+        "65A": "EVER",
+        "66A": "ONIT",
+        "67A": "ERICA",
+        "68A": "DESK",
+        "69A": "MVPS",
+        "70A": "PAUSE"
+      },
+      "responses": [
+        {
+          "text": "{\"answers\": {\"1A\": \"MISUSE\", \"1D\": \"WAZE\", \"2D\": \"AFAR\", \"3D\": \"STIR\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 103,
+            "prompt_tokens": 354,
+            "total_tokens": 457,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 66,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 98,
+            "reasoning_tokens": 66
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.775,
+          "ids": [
+            "1A",
+            "1D",
+            "2D",
+            "3D"
+          ],
+          "mode": "fill",
+          "rejected": {
+            "1A": "MISUSE"
+          },
+          "answered": [
+            "1A",
+            "1D",
+            "2D",
+            "3D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"4D\": \"TEL\", \"5D\": \"ERASES\", \"6A\": \"ETNA\", \"6D\": \"OGLED\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 169,
+            "prompt_tokens": 358,
+            "total_tokens": 527,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 133,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 102,
+            "reasoning_tokens": 133
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 2.746,
+          "ids": [
+            "4D",
+            "5D",
+            "6A",
+            "6D"
+          ],
+          "mode": "fill",
+          "rejected": {
+            "6D": "OGLED"
+          },
+          "answered": [
+            "4D",
+            "5D",
+            "6A",
+            "6D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"7D\": \"TEA\", \"8D\": \"NONO\", \"9D\": \"APIARIST\", \"10A\": \"THUS\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 298,
+            "prompt_tokens": 362,
+            "total_tokens": 660,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 261,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 106,
+            "reasoning_tokens": 261
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 3.662,
+          "ids": [
+            "7D",
+            "8D",
+            "9D",
+            "10A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "7D",
+            "8D",
+            "9D",
+            "10A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"10D\": \"\", \"11D\": \"FLORA\", \"12D\": \"UNDO\", \"13D\": \"FUME\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 138,
+            "prompt_tokens": 351,
+            "total_tokens": 489,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 105,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 95,
+            "reasoning_tokens": 105
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.966,
+          "ids": [
+            "10D",
+            "11D",
+            "12D",
+            "13D"
+          ],
+          "mode": "fill",
+          "rejected": {
+            "11D": "FLORA"
+          },
+          "answered": [
+            "10D",
+            "11D",
+            "12D",
+            "13D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"14A\": \"AFTER\", \"15A\": \"NEON\", \"16A\": \"BENT\", \"17A\": \"ZAILAAVANTGARDE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 134,
+            "prompt_tokens": 484,
+            "total_tokens": 618,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 92,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 228,
+            "reasoning_tokens": 92
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 2.145,
+          "ids": [
+            "14A",
+            "15A",
+            "16A",
+            "17A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "14A",
+            "15A",
+            "16A",
+            "17A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"18D\": \"ACRE\", \"19D\": \"SET\", \"20A\": \"ERR\", \"21A\": \"SCI\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 58,
+            "prompt_tokens": 356,
+            "total_tokens": 414,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 25,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 356,
+            "reasoning_tokens": 25
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.304,
+          "ids": [
+            "18D",
+            "19D",
+            "20A",
+            "21A"
+          ],
+          "mode": "fill",
+          "rejected": {
+            "19D": "SET"
+          },
+          "answered": [
+            "18D",
+            "19D",
+            "20A",
+            "21A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"22A\": \"OFA\", \"23A\": \"PROW\", \"24A\": \"DEREK\", \"24D\": \"DATABASE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 75,
+            "prompt_tokens": 359,
+            "total_tokens": 434,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 40,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 359,
+            "reasoning_tokens": 40
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.57,
+          "ids": [
+            "22A",
+            "23A",
+            "24A",
+            "24D"
+          ],
+          "mode": "fill",
+          "rejected": {
+            "23A": "PROW",
+            "24D": "DATABASE"
+          },
+          "answered": [
+            "22A",
+            "23A",
+            "24A",
+            "24D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"25D\": \"KINETIC\", \"26A\": \"AMP\", \"27D\": \"PGATOUR\", \"28A\": \"PLEASEDISREGARD\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 93,
+            "prompt_tokens": 497,
+            "total_tokens": 590,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 54,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 241,
+            "reasoning_tokens": 54
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.701,
+          "ids": [
+            "25D",
+            "26A",
+            "27D",
+            "28A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "25D",
+            "26A",
+            "27D",
+            "28A"
+          ]
+        },
+        {
+          "text": "",
+          "finish_reason": "length",
+          "usage": {
+            "completion_tokens": 6000,
+            "prompt_tokens": 361,
+            "total_tokens": 6361,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 6000,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 105,
+            "reasoning_tokens": 6000
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 25.229,
+          "ids": [
+            "28D",
+            "29D",
+            "30D",
+            "31D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "error": "Invalid output: substring not found"
+        },
+        {
+          "text": "{\"answers\": {\"28D\": \"PLUMP\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 13,
+            "prompt_tokens": 260,
+            "total_tokens": 273,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 1,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 260,
+            "reasoning_tokens": 1
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.116,
+          "ids": [
+            "28D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "28D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"29D\": \"HAMPS\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 306,
+            "prompt_tokens": 268,
+            "total_tokens": 574,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 294,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 268,
+            "reasoning_tokens": 294
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 3.249,
+          "ids": [
+            "29D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "29D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"30D\": \"ELENA\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 14,
+            "prompt_tokens": 262,
+            "total_tokens": 276,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 1,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 262,
+            "reasoning_tokens": 1
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.102,
+          "ids": [
+            "30D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "30D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"31D\": \"SOD\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 15,
+            "prompt_tokens": 261,
+            "total_tokens": 276,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 3,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 261,
+            "reasoning_tokens": 3
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.165,
+          "ids": [
+            "31D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "31D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"32D\": \"ACURA\", \"33D\": \"RARER\", \"34D\": \"DINED\", \"35A\": \"LILT\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 65,
+            "prompt_tokens": 352,
+            "total_tokens": 417,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 29,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 352,
+            "reasoning_tokens": 29
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.314,
+          "ids": [
+            "32D",
+            "33D",
+            "34D",
+            "35A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "32D",
+            "33D",
+            "34D",
+            "35A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"36A\": \"NOM\", \"37A\": \"ACAI\", \"38A\": \"UVEA\", \"39A\": \"DEEDS\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 63,
+            "prompt_tokens": 361,
+            "total_tokens": 424,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 25,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 361,
+            "reasoning_tokens": 25
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.311,
+          "ids": [
+            "36A",
+            "37A",
+            "38A",
+            "39A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "36A",
+            "37A",
+            "38A",
+            "39A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"39D\": \"DJOKOVIC\", \"40D\": \"ER\", \"41A\": \"VEER\", \"42A\": \"MENS\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 127,
+            "prompt_tokens": 416,
+            "total_tokens": 543,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 90,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 416,
+            "reasoning_tokens": 90
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 2.385,
+          "ids": [
+            "39D",
+            "40D",
+            "41A",
+            "42A"
+          ],
+          "mode": "fill",
+          "rejected": {
+            "40D": "ER"
+          },
+          "answered": [
+            "39D",
+            "40D",
+            "41A",
+            "42A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"43A\": \"JET\", \"44A\": \"OREE\", \"45A\": \"ROMANGLADIATORS\", \"46D\": \"TOWS\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 406,
+            "prompt_tokens": 502,
+            "total_tokens": 908,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 366,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 246,
+            "reasoning_tokens": 366
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 5.275,
+          "ids": [
+            "43A",
+            "44A",
+            "45A",
+            "46D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "43A",
+            "44A",
+            "45A",
+            "46D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"47D\": \"TALLIES\", \"48D\": \"NENE\", \"49D\": \"SOBBED\", \"50A\": \"TOK\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 139,
+            "prompt_tokens": 364,
+            "total_tokens": 503,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 101,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 364,
+            "reasoning_tokens": 101
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 2.12,
+          "ids": [
+            "47D",
+            "48D",
+            "49D",
+            "50A"
+          ],
+          "mode": "fill",
+          "rejected": {
+            "47D": "TALLIES"
+          },
+          "answered": [
+            "47D",
+            "48D",
+            "49D",
+            "50A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"51A\": \"CLEAR\", \"52A\": \"DMS\", \"52D\": \"DJED\", \"53D\": \"MOVE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 210,
+            "prompt_tokens": 376,
+            "total_tokens": 586,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 176,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 120,
+            "reasoning_tokens": 176
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 2.837,
+          "ids": [
+            "51A",
+            "52A",
+            "52D",
+            "53D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "51A",
+            "52A",
+            "52D",
+            "53D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"54D\": \"WIIU\", \"55A\": \"DAT\", \"56D\": \"FOMO\", \"57A\": \"ING\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 127,
+            "prompt_tokens": 372,
+            "total_tokens": 499,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 91,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 116,
+            "reasoning_tokens": 91
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 2.003,
+          "ids": [
+            "54D",
+            "55A",
+            "56D",
+            "57A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "54D",
+            "55A",
+            "56D",
+            "57A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"58A\": \"ROB\", \"58D\": \"STEP\", \"59D\": \"ORCA\", \"60D\": \"BDAY\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 89,
+            "prompt_tokens": 373,
+            "total_tokens": 462,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 54,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 373,
+            "reasoning_tokens": 54
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.694,
+          "ids": [
+            "58A",
+            "58D",
+            "59D",
+            "60D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "58A",
+            "58D",
+            "59D",
+            "60D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"61A\": \"JONASVINGEGAARD\", \"62D\": \"ARK\", \"63D\": \"NIA\", \"64D\": \"ARE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 75,
+            "prompt_tokens": 499,
+            "total_tokens": 574,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 36,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 243,
+            "reasoning_tokens": 36
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.48,
+          "ids": [
+            "61A",
+            "62D",
+            "63D",
+            "64D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "61A",
+            "62D",
+            "63D",
+            "64D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"65A\": \"EVER\", \"66A\": \"ONIT\", \"67A\": \"ERICA\", \"68A\": \"DESK\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 75,
+            "prompt_tokens": 393,
+            "total_tokens": 468,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 41,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 393,
+            "reasoning_tokens": 41
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 49.058,
+          "ids": [
+            "65A",
+            "66A",
+            "67A",
+            "68A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "65A",
+            "66A",
+            "67A",
+            "68A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"69A\": \"MVPs\", \"70A\": \"PAUSE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 75,
+            "prompt_tokens": 291,
+            "total_tokens": 366,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 54,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 291,
+            "reasoning_tokens": 54
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 48.342,
+          "ids": [
+            "69A",
+            "70A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "69A",
+            "70A"
+          ]
+        }
+      ],
+      "suspects": [],
+      "crosscheck_status": "pending",
+      "reviewed": 0,
+      "rejected": {
+        "1A": "MISUSE",
+        "6D": "OGLED",
+        "11D": "FLORA",
+        "19D": "SET",
+        "23A": "PROW",
+        "24D": "DATABASE",
+        "40D": "ER",
+        "47D": "TALLIES"
+      },
+      "calls": 24,
+      "error": "Invalid output: substring not found",
+      "latency_seconds": 59.796
+    },
+    {
+      "round": 2,
+      "phase": "fill",
+      "answered": 74,
+      "conflicts": 5,
+      "changes": {
+        "1A": {
+          "before": null,
+          "after": "WASTE"
+        },
+        "6D": {
+          "before": null,
+          "after": "ENVIED"
+        },
+        "9D": {
+          "before": null,
+          "after": "ANTFARMS"
+        },
+        "11D": {
+          "before": null,
+          "after": "HERB"
+        },
+        "13D": {
+          "before": null,
+          "after": "STEW"
+        },
+        "19D": {
+          "before": null,
+          "after": "GAME"
+        },
+        "23A": {
+          "before": null,
+          "after": "BOW"
+        },
+        "24D": {
+          "before": null,
+          "after": "DATASET"
+        },
+        "29D": {
+          "before": null,
+          "after": "LIVER"
+        },
+        "40D": {
+          "before": null,
+          "after": "EER"
+        },
+        "41A": {
+          "before": null,
+          "after": "TURN"
+        },
+        "45A": {
+          "before": null,
+          "after": "PRAETORIANGUARD"
+        },
+        "47D": {
+          "before": null,
+          "after": "ALIGNS"
+        },
+        "54D": {
+          "before": null,
+          "after": "SNES"
+        },
+        "55A": {
+          "before": null,
+          "after": "WOW"
+        },
+        "58D": {
+          "before": null,
+          "after": "RAIL"
+        },
+        "69A": {
+          "before": null,
+          "after": "CPAS"
+        },
+        "70A": {
+          "before": null,
+          "after": "DELAY"
+        }
+      },
+      "removed": {
+        "49D": "LAGGED",
+        "56D": "MISS",
+        "66A": "IMIT"
+      },
+      "proposed_answers": {
+        "1D": "WAZE",
+        "2D": "AFAR",
+        "3D": "STIR",
+        "4D": "TEL",
+        "5D": "ERASES",
+        "6A": "ETNA",
+        "7D": "TEA",
+        "8D": "NONO",
+        "10A": "THUS",
+        "12D": "UNDO",
+        "14A": "AFTER",
+        "15A": "NEON",
+        "16A": "BENT",
+        "17A": "ZAILAAVANTGARDE",
+        "18D": "ACRE",
+        "20A": "ERR",
+        "21A": "SCI",
+        "22A": "OFA",
+        "24A": "DEREK",
+        "25D": "KINETIC",
+        "26A": "AMP",
+        "27D": "PGATOUR",
+        "28A": "PLEASEDISREGARD",
+        "28D": "PLUMP",
+        "30D": "ELENA",
+        "31D": "SOD",
+        "32D": "ACURA",
+        "33D": "RARER",
+        "34D": "DINED",
+        "35A": "LILT",
+        "36A": "NOM",
+        "37A": "ACAI",
+        "38A": "UVEA",
+        "39A": "DEEDS",
+        "39D": "DJOKOVIC",
+        "42A": "MENS",
+        "43A": "JET",
+        "44A": "OREE",
+        "46D": "TOWS",
+        "48D": "NENE",
+        "50A": "TOK",
+        "51A": "CLEAR",
+        "52A": "DMS",
+        "52D": "DJED",
+        "53D": "MOVE",
+        "57A": "ING",
+        "58A": "ROB",
+        "59D": "ORCA",
+        "60D": "BDAY",
+        "61A": "JONASVINGEGAARD",
+        "62D": "ARK",
+        "63D": "NIA",
+        "64D": "ARE",
+        "65A": "EVER",
+        "67A": "ERICA",
+        "68A": "DESK",
+        "1A": "WASTE",
+        "6D": "ENVIED",
+        "9D": "ANTFARMS",
+        "11D": "HERB",
+        "13D": "STEW",
+        "19D": "GAME",
+        "23A": "BOW",
+        "24D": "DATASET",
+        "29D": "LIVER",
+        "40D": "EER",
+        "41A": "TURN",
+        "45A": "PRAETORIANGUARD",
+        "47D": "ALIGNS",
+        "49D": "LAGGED",
+        "54D": "SNES",
+        "55A": "WOW",
+        "56D": "MISS",
+        "58D": "RAIL",
+        "66A": "IMIT",
+        "69A": "CPAS",
+        "70A": "DELAY"
+      },
+      "responses": [
+        {
+          "text": "{\"answers\": {\"1A\": \"WASTE\", \"6D\": \"ENVIED\", \"9D\": \"ANTFARMS\", \"10D\": \"\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 116,
+            "prompt_tokens": 358,
+            "total_tokens": 474,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 80,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 358,
+            "reasoning_tokens": 80
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 25.155,
+          "ids": [
+            "1A",
+            "6D",
+            "9D",
+            "10D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "1A",
+            "6D",
+            "9D",
+            "10D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"11D\": \"HERB\", \"13D\": \"STEW\", \"19D\": \"GAME\", \"23A\": \"BOW\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 267,
+            "prompt_tokens": 354,
+            "total_tokens": 621,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 232,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 354,
+            "reasoning_tokens": 232
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 4.331,
+          "ids": [
+            "11D",
+            "13D",
+            "19D",
+            "23A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "11D",
+            "13D",
+            "19D",
+            "23A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"24D\": \"DATASET\", \"29D\": \"LIVER\", \"40D\": \"EER\", \"41A\": \"TURN\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 145,
+            "prompt_tokens": 420,
+            "total_tokens": 565,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 110,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 420,
+            "reasoning_tokens": 110
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 25.222,
+          "ids": [
+            "24D",
+            "29D",
+            "40D",
+            "41A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "24D",
+            "29D",
+            "40D",
+            "41A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"45A\": \"PRAETORIANGUARD\", \"47D\": \"ALIGNS\", \"49D\": \"LAGGED\", \"54D\": \"SNES\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 69,
+            "prompt_tokens": 530,
+            "total_tokens": 599,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 26,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 530,
+            "reasoning_tokens": 26
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 24.345,
+          "ids": [
+            "45A",
+            "47D",
+            "49D",
+            "54D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "45A",
+            "47D",
+            "49D",
+            "54D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"55A\": \"WOW\", \"56D\": \"MISS\", \"58D\": \"RAIL\", \"66A\": \"IMIT\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 423,
+            "prompt_tokens": 370,
+            "total_tokens": 793,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 389,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 370,
+            "reasoning_tokens": 389
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 4.703,
+          "ids": [
+            "55A",
+            "56D",
+            "58D",
+            "66A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "55A",
+            "56D",
+            "58D",
+            "66A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"69A\": \"CPAS\", \"70A\": \"DELAY\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 124,
+            "prompt_tokens": 295,
+            "total_tokens": 419,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 105,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 295,
+            "reasoning_tokens": 105
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 3.853,
+          "ids": [
+            "69A",
+            "70A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "69A",
+            "70A"
+          ]
+        }
+      ],
+      "suspects": [],
+      "crosscheck_status": "pending",
+      "reviewed": 0,
+      "rejected": {},
+      "calls": 6,
+      "error": null,
+      "latency_seconds": 85.023
+    },
+    {
+      "round": 3,
+      "phase": "repair",
+      "answered": 78,
+      "conflicts": 0,
+      "changes": {
+        "10D": {
+          "before": null,
+          "after": "TBA"
+        },
+        "49D": {
+          "before": null,
+          "after": "GAGGED"
+        },
+        "56D": {
+          "before": null,
+          "after": "WIMP"
+        },
+        "66A": {
+          "before": null,
+          "after": "IMIN"
+        }
+      },
+      "removed": {},
+      "proposed_answers": {
+        "1D": "WAZE",
+        "2D": "AFAR",
+        "3D": "STIR",
+        "4D": "TEL",
+        "5D": "ERASES",
+        "6A": "ETNA",
+        "7D": "TEA",
+        "8D": "NONO",
+        "10A": "THUS",
+        "12D": "UNDO",
+        "14A": "AFTER",
+        "15A": "NEON",
+        "16A": "BENT",
+        "17A": "ZAILAAVANTGARDE",
+        "18D": "ACRE",
+        "20A": "ERR",
+        "21A": "SCI",
+        "22A": "OFA",
+        "24A": "DEREK",
+        "25D": "KINETIC",
+        "26A": "AMP",
+        "27D": "PGATOUR",
+        "28A": "PLEASEDISREGARD",
+        "28D": "PLUMP",
+        "30D": "ELENA",
+        "31D": "SOD",
+        "32D": "ACURA",
+        "33D": "RARER",
+        "34D": "DINED",
+        "35A": "LILT",
+        "36A": "NOM",
+        "37A": "ACAI",
+        "38A": "UVEA",
+        "39A": "DEEDS",
+        "39D": "DJOKOVIC",
+        "42A": "MENS",
+        "43A": "JET",
+        "44A": "OREE",
+        "46D": "TOWS",
+        "48D": "NENE",
+        "50A": "TOK",
+        "51A": "CLEAR",
+        "52A": "DMS",
+        "52D": "DJED",
+        "53D": "MOVE",
+        "57A": "ING",
+        "58A": "ROB",
+        "59D": "ORCA",
+        "60D": "BDAY",
+        "61A": "JONASVINGEGAARD",
+        "62D": "ARK",
+        "63D": "NIA",
+        "64D": "ARE",
+        "65A": "EVER",
+        "67A": "ERICA",
+        "68A": "DESK",
+        "1A": "WASTE",
+        "6D": "ENVIED",
+        "9D": "ANTFARMS",
+        "11D": "HERB",
+        "13D": "STEW",
+        "19D": "GAME",
+        "23A": "BOW",
+        "24D": "DATASET",
+        "29D": "LIVER",
+        "40D": "EER",
+        "41A": "TURN",
+        "45A": "PRAETORIANGUARD",
+        "47D": "ALIGNS",
+        "54D": "SNES",
+        "55A": "WOW",
+        "58D": "RAIL",
+        "69A": "CPAS",
+        "70A": "DELAY",
+        "10D": "TBA",
+        "49D": "GAGGED",
+        "56D": "WIMP",
+        "66A": "IMIN"
+      },
+      "responses": [
+        {
+          "text": "{\"answers\": {\"10D\": \"TEA\", \"49D\": \"GAGGED\", \"56D\": \"WIMP\", \"66A\": \"IMIN\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 428,
+            "prompt_tokens": 1116,
+            "total_tokens": 1544,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 391,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1116,
+            "reasoning_tokens": 391
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 15.783,
+          "ids": [
+            "10D",
+            "49D",
+            "56D",
+            "66A"
+          ],
+          "mode": "repair",
+          "rejected": {},
+          "answered": [
+            "10D",
+            "49D",
+            "56D",
+            "66A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"10D\": \"TEAS\", \"66A\": \"ICAN\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 358,
+            "prompt_tokens": 1810,
+            "total_tokens": 2168,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 338,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1810,
+            "reasoning_tokens": 338
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 15.402,
+          "ids": [
+            "10A",
+            "16A",
+            "17A",
+            "39D"
+          ],
+          "mode": "repair",
+          "rejected": {},
+          "answered": []
+        },
+        {
+          "text": "{\"answers\": {\"10A\": \"THUS\", \"16A\": \"BENT\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 42,
+            "prompt_tokens": 614,
+            "total_tokens": 656,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 22,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 512
+            },
+            "prompt_cache_hit_tokens": 512,
+            "prompt_cache_miss_tokens": 102,
+            "reasoning_tokens": 22
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.329,
+          "ids": [
+            "10A",
+            "16A"
+          ],
+          "mode": "repair",
+          "rejected": {},
+          "answered": [
+            "10A",
+            "16A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"66A\": \"IMONIT\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 93,
+            "prompt_tokens": 1427,
+            "total_tokens": 1520,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 80,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 768
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 659,
+            "reasoning_tokens": 80
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.737,
+          "ids": [
+            "17A",
+            "39D"
+          ],
+          "mode": "repair",
+          "rejected": {},
+          "answered": []
+        },
+        {
+          "text": "{\"answers\": {\"17A\": \"ZAILAAVANTGARDE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 93,
+            "prompt_tokens": 1039,
+            "total_tokens": 1132,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 75,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1024
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 15,
+            "reasoning_tokens": 75
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.751,
+          "ids": [
+            "17A"
+          ],
+          "mode": "repair",
+          "rejected": {},
+          "answered": [
+            "17A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"39D\": \"DJOKOVIC\", \"66A\": \"DONTFRET\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 211,
+            "prompt_tokens": 619,
+            "total_tokens": 830,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 187,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 619,
+            "reasoning_tokens": 187
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 3.479,
+          "ids": [
+            "39D"
+          ],
+          "mode": "repair",
+          "rejected": {},
+          "answered": [
+            "39D"
+          ]
+        },
+        {
+          "text": "",
+          "finish_reason": "length",
+          "usage": {
+            "completion_tokens": 6000,
+            "prompt_tokens": 1831,
+            "total_tokens": 7831,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 6000,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1831,
+            "reasoning_tokens": 6000
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 30.335,
+          "ids": [
+            "45A",
+            "47D",
+            "51A",
+            "55A"
+          ],
+          "mode": "repair",
+          "rejected": {},
+          "error": "Invalid output: substring not found"
+        },
+        {
+          "text": "{\"answers\": {\"45A\": \"PRAETORIANGUARD\", \"49D\": \"GOTTEARY\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 277,
+            "prompt_tokens": 1116,
+            "total_tokens": 1393,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 249,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1116,
+            "reasoning_tokens": 249
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 3.246,
+          "ids": [
+            "45A"
+          ],
+          "mode": "repair",
+          "rejected": {},
+          "answered": [
+            "45A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"47D\": \"ALIGNS\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 131,
+            "prompt_tokens": 517,
+            "total_tokens": 648,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 118,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 517,
+            "reasoning_tokens": 118
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 2.286,
+          "ids": [
+            "47D"
+          ],
+          "mode": "repair",
+          "rejected": {},
+          "answered": [
+            "47D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"51A\": \"CLEAR\", \"49D\": \"CRIED\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 73,
+            "prompt_tokens": 474,
+            "total_tokens": 547,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 53,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 474,
+            "reasoning_tokens": 53
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.684,
+          "ids": [
+            "51A"
+          ],
+          "mode": "repair",
+          "rejected": {},
+          "answered": [
+            "51A"
+          ]
+        },
+        {
+          "text": "",
+          "finish_reason": "length",
+          "usage": {
+            "completion_tokens": 6000,
+            "prompt_tokens": 417,
+            "total_tokens": 6417,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 6000,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 417,
+            "reasoning_tokens": 6000
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 30.691,
+          "ids": [
+            "55A"
+          ],
+          "mode": "repair",
+          "rejected": {},
+          "error": "Invalid output: substring not found"
+        },
+        {
+          "text": "",
+          "finish_reason": "length",
+          "usage": {
+            "completion_tokens": 6000,
+            "prompt_tokens": 1702,
+            "total_tokens": 7702,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 6000,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1702,
+            "reasoning_tokens": 6000
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 53.057,
+          "ids": [
+            "57A",
+            "61A",
+            "63D",
+            "67A"
+          ],
+          "mode": "repair",
+          "rejected": {},
+          "error": "Invalid output: substring not found"
+        },
+        {
+          "text": "{\"answers\": {\"57A\": \"ING\", \"49D\": \"GAGGED\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 201,
+            "prompt_tokens": 390,
+            "total_tokens": 591,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 181,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 390,
+            "reasoning_tokens": 181
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 2.973,
+          "ids": [
+            "57A"
+          ],
+          "mode": "repair",
+          "rejected": {},
+          "answered": [
+            "57A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"61A\": \"JONASVINGEGAARD\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 489,
+            "prompt_tokens": 1111,
+            "total_tokens": 1600,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 472,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1111,
+            "reasoning_tokens": 472
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 4.812,
+          "ids": [
+            "61A"
+          ],
+          "mode": "repair",
+          "rejected": {},
+          "answered": [
+            "61A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"63D\": \"NIA\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 83,
+            "prompt_tokens": 402,
+            "total_tokens": 485,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 71,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 402,
+            "reasoning_tokens": 71
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.994,
+          "ids": [
+            "63D"
+          ],
+          "mode": "repair",
+          "rejected": {},
+          "answered": [
+            "63D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"67A\": \"ERICA\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 17,
+            "prompt_tokens": 492,
+            "total_tokens": 509,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 6,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 492,
+            "reasoning_tokens": 6
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.156,
+          "ids": [
+            "67A"
+          ],
+          "mode": "repair",
+          "rejected": {},
+          "answered": [
+            "67A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"69A\": \"CPAS\", \"70A\": \"DELAY\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 72,
+            "prompt_tokens": 704,
+            "total_tokens": 776,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 53,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 704,
+            "reasoning_tokens": 53
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.54,
+          "ids": [
+            "69A",
+            "70A"
+          ],
+          "mode": "repair",
+          "rejected": {},
+          "answered": [
+            "69A",
+            "70A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"10D\": \"TBA\", \"16A\": \"BENT\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 257,
+            "prompt_tokens": 589,
+            "total_tokens": 846,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 237,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 512
+            },
+            "prompt_cache_hit_tokens": 512,
+            "prompt_cache_miss_tokens": 77,
+            "reasoning_tokens": 237
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 3.372,
+          "ids": [
+            "10D",
+            "16A"
+          ],
+          "mode": "repair",
+          "rejected": {},
+          "answered": [
+            "10D",
+            "16A"
+          ]
+        }
+      ],
+      "suspects": [],
+      "crosscheck_status": "pending",
+      "reviewed": 0,
+      "rejected": {},
+      "calls": 18,
+      "error": "Invalid output: substring not found; Invalid output: substring not found; Invalid output: substring not found",
+      "latency_seconds": 156.646
+    },
+    {
+      "round": 4,
+      "phase": "review",
+      "answered": 78,
+      "conflicts": 0,
+      "changes": {},
+      "removed": {},
+      "proposed_answers": {
+        "1D": "WAZE",
+        "2D": "AFAR",
+        "3D": "STIR",
+        "4D": "TEL",
+        "5D": "ERASES",
+        "6A": "ETNA",
+        "7D": "TEA",
+        "8D": "NONO",
+        "10A": "THUS",
+        "12D": "UNDO",
+        "14A": "AFTER",
+        "15A": "NEON",
+        "16A": "BENT",
+        "17A": "ZAILAAVANTGARDE",
+        "18D": "ACRE",
+        "20A": "ERR",
+        "21A": "SCI",
+        "22A": "OFA",
+        "24A": "DEREK",
+        "25D": "KINETIC",
+        "26A": "AMP",
+        "27D": "PGATOUR",
+        "28A": "PLEASEDISREGARD",
+        "28D": "PLUMP",
+        "30D": "ELENA",
+        "31D": "SOD",
+        "32D": "ACURA",
+        "33D": "RARER",
+        "34D": "DINED",
+        "35A": "LILT",
+        "36A": "NOM",
+        "37A": "ACAI",
+        "38A": "UVEA",
+        "39A": "DEEDS",
+        "39D": "DJOKOVIC",
+        "42A": "MENS",
+        "43A": "JET",
+        "44A": "OREE",
+        "46D": "TOWS",
+        "48D": "NENE",
+        "50A": "TOK",
+        "51A": "CLEAR",
+        "52A": "DMS",
+        "52D": "DJED",
+        "53D": "MOVE",
+        "57A": "ING",
+        "58A": "ROB",
+        "59D": "ORCA",
+        "60D": "BDAY",
+        "61A": "JONASVINGEGAARD",
+        "62D": "ARK",
+        "63D": "NIA",
+        "64D": "ARE",
+        "65A": "EVER",
+        "67A": "ERICA",
+        "68A": "DESK",
+        "1A": "WASTE",
+        "6D": "ENVIED",
+        "9D": "ANTFARMS",
+        "11D": "HERB",
+        "13D": "STEW",
+        "19D": "GAME",
+        "23A": "BOW",
+        "24D": "DATASET",
+        "29D": "LIVER",
+        "40D": "EER",
+        "41A": "TURN",
+        "45A": "PRAETORIANGUARD",
+        "47D": "ALIGNS",
+        "54D": "SNES",
+        "55A": "WOW",
+        "58D": "RAIL",
+        "69A": "CPAS",
+        "70A": "DELAY",
+        "10D": "TBA",
+        "49D": "GAGGED",
+        "56D": "WIMP",
+        "66A": "IMIN"
+      },
+      "responses": [
+        {
+          "text": "{\"answers\": {\"1A\": \"WASTE\", \"1D\": \"WAZE\", \"2D\": \"AFAR\", \"3D\": \"STIR\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 43,
+            "prompt_tokens": 1073,
+            "total_tokens": 1116,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 7,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1073,
+            "reasoning_tokens": 7
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.309,
+          "ids": [
+            "1A",
+            "1D",
+            "2D",
+            "3D"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "1A",
+            "1D",
+            "2D",
+            "3D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"4D\": \"TEL\", \"5D\": \"ERASES\", \"6A\": \"ETNA\", \"6D\": \"ENVIED\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 173,
+            "prompt_tokens": 1197,
+            "total_tokens": 1370,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 137,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1024
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 173,
+            "reasoning_tokens": 137
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 2.124,
+          "ids": [
+            "4D",
+            "5D",
+            "6A",
+            "6D"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "4D",
+            "5D",
+            "6A",
+            "6D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"7D\": \"TEA\", \"8D\": \"NONO\", \"9D\": \"ANTFARMS\", \"10A\": \"THUS\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 89,
+            "prompt_tokens": 1191,
+            "total_tokens": 1280,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 51,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1024
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 167,
+            "reasoning_tokens": 51
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.576,
+          "ids": [
+            "7D",
+            "8D",
+            "9D",
+            "10A"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "7D",
+            "8D",
+            "9D",
+            "10A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"10D\": \"TER\", \"11D\": \"HERB\", \"12D\": \"UNDO\", \"13D\": \"STEW\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 139,
+            "prompt_tokens": 1010,
+            "total_tokens": 1149,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 104,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 768
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 242,
+            "reasoning_tokens": 104
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 2.285,
+          "ids": [
+            "10D",
+            "11D",
+            "12D",
+            "13D"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "10D",
+            "11D",
+            "12D",
+            "13D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"14A\": \"AFTER\", \"15A\": \"NEON\", \"16A\": \"BENT\", \"17A\": \"ZAILAAVANTGARDE\", \"1D\": \"WAZE\", \"2D\": \"AFAR\", \"3D\": \"STIR\", \"4D\": \"TEL\", \"5D\": \"ERASES\", \"6D\": \"ENVIED\", \"7D\": \"TEA\", \"8D\": \"NONO\", \"9D\": \"ANTFARMS\", \"10D\": \"TBA\", \"11D\": \"HERB\", \"12D\": \"UNDO\", \"13D\": \"STEW\", \"18D\": \"ACRE\", \"19D\": \"GAME\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 194,
+            "prompt_tokens": 1674,
+            "total_tokens": 1868,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 31,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1536
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 138,
+            "reasoning_tokens": 31
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.967,
+          "ids": [
+            "14A",
+            "15A",
+            "16A",
+            "17A"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "14A",
+            "15A",
+            "16A",
+            "17A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"18D\": \"ACRE\", \"19D\": \"GAME\", \"20A\": \"ERR\", \"21A\": \"SCI\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 104,
+            "prompt_tokens": 987,
+            "total_tokens": 1091,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 71,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 987,
+            "reasoning_tokens": 71
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.734,
+          "ids": [
+            "18D",
+            "19D",
+            "20A",
+            "21A"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "18D",
+            "19D",
+            "20A",
+            "21A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"22A\": \"OFA\", \"23A\": \"BOW\", \"24A\": \"DEREK\", \"24D\": \"DATASET\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 65,
+            "prompt_tokens": 1153,
+            "total_tokens": 1218,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 29,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1024
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 129,
+            "reasoning_tokens": 29
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.304,
+          "ids": [
+            "22A",
+            "23A",
+            "24A",
+            "24D"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "22A",
+            "23A",
+            "24A",
+            "24D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"25D\": \"KINETIC\", \"26A\": \"AMP\", \"27D\": \"PGATOUR\", \"28A\": \"PLEASEDISREGARD\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 46,
+            "prompt_tokens": 1885,
+            "total_tokens": 1931,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 7,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1792
+            },
+            "prompt_cache_hit_tokens": 1792,
+            "prompt_cache_miss_tokens": 93,
+            "reasoning_tokens": 7
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.299,
+          "ids": [
+            "25D",
+            "26A",
+            "27D",
+            "28A"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "25D",
+            "26A",
+            "27D",
+            "28A"
+          ]
+        },
+        {
+          "text": "",
+          "finish_reason": "length",
+          "usage": {
+            "completion_tokens": 6000,
+            "prompt_tokens": 1187,
+            "total_tokens": 7187,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 6000,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1024
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 163,
+            "reasoning_tokens": 6000
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 32.127,
+          "ids": [
+            "28D",
+            "29D",
+            "30D",
+            "31D"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "error": "Invalid output: substring not found"
+        },
+        {
+          "text": "{\"answers\": {\"28D\": \"PLUMP\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 54,
+            "prompt_tokens": 490,
+            "total_tokens": 544,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 42,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 490,
+            "reasoning_tokens": 42
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.426,
+          "ids": [
+            "28D"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "28D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"29D\": \"LIVER\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 13,
+            "prompt_tokens": 498,
+            "total_tokens": 511,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 1,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 498,
+            "reasoning_tokens": 1
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.163,
+          "ids": [
+            "29D"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "29D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"30D\": \"ELENA\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 82,
+            "prompt_tokens": 494,
+            "total_tokens": 576,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 69,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 494,
+            "reasoning_tokens": 69
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.476,
+          "ids": [
+            "30D"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "30D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"31D\": \"SOD\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 19,
+            "prompt_tokens": 398,
+            "total_tokens": 417,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 7,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 398,
+            "reasoning_tokens": 7
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.152,
+          "ids": [
+            "31D"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "31D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"32D\": \"ACURA\", \"33D\": \"RARER\", \"34D\": \"DINED\", \"35A\": \"LILT\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 281,
+            "prompt_tokens": 1213,
+            "total_tokens": 1494,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 245,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1024
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 189,
+            "reasoning_tokens": 245
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 2.86,
+          "ids": [
+            "32D",
+            "33D",
+            "34D",
+            "35A"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "32D",
+            "33D",
+            "34D",
+            "35A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"36A\": \"NOM\", \"37A\": \"ACAI\", \"38A\": \"UVEA\", \"39A\": \"DEEDS\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 235,
+            "prompt_tokens": 1112,
+            "total_tokens": 1347,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 197,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1024
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 88,
+            "reasoning_tokens": 197
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 2.488,
+          "ids": [
+            "36A",
+            "37A",
+            "38A",
+            "39A"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "36A",
+            "37A",
+            "38A",
+            "39A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"39D\": \"DJOKOVIC\", \"40D\": \"EER\", \"41A\": \"TURN\", \"42A\": \"MENS\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 648,
+            "prompt_tokens": 1252,
+            "total_tokens": 1900,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 611,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1024
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 228,
+            "reasoning_tokens": 611
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 5.699,
+          "ids": [
+            "39D",
+            "40D",
+            "41A",
+            "42A"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "39D",
+            "40D",
+            "41A",
+            "42A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"43A\": \"JET\", \"44A\": \"OREE\", \"45A\": \"PRAETORIANGUARD\", \"46D\": \"TOWS\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 51,
+            "prompt_tokens": 1775,
+            "total_tokens": 1826,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 8,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1536
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 239,
+            "reasoning_tokens": 8
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.263,
+          "ids": [
+            "43A",
+            "44A",
+            "45A",
+            "46D"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "43A",
+            "44A",
+            "45A",
+            "46D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"47D\": \"ALIGNS\", \"48D\": \"NENE\", \"49D\": \"GAGGED\", \"50A\": \"TOK\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 2117,
+            "prompt_tokens": 1211,
+            "total_tokens": 3328,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 2079,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1024
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 187,
+            "reasoning_tokens": 2079
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 19.839,
+          "ids": [
+            "47D",
+            "48D",
+            "49D",
+            "50A"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "47D",
+            "48D",
+            "49D",
+            "50A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"51A\": \"CLEAR\", \"52A\": \"DMS\", \"52D\": \"DJED\", \"53D\": \"MOVE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 41,
+            "prompt_tokens": 1157,
+            "total_tokens": 1198,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 7,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1157,
+            "reasoning_tokens": 7
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.126,
+          "ids": [
+            "51A",
+            "52A",
+            "52D",
+            "53D"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "51A",
+            "52A",
+            "52D",
+            "53D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"54D\": \"SNES\", \"55A\": \"WOW\", \"56D\": \"WIMP\", \"57A\": \"ING\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 43,
+            "prompt_tokens": 1049,
+            "total_tokens": 1092,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 8,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1049,
+            "reasoning_tokens": 8
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.318,
+          "ids": [
+            "54D",
+            "55A",
+            "56D",
+            "57A"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "54D",
+            "55A",
+            "56D",
+            "57A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"58A\": \"ROB\", \"58D\": \"RAIL\", \"59D\": \"ORCA\", \"60D\": \"BDAY\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 37,
+            "prompt_tokens": 1052,
+            "total_tokens": 1089,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 1,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1052,
+            "reasoning_tokens": 1
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.144,
+          "ids": [
+            "58A",
+            "58D",
+            "59D",
+            "60D"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "58A",
+            "58D",
+            "59D",
+            "60D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"61A\": \"JONASVINGEGAARD\", \"62D\": \"ARK\", \"63D\": \"NIA\", \"64D\": \"ARE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 46,
+            "prompt_tokens": 1654,
+            "total_tokens": 1700,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 7,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1654,
+            "reasoning_tokens": 7
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.357,
+          "ids": [
+            "61A",
+            "62D",
+            "63D",
+            "64D"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "61A",
+            "62D",
+            "63D",
+            "64D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"65A\": \"EVER\", \"66A\": \"IMIN\", \"67A\": \"ERICA\", \"68A\": \"DESK\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 41,
+            "prompt_tokens": 1207,
+            "total_tokens": 1248,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 7,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 1024
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 183,
+            "reasoning_tokens": 7
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.231,
+          "ids": [
+            "65A",
+            "66A",
+            "67A",
+            "68A"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "65A",
+            "66A",
+            "67A",
+            "68A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"69A\": \"CPAS\", \"70A\": \"DELAY\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 219,
+            "prompt_tokens": 709,
+            "total_tokens": 928,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 200,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 512
+            },
+            "prompt_cache_hit_tokens": 512,
+            "prompt_cache_miss_tokens": 197,
+            "reasoning_tokens": 200
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 3.305,
+          "ids": [
+            "69A",
+            "70A"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "69A",
+            "70A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"10D\": \"TBA\", \"16A\": \"BENT\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 261,
+            "prompt_tokens": 587,
+            "total_tokens": 848,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 241,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 512
+            },
+            "prompt_cache_hit_tokens": 512,
+            "prompt_cache_miss_tokens": 75,
+            "reasoning_tokens": 241
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 3.694,
+          "ids": [
+            "10D",
+            "16A"
+          ],
+          "mode": "repair",
+          "rejected": {},
+          "answered": [
+            "10D",
+            "16A"
+          ]
+        }
+      ],
+      "suspects": [],
+      "crosscheck_status": "pending",
+      "reviewed": 78,
+      "rejected": {},
+      "calls": 25,
+      "error": "Invalid output: substring not found",
+      "latency_seconds": 200.97
+    },
+    {
+      "round": 5,
+      "phase": "crosscheck",
+      "answered": 78,
+      "conflicts": 0,
+      "changes": {},
+      "removed": {},
+      "proposed_answers": {
+        "1D": "WAZE",
+        "2D": "AFAR",
+        "3D": "STIR",
+        "4D": "TEL",
+        "5D": "ERASES",
+        "6A": "ETNA",
+        "7D": "TEA",
+        "8D": "NONO",
+        "10A": "THUS",
+        "12D": "UNDO",
+        "14A": "AFTER",
+        "15A": "NEON",
+        "16A": "BENT",
+        "17A": "ZAILAAVANTGARDE",
+        "18D": "ACRE",
+        "20A": "ERR",
+        "21A": "SCI",
+        "22A": "OFA",
+        "24A": "DEREK",
+        "25D": "KINETIC",
+        "26A": "AMP",
+        "27D": "PGATOUR",
+        "28A": "PLEASEDISREGARD",
+        "28D": "PLUMP",
+        "30D": "ELENA",
+        "31D": "SOD",
+        "32D": "ACURA",
+        "33D": "RARER",
+        "34D": "DINED",
+        "35A": "LILT",
+        "36A": "NOM",
+        "37A": "ACAI",
+        "38A": "UVEA",
+        "39A": "DEEDS",
+        "39D": "DJOKOVIC",
+        "42A": "MENS",
+        "43A": "JET",
+        "44A": "OREE",
+        "46D": "TOWS",
+        "48D": "NENE",
+        "50A": "TOK",
+        "51A": "CLEAR",
+        "52A": "DMS",
+        "52D": "DJED",
+        "53D": "MOVE",
+        "57A": "ING",
+        "58A": "ROB",
+        "59D": "ORCA",
+        "60D": "BDAY",
+        "61A": "JONASVINGEGAARD",
+        "62D": "ARK",
+        "63D": "NIA",
+        "64D": "ARE",
+        "65A": "EVER",
+        "67A": "ERICA",
+        "68A": "DESK",
+        "1A": "WASTE",
+        "6D": "ENVIED",
+        "9D": "ANTFARMS",
+        "11D": "HERB",
+        "13D": "STEW",
+        "19D": "GAME",
+        "23A": "BOW",
+        "24D": "DATASET",
+        "29D": "LIVER",
+        "40D": "EER",
+        "41A": "TURN",
+        "45A": "PRAETORIANGUARD",
+        "47D": "ALIGNS",
+        "54D": "SNES",
+        "55A": "WOW",
+        "58D": "RAIL",
+        "69A": "CPAS",
+        "70A": "DELAY",
+        "10D": "TBA",
+        "49D": "GAGGED",
+        "56D": "WIMP",
+        "66A": "IMIN"
+      },
+      "responses": [
+        {
+          "text": "{\"answers\": {\"1A\": \"WASTE\", \"1D\": \"WAZE\", \"2D\": \"AFAR\", \"3D\": \"STIR\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 237,
+            "prompt_tokens": 354,
+            "total_tokens": 591,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 201,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 98,
+            "reasoning_tokens": 201
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 3.028,
+          "ids": [
+            "1A",
+            "1D",
+            "2D",
+            "3D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "1A",
+            "1D",
+            "2D",
+            "3D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"4D\": \"TEL\", \"5D\": \"ERASES\", \"6A\": \"ETNA\", \"6D\": \"OGLING\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 208,
+            "prompt_tokens": 358,
+            "total_tokens": 566,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 171,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 102,
+            "reasoning_tokens": 171
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 2.992,
+          "ids": [
+            "4D",
+            "5D",
+            "6A",
+            "6D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "4D",
+            "5D",
+            "6A",
+            "6D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"7D\": \"TEA\", \"8D\": \"NONO\", \"9D\": \"APIARIST\", \"10A\": \"THUS\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 397,
+            "prompt_tokens": 362,
+            "total_tokens": 759,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 360,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 106,
+            "reasoning_tokens": 360
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 4.359,
+          "ids": [
+            "7D",
+            "8D",
+            "9D",
+            "10A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "7D",
+            "8D",
+            "9D",
+            "10A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"10D\": \"\", \"11D\": \"HERB\", \"12D\": \"UNDO\", \"13D\": \"FUME\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 93,
+            "prompt_tokens": 351,
+            "total_tokens": 444,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 60,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 95,
+            "reasoning_tokens": 60
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.803,
+          "ids": [
+            "10D",
+            "11D",
+            "12D",
+            "13D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "10D",
+            "11D",
+            "12D",
+            "13D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"14A\": \"NEXTU\", \"15A\": \"HAHA\", \"16A\": \"BENT\", \"17A\": \"ZAILAAVANTGARDE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 187,
+            "prompt_tokens": 484,
+            "total_tokens": 671,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 145,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 228,
+            "reasoning_tokens": 145
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 2.971,
+          "ids": [
+            "14A",
+            "15A",
+            "16A",
+            "17A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "14A",
+            "15A",
+            "16A",
+            "17A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"18D\": \"ACRE\", \"19D\": \"SET\", \"20A\": \"ERR\", \"21A\": \"SCI\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 63,
+            "prompt_tokens": 356,
+            "total_tokens": 419,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 30,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 356,
+            "reasoning_tokens": 30
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.281,
+          "ids": [
+            "18D",
+            "19D",
+            "20A",
+            "21A"
+          ],
+          "mode": "fill",
+          "rejected": {
+            "19D": "SET"
+          },
+          "answered": [
+            "18D",
+            "19D",
+            "20A",
+            "21A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"22A\": \"OFA\", \"23A\": \"PROW\", \"24A\": \"DEREK\", \"24D\": \"DATABASE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 76,
+            "prompt_tokens": 359,
+            "total_tokens": 435,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 41,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 359,
+            "reasoning_tokens": 41
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.35,
+          "ids": [
+            "22A",
+            "23A",
+            "24A",
+            "24D"
+          ],
+          "mode": "fill",
+          "rejected": {
+            "23A": "PROW",
+            "24D": "DATABASE"
+          },
+          "answered": [
+            "22A",
+            "23A",
+            "24A",
+            "24D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"25D\": \"KINETIC\", \"26A\": \"AMP\", \"27D\": \"PGATOUR\", \"28A\": \"PLEASEDISREGARD\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 121,
+            "prompt_tokens": 497,
+            "total_tokens": 618,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 82,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 241,
+            "reasoning_tokens": 82
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.98,
+          "ids": [
+            "25D",
+            "26A",
+            "27D",
+            "28A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "25D",
+            "26A",
+            "27D",
+            "28A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"28D\": \"PLUMP\", \"29D\": \"YORK\", \"30D\": \"ELENA\", \"31D\": \"SOD\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 162,
+            "prompt_tokens": 361,
+            "total_tokens": 523,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 125,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 105,
+            "reasoning_tokens": 125
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 2.219,
+          "ids": [
+            "28D",
+            "29D",
+            "30D",
+            "31D"
+          ],
+          "mode": "fill",
+          "rejected": {
+            "29D": "YORK"
+          },
+          "answered": [
+            "28D",
+            "29D",
+            "30D",
+            "31D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"32D\": \"ACURA\", \"33D\": \"RARER\", \"34D\": \"DINED\", \"35A\": \"LILT\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 65,
+            "prompt_tokens": 352,
+            "total_tokens": 417,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 29,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 352,
+            "reasoning_tokens": 29
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.334,
+          "ids": [
+            "32D",
+            "33D",
+            "34D",
+            "35A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "32D",
+            "33D",
+            "34D",
+            "35A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"36A\": \"NOM\", \"37A\": \"ACAI\", \"38A\": \"UVEA\", \"39A\": \"DEEDS\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 62,
+            "prompt_tokens": 361,
+            "total_tokens": 423,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 24,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 361,
+            "reasoning_tokens": 24
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.271,
+          "ids": [
+            "36A",
+            "37A",
+            "38A",
+            "39A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "36A",
+            "37A",
+            "38A",
+            "39A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"39D\": \"DJOKOVIC\", \"40D\": \"GWEN\", \"41A\": \"ERR\", \"42A\": \"MENS\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 170,
+            "prompt_tokens": 416,
+            "total_tokens": 586,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 133,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 160,
+            "reasoning_tokens": 133
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 2.256,
+          "ids": [
+            "39D",
+            "40D",
+            "41A",
+            "42A"
+          ],
+          "mode": "fill",
+          "rejected": {
+            "40D": "GWEN",
+            "41A": "ERR"
+          },
+          "answered": [
+            "39D",
+            "40D",
+            "41A",
+            "42A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"43A\": \"JET\", \"44A\": \"OREE\", \"45A\": \"NEROANDCALIGULA\", \"46D\": \"TOWS\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 253,
+            "prompt_tokens": 502,
+            "total_tokens": 755,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 212,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 246,
+            "reasoning_tokens": 212
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 3.276,
+          "ids": [
+            "43A",
+            "44A",
+            "45A",
+            "46D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "43A",
+            "44A",
+            "45A",
+            "46D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"47D\": \"PAIRS\", \"48D\": \"NENE\", \"49D\": \"CRIED\", \"50A\": \"TOK\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 38,
+            "prompt_tokens": 364,
+            "total_tokens": 402,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 1,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 364,
+            "reasoning_tokens": 1
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.161,
+          "ids": [
+            "47D",
+            "48D",
+            "49D",
+            "50A"
+          ],
+          "mode": "fill",
+          "rejected": {
+            "47D": "PAIRS",
+            "49D": "CRIED"
+          },
+          "answered": [
+            "47D",
+            "48D",
+            "49D",
+            "50A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"51A\": \"CLEAR\", \"52A\": \"DMS\", \"52D\": \"DJED\", \"53D\": \"MOVE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 270,
+            "prompt_tokens": 376,
+            "total_tokens": 646,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 236,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 120,
+            "reasoning_tokens": 236
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 3.007,
+          "ids": [
+            "51A",
+            "52A",
+            "52D",
+            "53D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "51A",
+            "52A",
+            "52D",
+            "53D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"54D\": \"WIIU\", \"55A\": \"WOW\", \"56D\": \"FOMO\", \"57A\": \"ING\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 133,
+            "prompt_tokens": 372,
+            "total_tokens": 505,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 96,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 116,
+            "reasoning_tokens": 96
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.759,
+          "ids": [
+            "54D",
+            "55A",
+            "56D",
+            "57A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "54D",
+            "55A",
+            "56D",
+            "57A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"58A\": \"ROB\", \"58D\": \"STEP\", \"59D\": \"ORCA\", \"60D\": \"ANNY\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 36,
+            "prompt_tokens": 373,
+            "total_tokens": 409,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 1,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 373,
+            "reasoning_tokens": 1
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.164,
+          "ids": [
+            "58A",
+            "58D",
+            "59D",
+            "60D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "58A",
+            "58D",
+            "59D",
+            "60D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"61A\": \"JONASVINGEGAARD\", \"62D\": \"ARK\", \"63D\": \"NIA\", \"64D\": \"ARE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 94,
+            "prompt_tokens": 499,
+            "total_tokens": 593,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 55,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 243,
+            "reasoning_tokens": 55
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.726,
+          "ids": [
+            "61A",
+            "62D",
+            "63D",
+            "64D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "61A",
+            "62D",
+            "63D",
+            "64D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"65A\": \"EVER\", \"66A\": \"ONIT\", \"67A\": \"ERICA\", \"68A\": \"DESK\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 129,
+            "prompt_tokens": 393,
+            "total_tokens": 522,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 95,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 393,
+            "reasoning_tokens": 95
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.506,
+          "ids": [
+            "65A",
+            "66A",
+            "67A",
+            "68A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "65A",
+            "66A",
+            "67A",
+            "68A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"69A\": \"CPAS\", \"70A\": \"PAUSE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 104,
+            "prompt_tokens": 291,
+            "total_tokens": 395,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 84,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 291,
+            "reasoning_tokens": 84
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.758,
+          "ids": [
+            "69A",
+            "70A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "69A",
+            "70A"
+          ]
+        }
+      ],
+      "suspects": [],
+      "crosscheck_status": "completed",
+      "grid_before": {
+        "1D": "WAZE",
+        "2D": "AFAR",
+        "3D": "STIR",
+        "4D": "TEL",
+        "5D": "ERASES",
+        "6A": "ETNA",
+        "7D": "TEA",
+        "8D": "NONO",
+        "10A": "THUS",
+        "12D": "UNDO",
+        "14A": "AFTER",
+        "15A": "NEON",
+        "16A": "BENT",
+        "17A": "ZAILAAVANTGARDE",
+        "18D": "ACRE",
+        "20A": "ERR",
+        "21A": "SCI",
+        "22A": "OFA",
+        "24A": "DEREK",
+        "25D": "KINETIC",
+        "26A": "AMP",
+        "27D": "PGATOUR",
+        "28A": "PLEASEDISREGARD",
+        "28D": "PLUMP",
+        "30D": "ELENA",
+        "31D": "SOD",
+        "32D": "ACURA",
+        "33D": "RARER",
+        "34D": "DINED",
+        "35A": "LILT",
+        "36A": "NOM",
+        "37A": "ACAI",
+        "38A": "UVEA",
+        "39A": "DEEDS",
+        "39D": "DJOKOVIC",
+        "42A": "MENS",
+        "43A": "JET",
+        "44A": "OREE",
+        "46D": "TOWS",
+        "48D": "NENE",
+        "50A": "TOK",
+        "51A": "CLEAR",
+        "52A": "DMS",
+        "52D": "DJED",
+        "53D": "MOVE",
+        "57A": "ING",
+        "58A": "ROB",
+        "59D": "ORCA",
+        "60D": "BDAY",
+        "61A": "JONASVINGEGAARD",
+        "62D": "ARK",
+        "63D": "NIA",
+        "64D": "ARE",
+        "65A": "EVER",
+        "67A": "ERICA",
+        "68A": "DESK",
+        "1A": "WASTE",
+        "6D": "ENVIED",
+        "9D": "ANTFARMS",
+        "11D": "HERB",
+        "13D": "STEW",
+        "19D": "GAME",
+        "23A": "BOW",
+        "24D": "DATASET",
+        "29D": "LIVER",
+        "40D": "EER",
+        "41A": "TURN",
+        "45A": "PRAETORIANGUARD",
+        "47D": "ALIGNS",
+        "54D": "SNES",
+        "55A": "WOW",
+        "58D": "RAIL",
+        "69A": "CPAS",
+        "70A": "DELAY",
+        "10D": "TBA",
+        "49D": "GAGGED",
+        "56D": "WIMP",
+        "66A": "IMIN"
+      },
+      "blind_answers": {
+        "1A": "WASTE",
+        "1D": "WAZE",
+        "2D": "AFAR",
+        "3D": "STIR",
+        "4D": "TEL",
+        "5D": "ERASES",
+        "6A": "ETNA",
+        "6D": "OGLING",
+        "7D": "TEA",
+        "8D": "NONO",
+        "9D": "APIARIST",
+        "10A": "THUS",
+        "11D": "HERB",
+        "12D": "UNDO",
+        "13D": "FUME",
+        "14A": "NEXTU",
+        "15A": "HAHA",
+        "16A": "BENT",
+        "17A": "ZAILAAVANTGARDE",
+        "18D": "ACRE",
+        "20A": "ERR",
+        "21A": "SCI",
+        "22A": "OFA",
+        "24A": "DEREK",
+        "25D": "KINETIC",
+        "26A": "AMP",
+        "27D": "PGATOUR",
+        "28A": "PLEASEDISREGARD",
+        "28D": "PLUMP",
+        "30D": "ELENA",
+        "31D": "SOD",
+        "32D": "ACURA",
+        "33D": "RARER",
+        "34D": "DINED",
+        "35A": "LILT",
+        "36A": "NOM",
+        "37A": "ACAI",
+        "38A": "UVEA",
+        "39A": "DEEDS",
+        "39D": "DJOKOVIC",
+        "42A": "MENS",
+        "43A": "JET",
+        "44A": "OREE",
+        "45A": "NEROANDCALIGULA",
+        "46D": "TOWS",
+        "48D": "NENE",
+        "50A": "TOK",
+        "51A": "CLEAR",
+        "52A": "DMS",
+        "52D": "DJED",
+        "53D": "MOVE",
+        "54D": "WIIU",
+        "55A": "WOW",
+        "56D": "FOMO",
+        "57A": "ING",
+        "58A": "ROB",
+        "58D": "STEP",
+        "59D": "ORCA",
+        "60D": "ANNY",
+        "61A": "JONASVINGEGAARD",
+        "62D": "ARK",
+        "63D": "NIA",
+        "64D": "ARE",
+        "65A": "EVER",
+        "66A": "ONIT",
+        "67A": "ERICA",
+        "68A": "DESK",
+        "69A": "CPAS",
+        "70A": "PAUSE"
+      },
+      "reviewed": 78,
+      "rejected": {
+        "19D": "SET",
+        "23A": "PROW",
+        "24D": "DATABASE",
+        "29D": "YORK",
+        "40D": "GWEN",
+        "41A": "ERR",
+        "47D": "PAIRS",
+        "49D": "CRIED"
+      },
+      "calls": 20,
+      "error": null,
+      "latency_seconds": 212.054
+    }
+  ],
+  "submitted_verified": true,
+  "crosscheck_status": "completed",
+  "calls": 93,
+  "tokens": 107300,
+  "latency_seconds": 212.054,
+  "evaluation": {
+    "exact_solve": true,
+    "clue_correct": 78,
+    "clue_total": 78,
+    "clue_accuracy": 1.0,
+    "cell_correct": 187,
+    "cell_total": 187,
+    "cell_accuracy": 1.0,
+    "coverage": 1.0,
+    "conflicts": 0
+  },
+  "config_name": "L3_full",
+  "run": 3,
+  "created_at": "2026-10-10T12:31:09.095868+00:00",
+  "source_sha256": "a4057725624f17118435a3234de67c95cdab97a90f33b9dc8a55bd71547b913e",
+  "config": {
+    "max_rounds": 15,
+    "batch_size": 4,
+    "repair": true,
+    "review": true,
+    "crosscheck": true,
+    "max_tokens": 6000,
+    "max_calls": 200,
+    "token_budget": 400000
+  },
+  "puzzle_sha256": "5eadcdee82a1b0f3645af60442431c9609d9a65adffb1832f5922bd7cfd99e1f"
+}

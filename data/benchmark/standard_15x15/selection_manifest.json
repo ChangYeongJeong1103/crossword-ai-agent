@@ -1,7 +1,8 @@
 {
   "source": "Crossword Nexus",
   "license": "CC BY 4.0",
-  "selection_rule": "Five standard American 15x15 puzzles satisfying the documented structural and source requirements.",
+  "role": "development",
+  "selection_rule": "Six standard American 15x15 puzzles satisfying the documented structural and source requirements.",
   "acceptance_rules": [
     "downloadable solution-bearing JPZ or iPuz source",
     "exactly 15 rows and 15 columns",
@@ -84,8 +85,21 @@
       "source_sha256": "d56f3d2b1a0d8359fca5d8140fcb180f666e75e6ff4a9b245bf937c914ae062d",
       "clue_count": 78,
       "playable_cell_count": 191
+    },
+    {
+      "selection_index": 6,
+      "post_number": 4,
+      "puzzle_id": "crossword_nexus_fm",
+      "title": "FM (A Grid Charlemagne Puzzle)",
+      "author": "Alex Boisvert",
+      "published": "2021-06-25",
+      "page_url": "https://crosswordnexus.com/blog/2021/06/25/puzzle-4-fm-a-grid-charlemagne-puzzle/",
+      "source_url": "https://crosswordnexus.com/downloads/site_puzzles/FM.jpz",
+      "source_format": "jpz",
+      "source_sha256": "7ae245360cf4ef1cdc102fc6b088aa25cfd440edbbda9e282fb74e1c7097900a",
+      "clue_count": 78,
+      "playable_cell_count": 187
     }
   ],
-  "selected_puzzle_count": 5,
-  "solver_source_sha256": "a542fd543d2ede631a0ee957d7f159ddda3d194c01b6d781025d2a4c017e1423"
+  "selected_puzzle_count": 6
 }

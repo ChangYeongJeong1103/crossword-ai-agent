@@ -8,6 +8,7 @@ from pathlib import Path
 
 import streamlit as st
 
+from src import config
 from src.evaluator import evaluate
 from src.llm_client import Client, load_env
 from src.puzzle import Puzzle
@@ -16,10 +17,10 @@ from src.solver import solve
 ROOT = Path(__file__).parent
 DATA = ROOT / "data/benchmark"
 LIVE_RUNS = ROOT / "live_runs"
-MAX_ROUNDS = 12
-MAX_TOKENS = 6000
-MAX_CALLS = 200
-TOKEN_BUDGET = 400000
+MAX_ROUNDS, MAX_TOKENS = config.MAX_ROUNDS, config.MAX_TOKENS
+MAX_CALLS, TOKEN_BUDGET = config.MAX_CALLS, config.TOKEN_BUDGET
+# The demo shows only the bundled Crossword Nexus puzzles (CC BY 4.0).
+DEMO_SETS = ("standard_15x15", "held_out")
 
 
 def source_sha256():
@@ -123,7 +124,7 @@ def main():
     st.caption("Solve clues → check crossings → retry with letters → review meaning")
 
     paths = sorted(
-        DATA.glob("*/puzzles/*.json"),
+        (path for name in DEMO_SETS for path in (DATA / name / "puzzles").glob("*.json")),
         key=lambda path: ("im_alright" not in path.stem, path.name),
     )
     path = st.selectbox(
@@ -138,7 +139,7 @@ def main():
     load_env(ROOT / ".env")
     model = st.text_input(
         "Model",
-        os.environ.get("NEBIUS_MODEL", "zai-org/GLM-5.3-Flash"),
+        os.environ.get("NEBIUS_MODEL", config.MODEL),
     )
     st.caption(
         "**Solve live** makes real API calls, uses credits, and can range from "

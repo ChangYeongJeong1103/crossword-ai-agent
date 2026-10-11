@@ -1,6 +1,8 @@
 {
-  "status": "evaluation_set_finalized",
-  "selection_rule": "Two standard American 15x15 puzzles with explicit CC BY 4.0 source licenses; no model runs were used to choose between completed results.",
+  "source": "Crossword Nexus",
+  "license": "CC BY 4.0",
+  "role": "development",
+  "selection_rule": "Two standard American 15x15 puzzles with explicit CC BY 4.0 source licenses.",
   "selected": [
     {
       "selection_index": 1,
@@ -32,20 +34,5 @@
       "clue_count": 78,
       "playable_cell_count": 190
     }
-  ],
-  "solver_source_sha256": "a542fd543d2ede631a0ee957d7f159ddda3d194c01b6d781025d2a4c017e1423",
-  "config": {
-    "model": "zai-org/GLM-5.3-Flash",
-    "max_rounds": 12,
-    "max_tokens": 6000,
-    "max_calls": 200,
-    "token_budget": 400000,
-    "temperature": 0.2,
-    "reasoning_effort": "low",
-    "batch_size": 4,
-    "concurrent_calls_per_puzzle": 4,
-    "singleton_retry_max_tokens": 12000
-  },
-  "evaluated_puzzle_count": 2,
-  "protocol": "The two selected evaluation puzzles were each rerun once with the final source and settings. The reported artifacts are those completed reruns. Puzzle selection was unchanged, and no further tuning was performed from the rerun results. Gold is opened by the evaluator only after solving."
+  ]
 }

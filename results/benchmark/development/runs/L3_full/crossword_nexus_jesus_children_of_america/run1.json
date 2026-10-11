@@ -1,0 +1,3382 @@
+{
+  "puzzle_id": "crossword_nexus_jesus_children_of_america",
+  "model": "zai-org/GLM-5.3-Flash",
+  "answers": {
+    "1A": "BOB",
+    "1D": "BOSS",
+    "3D": "BEER",
+    "4A": "MEWS",
+    "5D": "EVE",
+    "7D": "SNIT",
+    "8A": "AHEM",
+    "8D": "AYE",
+    "9D": "HOYLE",
+    "10D": "EYEING",
+    "11D": "MOROSE",
+    "12A": "ONE",
+    "15A": "YOYO",
+    "16A": "STEPHENIEMEYER",
+    "18D": "MANGY",
+    "19A": "SORRY",
+    "20A": "ETTA",
+    "21A": "LION",
+    "22D": "NED",
+    "23A": "ODES",
+    "24D": "END",
+    "25A": "INTENSE",
+    "26D": "TSAR",
+    "27A": "KENJENNINGS",
+    "27D": "KFC",
+    "28D": "ERR",
+    "29D": "NEO",
+    "30D": "ICEIN",
+    "31A": "GED",
+    "32A": "FREE",
+    "33A": "DOC",
+    "34A": "YAS",
+    "35D": "SHELTIE",
+    "36A": "CROCS",
+    "37D": "SARI",
+    "38A": "BEL",
+    "39D": "LAGRANGE",
+    "41D": "OPI",
+    "42D": "NIN",
+    "44A": "TAB",
+    "45D": "BYRNE",
+    "46A": "IAM",
+    "47D": "MOO",
+    "48A": "EPIC",
+    "49A": "NBA",
+    "49D": "NBC",
+    "50D": "BALKAN",
+    "51D": "ATEASE",
+    "52A": "RYANGOSLING",
+    "53D": "ALARM",
+    "55A": "BATGIRL",
+    "56D": "GOTTA",
+    "57A": "ROUT",
+    "58A": "CLEO",
+    "60D": "DIAL",
+    "61A": "NIVEA",
+    "62D": "VIAL",
+    "63D": "EGAD",
+    "64D": "ALAS",
+    "65A": "KATHERINEHEIGL",
+    "66D": "HIT",
+    "68A": "ASTI",
+    "69A": "MAGMA",
+    "70A": "AAA",
+    "71A": "NEAT",
+    "72A": "LEST",
+    "73A": "LDS",
+    "2D": "ONTO",
+    "4D": "MRHYDE",
+    "6D": "WINESNOB",
+    "13A": "RVING",
+    "14D": "GETIN",
+    "17D": "PROJECT",
+    "40A": "RHONE",
+    "43D": "ECG",
+    "54D": "SUNHAT",
+    "59A": "NADA",
+    "67D": "EMS"
+  },
+  "grid": [
+    "BOB#MEWS##AHEM#",
+    "ONE#RVING#YOYO#",
+    "STEPHENIEMEYER#",
+    "SORRY#ETTA#LION",
+    "###ODES#INTENSE",
+    "KENJENNINGS#GED",
+    "FREE#DOC#YAS###",
+    "CROCS#BEL#RHONE",
+    "###TAB#IAM#EPIC",
+    "NBA#RYANGOSLING",
+    "BATGIRL#ROUT###",
+    "CLEO#NADA#NIVEA",
+    "#KATHERINEHEIGL",
+    "#ASTI#MAGMA#AAA",
+    "#NEAT##LEST#LDS"
+  ],
+  "termination": "complete_consistent_grid",
+  "trace": [
+    {
+      "round": 1,
+      "phase": "fill",
+      "answered": 67,
+      "conflicts": 27,
+      "changes": {
+        "1A": {
+          "before": null,
+          "after": "BOB"
+        },
+        "1D": {
+          "before": null,
+          "after": "BOSS"
+        },
+        "3D": {
+          "before": null,
+          "after": "BEER"
+        },
+        "4A": {
+          "before": null,
+          "after": "MEWS"
+        },
+        "5D": {
+          "before": null,
+          "after": "EVE"
+        },
+        "7D": {
+          "before": null,
+          "after": "SNIT"
+        },
+        "8A": {
+          "before": null,
+          "after": "AHEM"
+        },
+        "8D": {
+          "before": null,
+          "after": "AYE"
+        },
+        "9D": {
+          "before": null,
+          "after": "HOYLE"
+        },
+        "10D": {
+          "before": null,
+          "after": "EYEING"
+        },
+        "11D": {
+          "before": null,
+          "after": "MOROSE"
+        },
+        "12A": {
+          "before": null,
+          "after": "ONE"
+        },
+        "15A": {
+          "before": null,
+          "after": "YOYO"
+        },
+        "16A": {
+          "before": null,
+          "after": "STEPHENIEMEYER"
+        },
+        "18D": {
+          "before": null,
+          "after": "MANGY"
+        },
+        "19A": {
+          "before": null,
+          "after": "SORRY"
+        },
+        "20A": {
+          "before": null,
+          "after": "ETTA"
+        },
+        "21A": {
+          "before": null,
+          "after": "LION"
+        },
+        "22D": {
+          "before": null,
+          "after": "NED"
+        },
+        "23A": {
+          "before": null,
+          "after": "ODES"
+        },
+        "24D": {
+          "before": null,
+          "after": "END"
+        },
+        "25A": {
+          "before": null,
+          "after": "INTENSE"
+        },
+        "26D": {
+          "before": null,
+          "after": "TSAR"
+        },
+        "27A": {
+          "before": null,
+          "after": "KENJENNINGS"
+        },
+        "27D": {
+          "before": null,
+          "after": "KFC"
+        },
+        "28D": {
+          "before": null,
+          "after": "ERR"
+        },
+        "29D": {
+          "before": null,
+          "after": "NEO"
+        },
+        "30D": {
+          "before": null,
+          "after": "ICEIN"
+        },
+        "31A": {
+          "before": null,
+          "after": "GED"
+        },
+        "32A": {
+          "before": null,
+          "after": "FREE"
+        },
+        "33A": {
+          "before": null,
+          "after": "DOC"
+        },
+        "34A": {
+          "before": null,
+          "after": "YAS"
+        },
+        "35D": {
+          "before": null,
+          "after": "SHELTIE"
+        },
+        "36A": {
+          "before": null,
+          "after": "CROCS"
+        },
+        "37D": {
+          "before": null,
+          "after": "SARI"
+        },
+        "38A": {
+          "before": null,
+          "after": "BEL"
+        },
+        "39D": {
+          "before": null,
+          "after": "LAGRANGE"
+        },
+        "41D": {
+          "before": null,
+          "after": "OPI"
+        },
+        "42D": {
+          "before": null,
+          "after": "NIN"
+        },
+        "44A": {
+          "before": null,
+          "after": "TAB"
+        },
+        "45D": {
+          "before": null,
+          "after": "BYRNE"
+        },
+        "46A": {
+          "before": null,
+          "after": "IAM"
+        },
+        "47D": {
+          "before": null,
+          "after": "MOO"
+        },
+        "48A": {
+          "before": null,
+          "after": "EPIC"
+        },
+        "49A": {
+          "before": null,
+          "after": "NBA"
+        },
+        "49D": {
+          "before": null,
+          "after": "NBC"
+        },
+        "50D": {
+          "before": null,
+          "after": "BALKAN"
+        },
+        "51D": {
+          "before": null,
+          "after": "ATEASE"
+        },
+        "52A": {
+          "before": null,
+          "after": "RYANGOSLING"
+        },
+        "53D": {
+          "before": null,
+          "after": "ALARM"
+        },
+        "55A": {
+          "before": null,
+          "after": "BATGIRL"
+        },
+        "56D": {
+          "before": null,
+          "after": "GOTTA"
+        },
+        "57A": {
+          "before": null,
+          "after": "ROUT"
+        },
+        "58A": {
+          "before": null,
+          "after": "CLEO"
+        },
+        "60D": {
+          "before": null,
+          "after": "DIAL"
+        },
+        "61A": {
+          "before": null,
+          "after": "NIVEA"
+        },
+        "62D": {
+          "before": null,
+          "after": "VIAL"
+        },
+        "63D": {
+          "before": null,
+          "after": "EGAD"
+        },
+        "64D": {
+          "before": null,
+          "after": "ALAS"
+        },
+        "65A": {
+          "before": null,
+          "after": "KATHERINEHEIGL"
+        },
+        "66D": {
+          "before": null,
+          "after": "HIT"
+        },
+        "68A": {
+          "before": null,
+          "after": "ASTI"
+        },
+        "69A": {
+          "before": null,
+          "after": "MAGMA"
+        },
+        "70A": {
+          "before": null,
+          "after": "AAA"
+        },
+        "71A": {
+          "before": null,
+          "after": "NEAT"
+        },
+        "72A": {
+          "before": null,
+          "after": "LEST"
+        },
+        "73A": {
+          "before": null,
+          "after": "LDS"
+        }
+      },
+      "removed": {
+        "2D": "CLIP",
+        "6D": "FARESEER",
+        "13A": "GLAMP",
+        "14D": "HOPIN",
+        "17D": "PREDICT",
+        "43D": "EKG",
+        "54D": "HELMET",
+        "59A": "ZERO"
+      },
+      "proposed_answers": {
+        "1A": "BOB",
+        "1D": "BOSS",
+        "2D": "CLIP",
+        "3D": "BEER",
+        "4A": "MEWS",
+        "5D": "EVE",
+        "6D": "FARESEER",
+        "7D": "SNIT",
+        "8A": "AHEM",
+        "8D": "AYE",
+        "9D": "HOYLE",
+        "10D": "EYEING",
+        "11D": "MOROSE",
+        "12A": "ONE",
+        "13A": "GLAMP",
+        "14D": "HOPIN",
+        "15A": "YOYO",
+        "16A": "STEPHENIEMEYER",
+        "17D": "PREDICT",
+        "18D": "MANGY",
+        "19A": "SORRY",
+        "20A": "ETTA",
+        "21A": "LION",
+        "22D": "NED",
+        "23A": "ODES",
+        "24D": "END",
+        "25A": "INTENSE",
+        "26D": "TSAR",
+        "27A": "KENJENNINGS",
+        "27D": "KFC",
+        "28D": "ERR",
+        "29D": "NEO",
+        "30D": "ICEIN",
+        "31A": "GED",
+        "32A": "FREE",
+        "33A": "DOC",
+        "34A": "YAS",
+        "35D": "SHELTIE",
+        "36A": "CROCS",
+        "37D": "SARI",
+        "38A": "BEL",
+        "39D": "LAGRANGE",
+        "41D": "OPI",
+        "42D": "NIN",
+        "43D": "EKG",
+        "44A": "TAB",
+        "45D": "BYRNE",
+        "46A": "IAM",
+        "47D": "MOO",
+        "48A": "EPIC",
+        "49A": "NBA",
+        "49D": "NBC",
+        "50D": "BALKAN",
+        "51D": "ATEASE",
+        "52A": "RYANGOSLING",
+        "53D": "ALARM",
+        "54D": "HELMET",
+        "55A": "BATGIRL",
+        "56D": "GOTTA",
+        "57A": "ROUT",
+        "58A": "CLEO",
+        "59A": "ZERO",
+        "60D": "DIAL",
+        "61A": "NIVEA",
+        "62D": "VIAL",
+        "63D": "EGAD",
+        "64D": "ALAS",
+        "65A": "KATHERINEHEIGL",
+        "66D": "HIT",
+        "68A": "ASTI",
+        "69A": "MAGMA",
+        "70A": "AAA",
+        "71A": "NEAT",
+        "72A": "LEST",
+        "73A": "LDS"
+      },
+      "responses": [
+        {
+          "text": "{\"answers\": {\"1A\": \"BOB\", \"1D\": \"BOSS\", \"2D\": \"CLIP\", \"3D\": \"BEER\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 196,
+            "prompt_tokens": 377,
+            "total_tokens": 573,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 160,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 121,
+            "reasoning_tokens": 160
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 2.677,
+          "ids": [
+            "1A",
+            "1D",
+            "2D",
+            "3D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "1A",
+            "1D",
+            "2D",
+            "3D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"4A\": \"MEWS\", \"4D\": \"HYDE\", \"5D\": \"EVE\", \"6D\": \"FARESEER\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 501,
+            "prompt_tokens": 364,
+            "total_tokens": 865,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 463,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 108,
+            "reasoning_tokens": 463
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 5.392,
+          "ids": [
+            "4A",
+            "4D",
+            "5D",
+            "6D"
+          ],
+          "mode": "fill",
+          "rejected": {
+            "4D": "HYDE"
+          },
+          "answered": [
+            "4A",
+            "4D",
+            "5D",
+            "6D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"7D\": \"SNIT\", \"8A\": \"AHEM\", \"8D\": \"AYE\", \"9D\": \"HOYLE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 76,
+            "prompt_tokens": 352,
+            "total_tokens": 428,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 39,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 352,
+            "reasoning_tokens": 39
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 6.522,
+          "ids": [
+            "7D",
+            "8A",
+            "8D",
+            "9D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "7D",
+            "8A",
+            "8D",
+            "9D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"10D\": \"EYEING\", \"11D\": \"MOROSE\", \"12A\": \"ONE\", \"13A\": \"GLAMP\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 79,
+            "prompt_tokens": 364,
+            "total_tokens": 443,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 42,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 364,
+            "reasoning_tokens": 42
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.313,
+          "ids": [
+            "10D",
+            "11D",
+            "12A",
+            "13A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "10D",
+            "11D",
+            "12A",
+            "13A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"14D\": \"HOPIN\", \"15A\": \"YOYO\", \"16A\": \"STEPHENIEMEYER\", \"17D\": \"PREDICT\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 81,
+            "prompt_tokens": 492,
+            "total_tokens": 573,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 38,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 492,
+            "reasoning_tokens": 38
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.415,
+          "ids": [
+            "14D",
+            "15A",
+            "16A",
+            "17D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "14D",
+            "15A",
+            "16A",
+            "17D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"18D\": \"MANGY\", \"19A\": \"SORRY\", \"20A\": \"ETTA\", \"21A\": \"LION\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 99,
+            "prompt_tokens": 352,
+            "total_tokens": 451,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 62,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 352,
+            "reasoning_tokens": 62
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 2.016,
+          "ids": [
+            "18D",
+            "19A",
+            "20A",
+            "21A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "18D",
+            "19A",
+            "20A",
+            "21A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"22D\": \"NED\", \"23A\": \"ODES\", \"24D\": \"END\", \"25A\": \"INTENSE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 88,
+            "prompt_tokens": 356,
+            "total_tokens": 444,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 53,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 356,
+            "reasoning_tokens": 53
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.705,
+          "ids": [
+            "22D",
+            "23A",
+            "24D",
+            "25A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "22D",
+            "23A",
+            "24D",
+            "25A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"26D\": \"TSAR\", \"27A\": \"KENJENNINGS\", \"27D\": \"KFC\", \"28D\": \"ERR\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 69,
+            "prompt_tokens": 511,
+            "total_tokens": 580,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 32,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 511,
+            "reasoning_tokens": 32
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.416,
+          "ids": [
+            "26D",
+            "27A",
+            "27D",
+            "28D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "26D",
+            "27A",
+            "27D",
+            "28D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"29D\": \"NEO\", \"30D\": \"ICEIN\", \"31A\": \"GED\", \"32A\": \"FREE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 72,
+            "prompt_tokens": 366,
+            "total_tokens": 438,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 38,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 366,
+            "reasoning_tokens": 38
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.491,
+          "ids": [
+            "29D",
+            "30D",
+            "31A",
+            "32A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "29D",
+            "30D",
+            "31A",
+            "32A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"33A\": \"DOC\", \"34A\": \"YAS\", \"35D\": \"SHELTIE\", \"36A\": \"CROCS\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 75,
+            "prompt_tokens": 368,
+            "total_tokens": 443,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 37,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 368,
+            "reasoning_tokens": 37
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.582,
+          "ids": [
+            "33A",
+            "34A",
+            "35D",
+            "36A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "33A",
+            "34A",
+            "35D",
+            "36A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"37D\": \"SARI\", \"38A\": \"BEL\", \"39D\": \"LAGRANGE\", \"40A\": \"NILE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 67,
+            "prompt_tokens": 367,
+            "total_tokens": 434,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 31,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 367,
+            "reasoning_tokens": 31
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.395,
+          "ids": [
+            "37D",
+            "38A",
+            "39D",
+            "40A"
+          ],
+          "mode": "fill",
+          "rejected": {
+            "40A": "NILE"
+          },
+          "answered": [
+            "37D",
+            "38A",
+            "39D",
+            "40A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"41D\": \"OPI\", \"42D\": \"NIN\", \"43D\": \"EKG\", \"44A\": \"TAB\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 70,
+            "prompt_tokens": 372,
+            "total_tokens": 442,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 35,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 372,
+            "reasoning_tokens": 35
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.34,
+          "ids": [
+            "41D",
+            "42D",
+            "43D",
+            "44A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "41D",
+            "42D",
+            "43D",
+            "44A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"45D\": \"BYRNE\", \"46A\": \"IAM\", \"47D\": \"MOO\", \"48A\": \"EPIC\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 59,
+            "prompt_tokens": 357,
+            "total_tokens": 416,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 23,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 357,
+            "reasoning_tokens": 23
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.344,
+          "ids": [
+            "45D",
+            "46A",
+            "47D",
+            "48A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "45D",
+            "46A",
+            "47D",
+            "48A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"49A\": \"NBA\", \"49D\": \"NBC\", \"50D\": \"BALKAN\", \"51D\": \"ATEASE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 59,
+            "prompt_tokens": 364,
+            "total_tokens": 423,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 24,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 364,
+            "reasoning_tokens": 24
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.473,
+          "ids": [
+            "49A",
+            "49D",
+            "50D",
+            "51D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "49A",
+            "49D",
+            "50D",
+            "51D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"52A\": \"RYANGOSLING\", \"53D\": \"ALARM\", \"54D\": \"HELMET\", \"55A\": \"BATGIRL\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 76,
+            "prompt_tokens": 504,
+            "total_tokens": 580,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 35,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 504,
+            "reasoning_tokens": 35
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.359,
+          "ids": [
+            "52A",
+            "53D",
+            "54D",
+            "55A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "52A",
+            "53D",
+            "54D",
+            "55A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"56D\": \"GOTTA\", \"57A\": \"Rout\", \"58A\": \"Cleo\", \"59A\": \"Zero\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 37,
+            "prompt_tokens": 363,
+            "total_tokens": 400,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 1,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 363,
+            "reasoning_tokens": 1
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.039,
+          "ids": [
+            "56D",
+            "57A",
+            "58A",
+            "59A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "56D",
+            "57A",
+            "58A",
+            "59A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"60D\": \"DIAL\", \"61A\": \"NIVEA\", \"62D\": \"VIAL\", \"63D\": \"EGAD\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 38,
+            "prompt_tokens": 374,
+            "total_tokens": 412,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 1,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 374,
+            "reasoning_tokens": 1
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.239,
+          "ids": [
+            "60D",
+            "61A",
+            "62D",
+            "63D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "60D",
+            "61A",
+            "62D",
+            "63D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"64D\": \"ALAS\", \"65A\": \"KATHERINEHEIGL\", \"66D\": \"HIT\", \"67D\": \"EMTS\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 88,
+            "prompt_tokens": 497,
+            "total_tokens": 585,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 48,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 241,
+            "reasoning_tokens": 48
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.509,
+          "ids": [
+            "64D",
+            "65A",
+            "66D",
+            "67D"
+          ],
+          "mode": "fill",
+          "rejected": {
+            "67D": "EMTS"
+          },
+          "answered": [
+            "64D",
+            "65A",
+            "66D",
+            "67D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"68A\": \"ASTI\", \"69A\": \"MAGMA\", \"70A\": \"AAA\", \"71A\": \"NEAT\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 62,
+            "prompt_tokens": 354,
+            "total_tokens": 416,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 27,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 354,
+            "reasoning_tokens": 27
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.374,
+          "ids": [
+            "68A",
+            "69A",
+            "70A",
+            "71A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "68A",
+            "69A",
+            "70A",
+            "71A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"72A\": \"LEST\", \"73A\": \"LDS\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 33,
+            "prompt_tokens": 300,
+            "total_tokens": 333,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 13,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 300,
+            "reasoning_tokens": 13
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.247,
+          "ids": [
+            "72A",
+            "73A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "72A",
+            "73A"
+          ]
+        }
+      ],
+      "suspects": [],
+      "crosscheck_status": "pending",
+      "reviewed": 0,
+      "rejected": {
+        "4D": "HYDE",
+        "40A": "NILE",
+        "67D": "EMTS"
+      },
+      "calls": 20,
+      "error": null,
+      "latency_seconds": 9.961
+    },
+    {
+      "round": 2,
+      "phase": "fill",
+      "answered": 78,
+      "conflicts": 0,
+      "changes": {
+        "2D": {
+          "before": null,
+          "after": "ONTO"
+        },
+        "4D": {
+          "before": null,
+          "after": "MRHYDE"
+        },
+        "6D": {
+          "before": null,
+          "after": "WINESNOB"
+        },
+        "13A": {
+          "before": null,
+          "after": "RVING"
+        },
+        "14D": {
+          "before": null,
+          "after": "GETIN"
+        },
+        "17D": {
+          "before": null,
+          "after": "PROJECT"
+        },
+        "40A": {
+          "before": null,
+          "after": "RHONE"
+        },
+        "43D": {
+          "before": null,
+          "after": "ECG"
+        },
+        "54D": {
+          "before": null,
+          "after": "SUNHAT"
+        },
+        "59A": {
+          "before": null,
+          "after": "NADA"
+        },
+        "67D": {
+          "before": null,
+          "after": "EMS"
+        }
+      },
+      "removed": {},
+      "proposed_answers": {
+        "1A": "BOB",
+        "1D": "BOSS",
+        "3D": "BEER",
+        "4A": "MEWS",
+        "5D": "EVE",
+        "7D": "SNIT",
+        "8A": "AHEM",
+        "8D": "AYE",
+        "9D": "HOYLE",
+        "10D": "EYEING",
+        "11D": "MOROSE",
+        "12A": "ONE",
+        "15A": "YOYO",
+        "16A": "STEPHENIEMEYER",
+        "18D": "MANGY",
+        "19A": "SORRY",
+        "20A": "ETTA",
+        "21A": "LION",
+        "22D": "NED",
+        "23A": "ODES",
+        "24D": "END",
+        "25A": "INTENSE",
+        "26D": "TSAR",
+        "27A": "KENJENNINGS",
+        "27D": "KFC",
+        "28D": "ERR",
+        "29D": "NEO",
+        "30D": "ICEIN",
+        "31A": "GED",
+        "32A": "FREE",
+        "33A": "DOC",
+        "34A": "YAS",
+        "35D": "SHELTIE",
+        "36A": "CROCS",
+        "37D": "SARI",
+        "38A": "BEL",
+        "39D": "LAGRANGE",
+        "41D": "OPI",
+        "42D": "NIN",
+        "44A": "TAB",
+        "45D": "BYRNE",
+        "46A": "IAM",
+        "47D": "MOO",
+        "48A": "EPIC",
+        "49A": "NBA",
+        "49D": "NBC",
+        "50D": "BALKAN",
+        "51D": "ATEASE",
+        "52A": "RYANGOSLING",
+        "53D": "ALARM",
+        "55A": "BATGIRL",
+        "56D": "GOTTA",
+        "57A": "ROUT",
+        "58A": "CLEO",
+        "60D": "DIAL",
+        "61A": "NIVEA",
+        "62D": "VIAL",
+        "63D": "EGAD",
+        "64D": "ALAS",
+        "65A": "KATHERINEHEIGL",
+        "66D": "HIT",
+        "68A": "ASTI",
+        "69A": "MAGMA",
+        "70A": "AAA",
+        "71A": "NEAT",
+        "72A": "LEST",
+        "73A": "LDS",
+        "2D": "ONTO",
+        "4D": "MRHYDE",
+        "6D": "WINESNOB",
+        "13A": "RVING",
+        "14D": "GETIN",
+        "17D": "PROJECT",
+        "40A": "RHONE",
+        "43D": "ECG",
+        "54D": "SUNHAT",
+        "59A": "NADA",
+        "67D": "EMS"
+      },
+      "responses": [
+        {
+          "text": "{\"answers\": {\"2D\": \"ONTO\", \"4D\": \"MRHYDE\", \"6D\": \"WINESNOB\", \"13A\": \"RVING\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 552,
+            "prompt_tokens": 395,
+            "total_tokens": 947,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 513,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 395,
+            "reasoning_tokens": 513
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 4.191,
+          "ids": [
+            "2D",
+            "4D",
+            "6D",
+            "13A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "2D",
+            "4D",
+            "6D",
+            "13A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"14D\": \"GETIN\", \"17D\": \"PROJECT\", \"40A\": \"RHONE\", \"43D\": \"ECG\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 59,
+            "prompt_tokens": 354,
+            "total_tokens": 413,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 24,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 354,
+            "reasoning_tokens": 24
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.464,
+          "ids": [
+            "14D",
+            "17D",
+            "40A",
+            "43D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "14D",
+            "17D",
+            "40A",
+            "43D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"54D\": \"SUNHAT\", \"59A\": \"NADA\", \"67D\": \"EMS\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 30,
+            "prompt_tokens": 328,
+            "total_tokens": 358,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 1,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 328,
+            "reasoning_tokens": 1
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.27,
+          "ids": [
+            "54D",
+            "59A",
+            "67D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "54D",
+            "59A",
+            "67D"
+          ]
+        }
+      ],
+      "suspects": [],
+      "crosscheck_status": "pending",
+      "reviewed": 0,
+      "rejected": {},
+      "calls": 3,
+      "error": null,
+      "latency_seconds": 14.154
+    },
+    {
+      "round": 3,
+      "phase": "review",
+      "answered": 78,
+      "conflicts": 0,
+      "changes": {},
+      "removed": {},
+      "proposed_answers": {
+        "1A": "BOB",
+        "1D": "BOSS",
+        "3D": "BEER",
+        "4A": "MEWS",
+        "5D": "EVE",
+        "7D": "SNIT",
+        "8A": "AHEM",
+        "8D": "AYE",
+        "9D": "HOYLE",
+        "10D": "EYEING",
+        "11D": "MOROSE",
+        "12A": "ONE",
+        "15A": "YOYO",
+        "16A": "STEPHENIEMEYER",
+        "18D": "MANGY",
+        "19A": "SORRY",
+        "20A": "ETTA",
+        "21A": "LION",
+        "22D": "NED",
+        "23A": "ODES",
+        "24D": "END",
+        "25A": "INTENSE",
+        "26D": "TSAR",
+        "27A": "KENJENNINGS",
+        "27D": "KFC",
+        "28D": "ERR",
+        "29D": "NEO",
+        "30D": "ICEIN",
+        "31A": "GED",
+        "32A": "FREE",
+        "33A": "DOC",
+        "34A": "YAS",
+        "35D": "SHELTIE",
+        "36A": "CROCS",
+        "37D": "SARI",
+        "38A": "BEL",
+        "39D": "LAGRANGE",
+        "41D": "OPI",
+        "42D": "NIN",
+        "44A": "TAB",
+        "45D": "BYRNE",
+        "46A": "IAM",
+        "47D": "MOO",
+        "48A": "EPIC",
+        "49A": "NBA",
+        "49D": "NBC",
+        "50D": "BALKAN",
+        "51D": "ATEASE",
+        "52A": "RYANGOSLING",
+        "53D": "ALARM",
+        "55A": "BATGIRL",
+        "56D": "GOTTA",
+        "57A": "ROUT",
+        "58A": "CLEO",
+        "60D": "DIAL",
+        "61A": "NIVEA",
+        "62D": "VIAL",
+        "63D": "EGAD",
+        "64D": "ALAS",
+        "65A": "KATHERINEHEIGL",
+        "66D": "HIT",
+        "68A": "ASTI",
+        "69A": "MAGMA",
+        "70A": "AAA",
+        "71A": "NEAT",
+        "72A": "LEST",
+        "73A": "LDS",
+        "2D": "ONTO",
+        "4D": "MRHYDE",
+        "6D": "WINESNOB",
+        "13A": "RVING",
+        "14D": "GETIN",
+        "17D": "PROJECT",
+        "40A": "RHONE",
+        "43D": "ECG",
+        "54D": "SUNHAT",
+        "59A": "NADA",
+        "67D": "EMS"
+      },
+      "responses": [
+        {
+          "text": "{\"answers\": {\"1A\": \"BOB\", \"1D\": \"BOSS\", \"2D\": \"ONTO\", \"3D\": \"BEER\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 73,
+            "prompt_tokens": 1051,
+            "total_tokens": 1124,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 37,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1051,
+            "reasoning_tokens": 37
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.489,
+          "ids": [
+            "1A",
+            "1D",
+            "2D",
+            "3D"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "1A",
+            "1D",
+            "2D",
+            "3D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"4A\": \"MEWS\", \"4D\": \"MRHYDE\", \"5D\": \"EVE\", \"6D\": \"WINESNOB\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 96,
+            "prompt_tokens": 1320,
+            "total_tokens": 1416,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 57,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1320,
+            "reasoning_tokens": 57
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.709,
+          "ids": [
+            "4A",
+            "4D",
+            "5D",
+            "6D"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "4A",
+            "4D",
+            "5D",
+            "6D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"7D\": \"SNIT\", \"8A\": \"AHEM\", \"8D\": \"AYE\", \"9D\": \"HOYLE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 44,
+            "prompt_tokens": 1045,
+            "total_tokens": 1089,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 7,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1045,
+            "reasoning_tokens": 7
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.225,
+          "ids": [
+            "7D",
+            "8A",
+            "8D",
+            "9D"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "7D",
+            "8A",
+            "8D",
+            "9D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"10D\": \"EYEING\", \"11D\": \"MOROSE\", \"12A\": \"ONE\", \"13A\": \"RVING\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 151,
+            "prompt_tokens": 1226,
+            "total_tokens": 1377,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 114,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1226,
+            "reasoning_tokens": 114
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 2.051,
+          "ids": [
+            "10D",
+            "11D",
+            "12A",
+            "13A"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "10D",
+            "11D",
+            "12A",
+            "13A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"14D\": \"GETIN\", \"15A\": \"YOYO\", \"16A\": \"STEPHENIEMEYER\", \"17D\": \"PROJECT\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 47,
+            "prompt_tokens": 1810,
+            "total_tokens": 1857,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 7,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1810,
+            "reasoning_tokens": 7
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.549,
+          "ids": [
+            "14D",
+            "15A",
+            "16A",
+            "17D"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "14D",
+            "15A",
+            "16A",
+            "17D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"18D\": \"MANGY\", \"19A\": \"SORRY\", \"20A\": \"ETTA\", \"21A\": \"LION\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 42,
+            "prompt_tokens": 1147,
+            "total_tokens": 1189,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 5,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1147,
+            "reasoning_tokens": 5
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.354,
+          "ids": [
+            "18D",
+            "19A",
+            "20A",
+            "21A"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "18D",
+            "19A",
+            "20A",
+            "21A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"22D\": \"NED\", \"23A\": \"ODES\", \"24D\": \"END\", \"25A\": \"INTENSE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 43,
+            "prompt_tokens": 1090,
+            "total_tokens": 1133,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 8,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1090,
+            "reasoning_tokens": 8
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.214,
+          "ids": [
+            "22D",
+            "23A",
+            "24D",
+            "25A"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "22D",
+            "23A",
+            "24D",
+            "25A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"26D\": \"TSAR\", \"27A\": \"KENJENNINGS\", \"27D\": \"KFC\", \"28D\": \"ERR\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 44,
+            "prompt_tokens": 1492,
+            "total_tokens": 1536,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 7,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1492,
+            "reasoning_tokens": 7
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.074,
+          "ids": [
+            "26D",
+            "27A",
+            "27D",
+            "28D"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "26D",
+            "27A",
+            "27D",
+            "28D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"29D\": \"NEO\", \"30D\": \"ICEIN\", \"31A\": \"GED\", \"32A\": \"FREE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 42,
+            "prompt_tokens": 1057,
+            "total_tokens": 1099,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 8,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1057,
+            "reasoning_tokens": 8
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.486,
+          "ids": [
+            "29D",
+            "30D",
+            "31A",
+            "32A"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "29D",
+            "30D",
+            "31A",
+            "32A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"33A\": \"DOC\", \"34A\": \"YAS\", \"35D\": \"SHELTIE\", \"36A\": \"CROCS\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 68,
+            "prompt_tokens": 1153,
+            "total_tokens": 1221,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 30,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1153,
+            "reasoning_tokens": 30
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.017,
+          "ids": [
+            "33A",
+            "34A",
+            "35D",
+            "36A"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "33A",
+            "34A",
+            "35D",
+            "36A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"37D\": \"SARI\", \"38A\": \"BEL\", \"39D\": \"LAGRANGE\", \"40A\": \"RHONE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 64,
+            "prompt_tokens": 1253,
+            "total_tokens": 1317,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 28,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1253,
+            "reasoning_tokens": 28
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.473,
+          "ids": [
+            "37D",
+            "38A",
+            "39D",
+            "40A"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "37D",
+            "38A",
+            "39D",
+            "40A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"41D\": \"OPI\", \"42D\": \"NIN\", \"43D\": \"ECG\", \"44A\": \"TAB\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 42,
+            "prompt_tokens": 900,
+            "total_tokens": 942,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 7,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 900,
+            "reasoning_tokens": 7
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.086,
+          "ids": [
+            "41D",
+            "42D",
+            "43D",
+            "44A"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "41D",
+            "42D",
+            "43D",
+            "44A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"45D\": \"BYRNE\", \"46A\": \"IAM\", \"47D\": \"MOO\", \"48A\": \"EPIC\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 44,
+            "prompt_tokens": 1030,
+            "total_tokens": 1074,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 8,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1030,
+            "reasoning_tokens": 8
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.274,
+          "ids": [
+            "45D",
+            "46A",
+            "47D",
+            "48A"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "45D",
+            "46A",
+            "47D",
+            "48A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"49A\": \"NBA\", \"49D\": \"NBC\", \"50D\": \"BALKAN\", \"51D\": \"ATEASE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 42,
+            "prompt_tokens": 1157,
+            "total_tokens": 1199,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 7,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1157,
+            "reasoning_tokens": 7
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.173,
+          "ids": [
+            "49A",
+            "49D",
+            "50D",
+            "51D"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "49A",
+            "49D",
+            "50D",
+            "51D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"52A\": \"RYANGOSLING\", \"53D\": \"ALARM\", \"54D\": \"SUNHAT\", \"55A\": \"BATGIRL\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 51,
+            "prompt_tokens": 1776,
+            "total_tokens": 1827,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 9,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1776,
+            "reasoning_tokens": 9
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.397,
+          "ids": [
+            "52A",
+            "53D",
+            "54D",
+            "55A"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "52A",
+            "53D",
+            "54D",
+            "55A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"56D\": \"GOTTA\", \"57A\": \"ROUT\", \"58A\": \"CLEO\", \"59A\": \"NADA\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 44,
+            "prompt_tokens": 1124,
+            "total_tokens": 1168,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 8,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1124,
+            "reasoning_tokens": 8
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.351,
+          "ids": [
+            "56D",
+            "57A",
+            "58A",
+            "59A"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "56D",
+            "57A",
+            "58A",
+            "59A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"60D\": \"DIAL\", \"61A\": \"NIVEA\", \"62D\": \"VIAL\", \"63D\": \"EGAD\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 38,
+            "prompt_tokens": 1135,
+            "total_tokens": 1173,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 1,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1135,
+            "reasoning_tokens": 1
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.146,
+          "ids": [
+            "60D",
+            "61A",
+            "62D",
+            "63D"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "60D",
+            "61A",
+            "62D",
+            "63D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"64D\": \"ALAS\", \"65A\": \"KATHERINEHEIGL\", \"66D\": \"HIT\", \"67D\": \"EMS\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 70,
+            "prompt_tokens": 1571,
+            "total_tokens": 1641,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 31,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1571,
+            "reasoning_tokens": 31
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.386,
+          "ids": [
+            "64D",
+            "65A",
+            "66D",
+            "67D"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "64D",
+            "65A",
+            "66D",
+            "67D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"68A\": \"ASTI\", \"69A\": \"MAGMA\", \"70A\": \"AAA\", \"71A\": \"NEAT\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 60,
+            "prompt_tokens": 1074,
+            "total_tokens": 1134,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 25,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1074,
+            "reasoning_tokens": 25
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.386,
+          "ids": [
+            "68A",
+            "69A",
+            "70A",
+            "71A"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "68A",
+            "69A",
+            "70A",
+            "71A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"72A\": \"LEST\", \"73A\": \"LDS\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 21,
+            "prompt_tokens": 615,
+            "total_tokens": 636,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 1,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 615,
+            "reasoning_tokens": 1
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.179,
+          "ids": [
+            "72A",
+            "73A"
+          ],
+          "mode": "review",
+          "rejected": {},
+          "answered": [
+            "72A",
+            "73A"
+          ]
+        }
+      ],
+      "suspects": [],
+      "crosscheck_status": "pending",
+      "reviewed": 78,
+      "rejected": {},
+      "calls": 20,
+      "error": null,
+      "latency_seconds": 21.204
+    },
+    {
+      "round": 4,
+      "phase": "crosscheck",
+      "answered": 78,
+      "conflicts": 0,
+      "changes": {},
+      "removed": {},
+      "proposed_answers": {
+        "1A": "BOB",
+        "1D": "BOSS",
+        "3D": "BEER",
+        "4A": "MEWS",
+        "5D": "EVE",
+        "7D": "SNIT",
+        "8A": "AHEM",
+        "8D": "AYE",
+        "9D": "HOYLE",
+        "10D": "EYEING",
+        "11D": "MOROSE",
+        "12A": "ONE",
+        "15A": "YOYO",
+        "16A": "STEPHENIEMEYER",
+        "18D": "MANGY",
+        "19A": "SORRY",
+        "20A": "ETTA",
+        "21A": "LION",
+        "22D": "NED",
+        "23A": "ODES",
+        "24D": "END",
+        "25A": "INTENSE",
+        "26D": "TSAR",
+        "27A": "KENJENNINGS",
+        "27D": "KFC",
+        "28D": "ERR",
+        "29D": "NEO",
+        "30D": "ICEIN",
+        "31A": "GED",
+        "32A": "FREE",
+        "33A": "DOC",
+        "34A": "YAS",
+        "35D": "SHELTIE",
+        "36A": "CROCS",
+        "37D": "SARI",
+        "38A": "BEL",
+        "39D": "LAGRANGE",
+        "41D": "OPI",
+        "42D": "NIN",
+        "44A": "TAB",
+        "45D": "BYRNE",
+        "46A": "IAM",
+        "47D": "MOO",
+        "48A": "EPIC",
+        "49A": "NBA",
+        "49D": "NBC",
+        "50D": "BALKAN",
+        "51D": "ATEASE",
+        "52A": "RYANGOSLING",
+        "53D": "ALARM",
+        "55A": "BATGIRL",
+        "56D": "GOTTA",
+        "57A": "ROUT",
+        "58A": "CLEO",
+        "60D": "DIAL",
+        "61A": "NIVEA",
+        "62D": "VIAL",
+        "63D": "EGAD",
+        "64D": "ALAS",
+        "65A": "KATHERINEHEIGL",
+        "66D": "HIT",
+        "68A": "ASTI",
+        "69A": "MAGMA",
+        "70A": "AAA",
+        "71A": "NEAT",
+        "72A": "LEST",
+        "73A": "LDS",
+        "2D": "ONTO",
+        "4D": "MRHYDE",
+        "6D": "WINESNOB",
+        "13A": "RVING",
+        "14D": "GETIN",
+        "17D": "PROJECT",
+        "40A": "RHONE",
+        "43D": "ECG",
+        "54D": "SUNHAT",
+        "59A": "NADA",
+        "67D": "EMS"
+      },
+      "responses": [
+        {
+          "text": "{\"answers\": {\"1A\": \"BOB\", \"1D\": \"BOSS\", \"2D\": \"OPEN\", \"3D\": \"BEER\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 1098,
+            "prompt_tokens": 377,
+            "total_tokens": 1475,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 1063,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 121,
+            "reasoning_tokens": 1063
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 13.472,
+          "ids": [
+            "1A",
+            "1D",
+            "2D",
+            "3D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "1A",
+            "1D",
+            "2D",
+            "3D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"4A\": \"MEWS\", \"4D\": \"MRHYDE\", \"5D\": \"EVE\", \"6D\": \"FARECAST\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 390,
+            "prompt_tokens": 364,
+            "total_tokens": 754,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 352,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 108,
+            "reasoning_tokens": 352
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 21.42,
+          "ids": [
+            "4A",
+            "4D",
+            "5D",
+            "6D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "4A",
+            "4D",
+            "5D",
+            "6D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"7D\": \"SNIT\", \"8A\": \"AHEM\", \"8D\": \"AYE\", \"9D\": \"HOYLE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 80,
+            "prompt_tokens": 352,
+            "total_tokens": 432,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 43,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 96,
+            "reasoning_tokens": 43
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.491,
+          "ids": [
+            "7D",
+            "8A",
+            "8D",
+            "9D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "7D",
+            "8A",
+            "8D",
+            "9D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"10D\": \"EYEING\", \"11D\": \"MOROSE\", \"12A\": \"ONE\", \"13A\": \"GLAMP\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 84,
+            "prompt_tokens": 364,
+            "total_tokens": 448,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 47,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 108,
+            "reasoning_tokens": 47
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.619,
+          "ids": [
+            "10D",
+            "11D",
+            "12A",
+            "13A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "10D",
+            "11D",
+            "12A",
+            "13A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"14D\": \"HOPIN\", \"15A\": \"YOYO\", \"16A\": \"STEPHENIEMEYER\", \"17D\": \"PREDICT\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 80,
+            "prompt_tokens": 492,
+            "total_tokens": 572,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 37,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 492,
+            "reasoning_tokens": 37
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.418,
+          "ids": [
+            "14D",
+            "15A",
+            "16A",
+            "17D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "14D",
+            "15A",
+            "16A",
+            "17D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"18D\": \"UNKEPT\", \"19A\": \"SORRY\", \"20A\": \"ETTA\", \"21A\": \"LION\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 38,
+            "prompt_tokens": 352,
+            "total_tokens": 390,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 1,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 352,
+            "reasoning_tokens": 1
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.203,
+          "ids": [
+            "18D",
+            "19A",
+            "20A",
+            "21A"
+          ],
+          "mode": "fill",
+          "rejected": {
+            "18D": "UNKEPT"
+          },
+          "answered": [
+            "18D",
+            "19A",
+            "20A",
+            "21A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"22D\": \"NED\", \"23A\": \"ODES\", \"24D\": \"END\", \"25A\": \"INTENSE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 62,
+            "prompt_tokens": 356,
+            "total_tokens": 418,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 27,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 100,
+            "reasoning_tokens": 27
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.301,
+          "ids": [
+            "22D",
+            "23A",
+            "24D",
+            "25A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "22D",
+            "23A",
+            "24D",
+            "25A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"26D\": \"TSAR\", \"27A\": \"KENJENNINGS\", \"27D\": \"KFC\", \"28D\": \"ERR\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 69,
+            "prompt_tokens": 511,
+            "total_tokens": 580,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 32,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 255,
+            "reasoning_tokens": 32
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.511,
+          "ids": [
+            "26D",
+            "27A",
+            "27D",
+            "28D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "26D",
+            "27A",
+            "27D",
+            "28D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"29D\": \"NEO\", \"30D\": \"ICEIN\", \"31A\": \"GED\", \"32A\": \"FREE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 76,
+            "prompt_tokens": 366,
+            "total_tokens": 442,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 42,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 110,
+            "reasoning_tokens": 42
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.446,
+          "ids": [
+            "29D",
+            "30D",
+            "31A",
+            "32A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "29D",
+            "30D",
+            "31A",
+            "32A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"33A\": \"DOC\", \"34A\": \"YAS\", \"35D\": \"SHELTIE\", \"36A\": \"CROCS\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 72,
+            "prompt_tokens": 368,
+            "total_tokens": 440,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 34,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 368,
+            "reasoning_tokens": 34
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.528,
+          "ids": [
+            "33A",
+            "34A",
+            "35D",
+            "36A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "33A",
+            "34A",
+            "35D",
+            "36A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"37D\": \"SARI\", \"38A\": \"BEL\", \"39D\": \"LAGRANGE\", \"40A\": \"NILE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 64,
+            "prompt_tokens": 367,
+            "total_tokens": 431,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 28,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 111,
+            "reasoning_tokens": 28
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.523,
+          "ids": [
+            "37D",
+            "38A",
+            "39D",
+            "40A"
+          ],
+          "mode": "fill",
+          "rejected": {
+            "40A": "NILE"
+          },
+          "answered": [
+            "37D",
+            "38A",
+            "39D",
+            "40A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"41D\": \"OPI\", \"42D\": \"NIN\", \"43D\": \"ECG\", \"44A\": \"TAB\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 70,
+            "prompt_tokens": 372,
+            "total_tokens": 442,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 35,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 116,
+            "reasoning_tokens": 35
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 2.457,
+          "ids": [
+            "41D",
+            "42D",
+            "43D",
+            "44A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "41D",
+            "42D",
+            "43D",
+            "44A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"45D\": \"BYRNE\", \"46A\": \"IAM\", \"47D\": \"MOO\", \"48A\": \"EPIC\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 59,
+            "prompt_tokens": 357,
+            "total_tokens": 416,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 23,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 357,
+            "reasoning_tokens": 23
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.254,
+          "ids": [
+            "45D",
+            "46A",
+            "47D",
+            "48A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "45D",
+            "46A",
+            "47D",
+            "48A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"49A\": \"NBA\", \"49D\": \"NBC\", \"50D\": \"BALKAN\", \"51D\": \"ATEASE\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 68,
+            "prompt_tokens": 364,
+            "total_tokens": 432,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 33,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 108,
+            "reasoning_tokens": 33
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.374,
+          "ids": [
+            "49A",
+            "49D",
+            "50D",
+            "51D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "49A",
+            "49D",
+            "50D",
+            "51D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"52A\": \"RYANGOSLING\", \"53D\": \"ALARM\", \"54D\": \"HELMET\", \"55A\": \"BATGIRL\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 76,
+            "prompt_tokens": 504,
+            "total_tokens": 580,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 35,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 504,
+            "reasoning_tokens": 35
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.5,
+          "ids": [
+            "52A",
+            "53D",
+            "54D",
+            "55A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "52A",
+            "53D",
+            "54D",
+            "55A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"56D\": \"GOTTA\", \"57A\": \"ROUT\", \"58A\": \"CLEO\", \"59A\": \"ZERO\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 90,
+            "prompt_tokens": 363,
+            "total_tokens": 453,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 55,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 107,
+            "reasoning_tokens": 55
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.683,
+          "ids": [
+            "56D",
+            "57A",
+            "58A",
+            "59A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "56D",
+            "57A",
+            "58A",
+            "59A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"60D\": \"DIAL\", \"61A\": \"NIVEA\", \"62D\": \"VIAL\", \"63D\": \"EGAD\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 38,
+            "prompt_tokens": 374,
+            "total_tokens": 412,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 1,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 374,
+            "reasoning_tokens": 1
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.369,
+          "ids": [
+            "60D",
+            "61A",
+            "62D",
+            "63D"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "60D",
+            "61A",
+            "62D",
+            "63D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"64D\": \"ALAS\", \"65A\": \"KATHERINEHEIGL\", \"66D\": \"HIT\", \"67D\": \"EMTS\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 86,
+            "prompt_tokens": 497,
+            "total_tokens": 583,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 46,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 241,
+            "reasoning_tokens": 46
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.841,
+          "ids": [
+            "64D",
+            "65A",
+            "66D",
+            "67D"
+          ],
+          "mode": "fill",
+          "rejected": {
+            "67D": "EMTS"
+          },
+          "answered": [
+            "64D",
+            "65A",
+            "66D",
+            "67D"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"68A\": \"ASTI\", \"69A\": \"MAGMA\", \"70A\": \"AAA\", \"71A\": \"NEAT\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 62,
+            "prompt_tokens": 354,
+            "total_tokens": 416,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 27,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 354,
+            "reasoning_tokens": 27
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.147,
+          "ids": [
+            "68A",
+            "69A",
+            "70A",
+            "71A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "68A",
+            "69A",
+            "70A",
+            "71A"
+          ]
+        },
+        {
+          "text": "{\"answers\": {\"72A\": \"LEST\", \"73A\": \"LDS\"}}",
+          "finish_reason": "stop",
+          "usage": {
+            "completion_tokens": 33,
+            "prompt_tokens": 300,
+            "total_tokens": 333,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 13,
+              "rejected_prediction_tokens": null
+            },
+            "prompt_tokens_details": null,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 300,
+            "reasoning_tokens": 13
+          },
+          "served_model": "zai-org/GLM-5.3-Flash",
+          "max_tokens": 6000,
+          "http_attempts": 1,
+          "latency_seconds": 1.082,
+          "ids": [
+            "72A",
+            "73A"
+          ],
+          "mode": "fill",
+          "rejected": {},
+          "answered": [
+            "72A",
+            "73A"
+          ]
+        }
+      ],
+      "suspects": [],
+      "crosscheck_status": "completed",
+      "grid_before": {
+        "1A": "BOB",
+        "1D": "BOSS",
+        "3D": "BEER",
+        "4A": "MEWS",
+        "5D": "EVE",
+        "7D": "SNIT",
+        "8A": "AHEM",
+        "8D": "AYE",
+        "9D": "HOYLE",
+        "10D": "EYEING",
+        "11D": "MOROSE",
+        "12A": "ONE",
+        "15A": "YOYO",
+        "16A": "STEPHENIEMEYER",
+        "18D": "MANGY",
+        "19A": "SORRY",
+        "20A": "ETTA",
+        "21A": "LION",
+        "22D": "NED",
+        "23A": "ODES",
+        "24D": "END",
+        "25A": "INTENSE",
+        "26D": "TSAR",
+        "27A": "KENJENNINGS",
+        "27D": "KFC",
+        "28D": "ERR",
+        "29D": "NEO",
+        "30D": "ICEIN",
+        "31A": "GED",
+        "32A": "FREE",
+        "33A": "DOC",
+        "34A": "YAS",
+        "35D": "SHELTIE",
+        "36A": "CROCS",
+        "37D": "SARI",
+        "38A": "BEL",
+        "39D": "LAGRANGE",
+        "41D": "OPI",
+        "42D": "NIN",
+        "44A": "TAB",
+        "45D": "BYRNE",
+        "46A": "IAM",
+        "47D": "MOO",
+        "48A": "EPIC",
+        "49A": "NBA",
+        "49D": "NBC",
+        "50D": "BALKAN",
+        "51D": "ATEASE",
+        "52A": "RYANGOSLING",
+        "53D": "ALARM",
+        "55A": "BATGIRL",
+        "56D": "GOTTA",
+        "57A": "ROUT",
+        "58A": "CLEO",
+        "60D": "DIAL",
+        "61A": "NIVEA",
+        "62D": "VIAL",
+        "63D": "EGAD",
+        "64D": "ALAS",
+        "65A": "KATHERINEHEIGL",
+        "66D": "HIT",
+        "68A": "ASTI",
+        "69A": "MAGMA",
+        "70A": "AAA",
+        "71A": "NEAT",
+        "72A": "LEST",
+        "73A": "LDS",
+        "2D": "ONTO",
+        "4D": "MRHYDE",
+        "6D": "WINESNOB",
+        "13A": "RVING",
+        "14D": "GETIN",
+        "17D": "PROJECT",
+        "40A": "RHONE",
+        "43D": "ECG",
+        "54D": "SUNHAT",
+        "59A": "NADA",
+        "67D": "EMS"
+      },
+      "blind_answers": {
+        "1A": "BOB",
+        "1D": "BOSS",
+        "2D": "OPEN",
+        "3D": "BEER",
+        "4A": "MEWS",
+        "4D": "MRHYDE",
+        "5D": "EVE",
+        "6D": "FARECAST",
+        "7D": "SNIT",
+        "8A": "AHEM",
+        "8D": "AYE",
+        "9D": "HOYLE",
+        "10D": "EYEING",
+        "11D": "MOROSE",
+        "12A": "ONE",
+        "13A": "GLAMP",
+        "14D": "HOPIN",
+        "15A": "YOYO",
+        "16A": "STEPHENIEMEYER",
+        "17D": "PREDICT",
+        "19A": "SORRY",
+        "20A": "ETTA",
+        "21A": "LION",
+        "22D": "NED",
+        "23A": "ODES",
+        "24D": "END",
+        "25A": "INTENSE",
+        "26D": "TSAR",
+        "27A": "KENJENNINGS",
+        "27D": "KFC",
+        "28D": "ERR",
+        "29D": "NEO",
+        "30D": "ICEIN",
+        "31A": "GED",
+        "32A": "FREE",
+        "33A": "DOC",
+        "34A": "YAS",
+        "35D": "SHELTIE",
+        "36A": "CROCS",
+        "37D": "SARI",
+        "38A": "BEL",
+        "39D": "LAGRANGE",
+        "41D": "OPI",
+        "42D": "NIN",
+        "43D": "ECG",
+        "44A": "TAB",
+        "45D": "BYRNE",
+        "46A": "IAM",
+        "47D": "MOO",
+        "48A": "EPIC",
+        "49A": "NBA",
+        "49D": "NBC",
+        "50D": "BALKAN",
+        "51D": "ATEASE",
+        "52A": "RYANGOSLING",
+        "53D": "ALARM",
+        "54D": "HELMET",
+        "55A": "BATGIRL",
+        "56D": "GOTTA",
+        "57A": "ROUT",
+        "58A": "CLEO",
+        "59A": "ZERO",
+        "60D": "DIAL",
+        "61A": "NIVEA",
+        "62D": "VIAL",
+        "63D": "EGAD",
+        "64D": "ALAS",
+        "65A": "KATHERINEHEIGL",
+        "66D": "HIT",
+        "68A": "ASTI",
+        "69A": "MAGMA",
+        "70A": "AAA",
+        "71A": "NEAT",
+        "72A": "LEST",
+        "73A": "LDS"
+      },
+      "reviewed": 78,
+      "rejected": {
+        "18D": "UNKEPT",
+        "40A": "NILE",
+        "67D": "EMTS"
+      },
+      "calls": 20,
+      "error": null,
+      "latency_seconds": 42.628
+    }
+  ],
+  "submitted_verified": true,
+  "crosscheck_status": "completed",
+  "calls": 63,
+  "tokens": 46998,
+  "latency_seconds": 42.628,
+  "evaluation": {
+    "exact_solve": true,
+    "clue_correct": 78,
+    "clue_total": 78,
+    "clue_accuracy": 1.0,
+    "cell_correct": 183,
+    "cell_total": 183,
+    "cell_accuracy": 1.0,
+    "coverage": 1.0,
+    "conflicts": 0
+  },
+  "config_name": "L3_full",
+  "run": 1,
+  "created_at": "2026-10-10T12:12:32.736781+00:00",
+  "source_sha256": "a4057725624f17118435a3234de67c95cdab97a90f33b9dc8a55bd71547b913e",
+  "config": {
+    "max_rounds": 15,
+    "batch_size": 4,
+    "repair": true,
+    "review": true,
+    "crosscheck": true,
+    "max_tokens": 6000,
+    "max_calls": 200,
+    "token_budget": 400000
+  },
+  "puzzle_sha256": "e8990872e7e939b748e102d270ccec9e7d6d14ed3d682e5ab8326a2c99d99d5e"
+}

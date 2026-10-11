@@ -32,8 +32,11 @@ flowchart TD
   M --> N{"10. Complete and<br/>semantically reviewed?"}
   N -->|"No"| O{"Round, call or<br/>token budget left?"}
   O -->|"Yes"| C
-  O -->|"No"| P["Return the best<br/>consistent partial grid"]
-  N -->|"Yes"| Q["Return completed grid<br/>and full solve trace"]
+  O -->|"No"| P["Return the last verified grid,<br/>or else the best<br/>consistent partial grid"]
+  N -->|"Yes, first time"| X["CROSSCHECK (once)<br/>Re-solve every clue without letters<br/>Recheck crossing pairs that differ"]
+  X -->|"Answers changed"| O
+  X -->|"No change"| Q["Return completed grid<br/>and full solve trace"]
+  N -->|"Yes, after crosscheck"| Q
 
   P --> R["11. Optional evaluator<br/>opens separate gold file"]
   Q --> R
@@ -47,7 +50,7 @@ flowchart TD
   classDef result fill:#e0f2fe,stroke:#0284c7,color:#0f172a;
 
   class A,B input;
-  class D,E,F phase;
+  class D,E,F,X phase;
   class G,H,I,K model;
   class J,L,M,R,T check;
   class C,N,O decision;
@@ -68,15 +71,20 @@ flowchart LR
   REPAIR -->|"Progress with<br/>gaps remaining"| FILL
   REPAIR -->|"No progress"| REPAIR
   REVIEW -->|"Correction creates<br/>a crossing conflict"| JOINT["JOINT RECHECK<br/>Check the correction with<br/>its conflicting crossing"]
-  JOINT -->|"All answers confirmed"| DONE["DONE"]
   JOINT -->|"Grid remains full<br/>but review is pending"| REVIEW
   JOINT -->|"Pruning removes<br/>an answer"| FILL
   REVIEW -->|"Some answers not<br/>yet confirmed"| REVIEW
-  REVIEW -->|"All answers confirmed"| DONE
+  REVIEW -->|"All answers confirmed"| CHECKED{"Crosschecked?"}
+  JOINT -->|"All answers confirmed"| CHECKED
+  CHECKED -->|"No"| CROSSCHECK["CROSSCHECK<br/>Re-solve every clue without letters;<br/>recheck crossing pairs that differ"]
+  CHECKED -->|"Yes"| DONE["DONE"]
+  CROSSCHECK -->|"Corrections"| REVIEW
+  CROSSCHECK -->|"Pruning removes<br/>an answer"| FILL
+  CROSSCHECK -->|"No change"| DONE
 
   classDef phase fill:#fff4d6,stroke:#d97706,color:#0f172a;
   classDef done fill:#dcfce7,stroke:#16a34a,color:#0f172a;
-  class FILL,REPAIR,REVIEW,JOINT phase;
+  class FILL,REPAIR,REVIEW,JOINT,CROSSCHECK phase;
   class DONE done;
 ```
 
@@ -102,6 +110,18 @@ flowchart LR
 - Immediately rechecks a semantic correction with any conflicting crossing answer.
 - If pruning removes an answer, the next round fills the resulting gap.
 
+### Crosscheck
+
+A crossing pair can agree letter for letter and still be wrong when one wrong shared letter is absorbed by both answers. Review alone often accepts such a pair, because each answer looks plausible next to the other.
+
+- Runs once, after the grid is first verified, whenever review is on.
+- Re-solves every clue without crossing letters, in batches of four, as an independent second opinion. A blank answer only means the model has no confident answer without letters.
+- Flags a crossing pair when an independent answer differs from the grid answer in one or two letters, including the shared cell.
+- Rechecks up to eight flagged pairs jointly, showing the current answers and the independent alternatives.
+- Reviews every changed answer again, together with any crossing answer whose shared letter changed, before the grid is accepted.
+- Submits the last verified grid if the rounds or the token budget run out before that.
+- Records its status: `completed`, `incomplete` (some clues got no answer because a request hit the output limit, the budget or a transport failure), `skipped` (no round left) or `not_reached` (the grid was never verified).
+
 ### Retry and budget control
 
 - Immediately retries missing IDs and responses that cannot be parsed.
@@ -111,6 +131,7 @@ flowchart LR
 - Preserves one larger retry for a request that started as a singleton.
 - Records each returned response, final error and provider usage report in the solve trace.
 - Summarizes transient HTTP retries with `http_attempts` rather than storing each intermediate HTTP error.
+- Records the model name the API reports for every response.
 
 ## Prompt context sent to the model
 
@@ -120,6 +141,7 @@ flowchart LR
   B["Required length"] --> P
   C["Current letter pattern"] --> P
   D["Crossing clues and answers<br/>during repair/review"] --> P
+  H["Independent alternative answers<br/>during crosscheck rechecks"] --> P
   E["Referenced clues<br/>such as See 12-Down"] --> P
   F["Other long clues and answers<br/>when a requested clue has 10+ letters"] --> P
   P --> G["JSON answers only"]
@@ -147,10 +169,13 @@ flowchart LR
 | Component | File | Responsibility |
 |---|---|---|
 | Puzzle | `src/puzzle.py` | Load and validate the grid; build slots, patterns and crossings |
-| Model client | `src/llm_client.py` | Call Nebius Token Factory; enforce call/token budgets and HTTP retries |
-| Solver | `src/solver.py` | Run fill, repair, review, validation, pruning and tracing |
+| Model client | `src/llm_client.py` | Call Nebius Token Factory; enforce call/token budgets and HTTP retries; record the serving model |
+| Solver | `src/solver.py` | Run fill, repair, review, crosscheck, validation, pruning and tracing; `batch_size`, `repair`, `review` and `crosscheck` arguments support ablations |
+| Configuration | `src/config.py` | Reported defaults shared by the client, solver, CLI and demo |
 | Evaluator | `src/evaluator.py` | Compare returned answers with gold after inference |
 | Demo | `app.py` | Show live solving or replay a recorded run |
 | CLI | `run_eval.py` | Run one puzzle, optionally evaluate it and save the full result |
+| Benchmark | `run_benchmark.py`, `analyze_benchmark.py` | Run configurations × puzzles × repeated runs with resumable, hash-checked results; report puzzle-level statistics |
+| Memorization probe | `scripts/probe_memorization.py` | Ask for answers from puzzle identity and slot lengths only |
 
-The reported app and CLI configuration uses 12 rounds, up to 200 HTTP attempts and a 400,000 reported-token threshold per puzzle. The round limit is configurable up to 30, and concurrent in-flight requests can take reported usage slightly above the token threshold. The controller uses no answer retrieval, candidate beam or constraint-satisfaction solver. A structurally complete grid can still be semantically wrong, so only the separate evaluator can establish an exact solve.
+The reported app and CLI configuration uses 15 rounds, up to 200 HTTP attempts and a 400,000 reported-token threshold per puzzle. The round limit is configurable up to 30. New requests stop at the token threshold; requests already in flight can take reported usage slightly above it. The controller uses no answer retrieval, candidate beam or constraint-satisfaction solver. A structurally complete grid can still be semantically wrong, so only the separate evaluator can establish an exact solve.

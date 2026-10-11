@@ -1,0 +1,2798 @@
+{
+  "configs": {
+    "L0_single_pass": {
+      "runs": 250,
+      "puzzles": 50,
+      "solved": {
+        "mean": 0.0,
+        "ci_low": 6.938893903907228e-18,
+        "ci_high": 0.07134759913335872,
+        "count": 0,
+        "puzzles": 50,
+        "pending": 0
+      },
+      "exact": {
+        "mean": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "clue": {
+        "mean": 0.7260723724192595,
+        "ci_low": 0.6954535284499889,
+        "ci_high": 0.7527951788543308
+      },
+      "cell": {
+        "mean": 0.8958839601570585,
+        "ci_low": 0.8696485882863578,
+        "ci_high": 0.9175091579130447
+      },
+      "false_accept": 0,
+      "crosscheck": {
+        "status": {
+          "disabled": 250
+        },
+        "runs": {},
+        "clues_fixed": 0,
+        "clues_broken": 0,
+        "coverage": null
+      },
+      "verified_submissions": 0,
+      "termination_of_verified": {},
+      "tokens_total": 5749281,
+      "tokens_median": 18742.5,
+      "tokens_p90": 39444,
+      "tokens_per_exact": null,
+      "calls_median": 23.0,
+      "requests_median": 23.0,
+      "clues_per_request": 3.3376731764313137,
+      "splits_per_run": 1.236,
+      "latency_median": 43.605000000000004,
+      "termination": {
+        "round_limit": 250
+      },
+      "reliability": {
+        "all": 0,
+        "some": 0,
+        "none": 50
+      }
+    },
+    "L1_fill_loop": {
+      "runs": 250,
+      "puzzles": 50,
+      "solved": {
+        "mean": 0.32,
+        "ci_low": 0.20758216260656845,
+        "ci_high": 0.45810297308144077,
+        "count": 16,
+        "puzzles": 50,
+        "pending": 0
+      },
+      "exact": {
+        "mean": 0.32,
+        "ci_low": 0.21600000000000003,
+        "ci_high": 0.42800000000000005
+      },
+      "clue": {
+        "mean": 0.9449334034116579,
+        "ci_low": 0.9236923036972554,
+        "ci_high": 0.9615425950642272
+      },
+      "cell": {
+        "mean": 0.9792152501734211,
+        "ci_low": 0.9660016843188403,
+        "ci_high": 0.987904140741639
+      },
+      "false_accept": 19,
+      "crosscheck": {
+        "status": {
+          "disabled": 250
+        },
+        "runs": {},
+        "clues_fixed": 0,
+        "clues_broken": 0,
+        "coverage": null
+      },
+      "verified_submissions": 99,
+      "termination_of_verified": {
+        "complete_consistent_grid": 99
+      },
+      "tokens_total": 14349965,
+      "tokens_median": 34452.0,
+      "tokens_p90": 119112,
+      "tokens_per_exact": 179374.5625,
+      "calls_median": 34.0,
+      "requests_median": 34.0,
+      "clues_per_request": 2.8976313916844565,
+      "splits_per_run": 3.316,
+      "latency_median": 91.11949999999999,
+      "termination": {
+        "stalled": 146,
+        "complete_consistent_grid": 99,
+        "budget_limit": 5
+      },
+      "reliability": {
+        "all": 7,
+        "some": 19,
+        "none": 24
+      }
+    },
+    "L2_fill_repair": {
+      "runs": 250,
+      "puzzles": 50,
+      "solved": {
+        "mean": 0.84,
+        "ci_low": 0.7148578393696501,
+        "ci_high": 0.916625793219666,
+        "count": 42,
+        "puzzles": 50,
+        "pending": 0
+      },
+      "exact": {
+        "mean": 0.792,
+        "ci_low": 0.708,
+        "ci_high": 0.8640000000000001
+      },
+      "clue": {
+        "mean": 0.9828622275838219,
+        "ci_low": 0.9616067536459951,
+        "ci_high": 0.9950172580914841
+      },
+      "cell": {
+        "mean": 0.9904937378124914,
+        "ci_low": 0.9746368714939108,
+        "ci_high": 0.9988104182702632
+      },
+      "false_accept": 39,
+      "crosscheck": {
+        "status": {
+          "disabled": 250
+        },
+        "runs": {},
+        "clues_fixed": 0,
+        "clues_broken": 0,
+        "coverage": null
+      },
+      "verified_submissions": 237,
+      "termination_of_verified": {
+        "complete_consistent_grid": 237
+      },
+      "tokens_total": 21790086,
+      "tokens_median": 51294.5,
+      "tokens_p90": 208475,
+      "tokens_per_exact": 110050.93939393939,
+      "calls_median": 40.5,
+      "requests_median": 40.5,
+      "clues_per_request": 2.653014338905173,
+      "splits_per_run": 5.46,
+      "latency_median": 128.298,
+      "termination": {
+        "complete_consistent_grid": 237,
+        "budget_limit": 13
+      },
+      "reliability": {
+        "all": 26,
+        "some": 22,
+        "none": 2
+      }
+    },
+    "L3_full": {
+      "runs": 250,
+      "puzzles": 50,
+      "solved": {
+        "mean": 0.92,
+        "ci_low": 0.8116175308165717,
+        "ci_high": 0.968450485911407,
+        "count": 46,
+        "puzzles": 50,
+        "pending": 0
+      },
+      "exact": {
+        "mean": 0.9,
+        "ci_low": 0.836,
+        "ci_high": 0.9520000000000001
+      },
+      "clue": {
+        "mean": 0.9834456493768413,
+        "ci_low": 0.9594131605808076,
+        "ci_high": 0.9976908060120134
+      },
+      "cell": {
+        "mean": 0.9901111819474702,
+        "ci_low": 0.9736746893074278,
+        "ci_high": 0.9994168662182601
+      },
+      "false_accept": 13,
+      "crosscheck": {
+        "status": {
+          "incomplete": 71,
+          "completed": 165,
+          "not_reached": 13,
+          "skipped": 1
+        },
+        "runs": {
+          "unchanged": 232,
+          "fixed": 4
+        },
+        "clues_fixed": 9,
+        "clues_broken": 0,
+        "coverage": {
+          "answered": 0.9914433686106733,
+          "second_opinion": 0.926987165052916
+        }
+      },
+      "verified_submissions": 237,
+      "termination_of_verified": {
+        "complete_consistent_grid": 236,
+        "round_limit": 1
+      },
+      "tokens_total": 35006749,
+      "tokens_median": 106434.0,
+      "tokens_p90": 296451,
+      "tokens_per_exact": 155585.5511111111,
+      "calls_median": 89.5,
+      "requests_median": 89.5,
+      "clues_per_request": 3.032085336031706,
+      "splits_per_run": 6.948,
+      "latency_median": 226.6695,
+      "termination": {
+        "complete_consistent_grid": 236,
+        "budget_limit": 13,
+        "round_limit": 1
+      },
+      "reliability": {
+        "all": 37,
+        "some": 12,
+        "none": 1
+      }
+    },
+    "L3_no_crosscheck": {
+      "runs": 250,
+      "puzzles": 50,
+      "solved": {
+        "mean": 0.84,
+        "ci_low": 0.7148578393696501,
+        "ci_high": 0.916625793219666,
+        "count": 42,
+        "puzzles": 50,
+        "pending": 0
+      },
+      "exact": {
+        "mean": 0.852,
+        "ci_low": 0.768,
+        "ci_high": 0.924
+      },
+      "clue": {
+        "mean": 0.9818779240553235,
+        "ci_low": 0.9569061628272155,
+        "ci_high": 0.9963547579355629
+      },
+      "cell": {
+        "mean": 0.9897438820966309,
+        "ci_low": 0.9728108459779541,
+        "ci_high": 0.9990672430131751
+      },
+      "false_accept": 20,
+      "crosscheck": {
+        "status": {
+          "disabled": 250
+        },
+        "runs": {},
+        "clues_fixed": 0,
+        "clues_broken": 0,
+        "coverage": null
+      },
+      "verified_submissions": 233,
+      "termination_of_verified": {
+        "complete_consistent_grid": 233
+      },
+      "tokens_total": 31613947,
+      "tokens_median": 84779.5,
+      "tokens_p90": 263281,
+      "tokens_per_exact": 148422.28638497653,
+      "calls_median": 62.5,
+      "requests_median": 62.5,
+      "clues_per_request": 2.8939774838780195,
+      "splits_per_run": 6.488,
+      "latency_median": 188.094,
+      "termination": {
+        "complete_consistent_grid": 233,
+        "budget_limit": 16,
+        "round_limit": 1
+      },
+      "reliability": {
+        "all": 35,
+        "some": 14,
+        "none": 1
+      }
+    },
+    "L3_batch1": {
+      "runs": 250,
+      "puzzles": 50,
+      "solved": {
+        "mean": 0.88,
+        "ci_low": 0.7619518261679701,
+        "ci_high": 0.9438239984906773,
+        "count": 44,
+        "puzzles": 50,
+        "pending": 0
+      },
+      "exact": {
+        "mean": 0.8640000000000001,
+        "ci_low": 0.792,
+        "ci_high": 0.9279999999999999
+      },
+      "clue": {
+        "mean": 0.9825073251380999,
+        "ci_low": 0.9570677423485171,
+        "ci_high": 0.9970418170594642
+      },
+      "cell": {
+        "mean": 0.990101921906292,
+        "ci_low": 0.9729788588778713,
+        "ci_high": 0.9992572038620097
+      },
+      "false_accept": 13,
+      "crosscheck": {
+        "status": {
+          "incomplete": 68,
+          "completed": 158,
+          "not_reached": 24
+        },
+        "runs": {
+          "unchanged": 224,
+          "fixed": 2
+        },
+        "clues_fixed": 4,
+        "clues_broken": 0,
+        "coverage": {
+          "answered": 0.9937822618488973,
+          "second_opinion": 0.9307250117315814
+        }
+      },
+      "verified_submissions": 226,
+      "termination_of_verified": {
+        "complete_consistent_grid": 226
+      },
+      "tokens_total": 47961631,
+      "tokens_median": 156390.5,
+      "tokens_p90": 401723,
+      "tokens_per_exact": 222044.58796296295,
+      "calls_median": 210.5,
+      "requests_median": 210.5,
+      "clues_per_request": 1.2531690206195134,
+      "splits_per_run": 1.432,
+      "latency_median": 306.144,
+      "termination": {
+        "complete_consistent_grid": 226,
+        "budget_limit": 23,
+        "round_limit": 1
+      },
+      "reliability": {
+        "all": 34,
+        "some": 15,
+        "none": 1
+      }
+    },
+    "L3_batch_all": {
+      "runs": 250,
+      "puzzles": 50,
+      "solved": {
+        "mean": 0.94,
+        "ci_low": 0.8378290831116182,
+        "ci_high": 0.979385029651026,
+        "count": 47,
+        "puzzles": 50,
+        "pending": 0
+      },
+      "exact": {
+        "mean": 0.888,
+        "ci_low": 0.828,
+        "ci_high": 0.94
+      },
+      "clue": {
+        "mean": 0.9847640061391005,
+        "ci_low": 0.9637464212342262,
+        "ci_high": 0.9972132635382636
+      },
+      "cell": {
+        "mean": 0.9909244431454717,
+        "ci_low": 0.9766616179889894,
+        "ci_high": 0.9992658245507962
+      },
+      "false_accept": 14,
+      "crosscheck": {
+        "status": {
+          "incomplete": 70,
+          "completed": 166,
+          "not_reached": 14
+        },
+        "runs": {
+          "unchanged": 229,
+          "fixed": 5,
+          "changed": 1,
+          "broke": 1
+        },
+        "clues_fixed": 12,
+        "clues_broken": 2,
+        "coverage": {
+          "answered": 0.9772445646051594,
+          "second_opinion": 0.9125830798693252
+        }
+      },
+      "verified_submissions": 236,
+      "termination_of_verified": {
+        "complete_consistent_grid": 236
+      },
+      "tokens_total": 36113887,
+      "tokens_median": 113632.5,
+      "tokens_p90": 300118,
+      "tokens_per_exact": 162675.16666666666,
+      "calls_median": 119.5,
+      "requests_median": 119.5,
+      "clues_per_request": 3.1187891440501043,
+      "splits_per_run": 4.572,
+      "latency_median": 389.198,
+      "termination": {
+        "complete_consistent_grid": 236,
+        "budget_limit": 14
+      },
+      "reliability": {
+        "all": 34,
+        "some": 15,
+        "none": 1
+      }
+    }
+  },
+  "paired_vs_reference": {
+    "L0_single_pass": {
+      "puzzles": 50,
+      "delta_solved": -0.92,
+      "ci_low": -0.968450485911407,
+      "ci_high": -0.7902416109517723,
+      "puzzles_worse": 46,
+      "puzzles_better": 0,
+      "puzzles_tied": 4,
+      "sign_test_p": 2.842170943040401e-14
+    },
+    "L1_fill_loop": {
+      "puzzles": 50,
+      "delta_solved": -0.6000000000000001,
+      "ci_low": -0.7168006599822863,
+      "ci_high": -0.435291152802948,
+      "puzzles_worse": 30,
+      "puzzles_better": 0,
+      "puzzles_tied": 20,
+      "sign_test_p": 1.862645149230957e-09
+    },
+    "L2_fill_repair": {
+      "puzzles": 50,
+      "delta_solved": -0.08000000000000007,
+      "ci_low": -0.18504233580548776,
+      "ci_high": 0.009809095834855855,
+      "puzzles_worse": 4,
+      "puzzles_better": 0,
+      "puzzles_tied": 46,
+      "sign_test_p": 0.125
+    },
+    "L3_no_crosscheck": {
+      "puzzles": 50,
+      "delta_solved": -0.08000000000000007,
+      "ci_low": -0.18504233580548776,
+      "ci_high": 0.009809095834855855,
+      "puzzles_worse": 4,
+      "puzzles_better": 0,
+      "puzzles_tied": 46,
+      "sign_test_p": 0.125
+    },
+    "L3_batch1": {
+      "puzzles": 50,
+      "delta_solved": -0.040000000000000036,
+      "ci_low": -0.15677270667119725,
+      "ci_high": 0.07233395919913,
+      "puzzles_worse": 4,
+      "puzzles_better": 2,
+      "puzzles_tied": 44,
+      "sign_test_p": 0.6875
+    },
+    "L3_batch_all": {
+      "puzzles": 50,
+      "delta_solved": 0.019999999999999907,
+      "ci_low": -0.08948645649474411,
+      "ci_high": 0.13228935449988238,
+      "puzzles_worse": 2,
+      "puzzles_better": 3,
+      "puzzles_tied": 45,
+      "sign_test_p": 1.0
+    }
+  },
+  "per_puzzle": {
+    "crosshare_2611sUM7irDbvVzsqHJm": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 23810
+      },
+      "L1_fill_loop": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 35829
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 75550
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 129123
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 81485
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 191366
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 202323
+      }
+    },
+    "crosshare_2TDCb2vrPjfnF9DpZAIt": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 10343
+      },
+      "L1_fill_loop": {
+        "solved": 1,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 37798
+      },
+      "L2_fill_repair": {
+        "solved": 3,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 96580
+      },
+      "L3_full": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 119508
+      },
+      "L3_no_crosscheck": {
+        "solved": 2,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 109641
+      },
+      "L3_batch1": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 148681
+      },
+      "L3_batch_all": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 86461
+      }
+    },
+    "crosshare_38WSnHVDDBSZaLHE9zkH": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 33313
+      },
+      "L1_fill_loop": {
+        "solved": 3,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 32217
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 23045
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 88269
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 49666
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 119246
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 49309
+      }
+    },
+    "crosshare_3OtijHE5IddDkmQ66hQW": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 35207
+      },
+      "L1_fill_loop": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 154771
+      },
+      "L2_fill_repair": {
+        "solved": 2,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 269002
+      },
+      "L3_full": {
+        "solved": 3,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 406826
+      },
+      "L3_no_crosscheck": {
+        "solved": 1,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 384238
+      },
+      "L3_batch1": {
+        "solved": 2,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 336755
+      },
+      "L3_batch_all": {
+        "solved": 3,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 334360
+      }
+    },
+    "crosshare_3hP6JNKMyKSdaYdcrvJG": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 30629
+      },
+      "L1_fill_loop": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 65392
+      },
+      "L2_fill_repair": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 97129
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 148745
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 143247
+      },
+      "L3_batch1": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 402244
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 209632
+      }
+    },
+    "crosshare_4bNxlP8fUltvTdhTTEoK": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 40163
+      },
+      "L1_fill_loop": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 420852
+      },
+      "L2_fill_repair": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 411251
+      },
+      "L3_full": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 414777
+      },
+      "L3_no_crosscheck": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 417815
+      },
+      "L3_batch1": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 426544
+      },
+      "L3_batch_all": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 403397
+      }
+    },
+    "crosshare_5vNf02sCzBMhgwq0JbgN": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 18001
+      },
+      "L1_fill_loop": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 40039
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 40222
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 115452
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 92560
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 188755
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 122581
+      }
+    },
+    "crosshare_9cxdtDBHx94ejvHpc8tE": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 18832
+      },
+      "L1_fill_loop": {
+        "solved": 1,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 43403
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 58299
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 98917
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 131644
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 151079
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 107463
+      }
+    },
+    "crosshare_AX9mYrlSCkBCS3dySePx": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 11149
+      },
+      "L1_fill_loop": {
+        "solved": 1,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 27808
+      },
+      "L2_fill_repair": {
+        "solved": 3,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 60763
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 111146
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 81465
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 185905
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 150574
+      }
+    },
+    "crosshare_BQSM8Jl1zPEKa5xC5fbs": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 12105
+      },
+      "L1_fill_loop": {
+        "solved": 2,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 26148
+      },
+      "L2_fill_repair": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 30614
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 80966
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 63543
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 120055
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 88193
+      }
+    },
+    "crosshare_F4h3Z1ADMuXzWODI34Pd": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 19679
+      },
+      "L1_fill_loop": {
+        "solved": 3,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 47867
+      },
+      "L2_fill_repair": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 44118
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 90912
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 120840
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 148240
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 131531
+      }
+    },
+    "crosshare_FsXwUAHTThc3yLd7g11e": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 17677
+      },
+      "L1_fill_loop": {
+        "solved": 2,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 56806
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 42085
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 106541
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 95022
+      },
+      "L3_batch1": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 195986
+      },
+      "L3_batch_all": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 118500
+      }
+    },
+    "crosshare_HrWzJJLLYz75nFVFJtu1": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 28620
+      },
+      "L1_fill_loop": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 24281
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 31399
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 62940
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 67713
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 111658
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 91015
+      }
+    },
+    "crosshare_I1tiafCevmdJKjug0wXI": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 41189
+      },
+      "L1_fill_loop": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 95327
+      },
+      "L2_fill_repair": {
+        "solved": 3,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 179841
+      },
+      "L3_full": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 292855
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 182474
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 263800
+      },
+      "L3_batch_all": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 254565
+      }
+    },
+    "crosshare_I45iFumRQqyrkoTbLH34": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 13209
+      },
+      "L1_fill_loop": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 24903
+      },
+      "L2_fill_repair": {
+        "solved": 3,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 61993
+      },
+      "L3_full": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 107781
+      },
+      "L3_no_crosscheck": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 71210
+      },
+      "L3_batch1": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 146071
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 109750
+      }
+    },
+    "crosshare_IxFrwllGnFQbuAqywLuy": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 16260
+      },
+      "L1_fill_loop": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 32376
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 31840
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 94157
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 57733
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 154283
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 74345
+      }
+    },
+    "crosshare_JKOhW5Oxk1qXNHRMpz0X": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 15971
+      },
+      "L1_fill_loop": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 10395
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 10638
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 46370
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 38235
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 77809
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 37161
+      }
+    },
+    "crosshare_JjM8LtnHATgVNUbr3uzU": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 11965
+      },
+      "L1_fill_loop": {
+        "solved": 1,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 13047
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 17309
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 62773
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 43001
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 89623
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 70370
+      }
+    },
+    "crosshare_KaErsAaTMOURSGNnAPky": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 37375
+      },
+      "L1_fill_loop": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 55948
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 53548
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 123532
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 79074
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 168045
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 114703
+      }
+    },
+    "crosshare_MvSrn2yKtMh97gcp7EN8": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 20260
+      },
+      "L1_fill_loop": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 58384
+      },
+      "L2_fill_repair": {
+        "solved": 1,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 126442
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 155570
+      },
+      "L3_no_crosscheck": {
+        "solved": 1,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 222306
+      },
+      "L3_batch1": {
+        "solved": 3,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 346581
+      },
+      "L3_batch_all": {
+        "solved": 2,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 288445
+      }
+    },
+    "crosshare_OeRu1jTTpnFWnUW79BW8": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 25775
+      },
+      "L1_fill_loop": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 66677
+      },
+      "L2_fill_repair": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 118887
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 179537
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 177240
+      },
+      "L3_batch1": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 197779
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 174366
+      }
+    },
+    "crosshare_PcI2RV1pHWNLvNjNgdS7": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 25772
+      },
+      "L1_fill_loop": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 56629
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 114497
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 164001
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 175462
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 265216
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 210752
+      }
+    },
+    "crosshare_PoQ5Eai2SuIUjBdSapkN": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 27552
+      },
+      "L1_fill_loop": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 21136
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 23325
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 96942
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 58788
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 106796
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 80484
+      }
+    },
+    "crosshare_Q0ZKSI2FvAm8ieyuzdkD": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 27781
+      },
+      "L1_fill_loop": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 76477
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 109809
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 219025
+      },
+      "L3_no_crosscheck": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 161618
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 219259
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 285048
+      }
+    },
+    "crosshare_SQXiQ3ClGEt3UvYuErN6": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 31194
+      },
+      "L1_fill_loop": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 119112
+      },
+      "L2_fill_repair": {
+        "solved": 1,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 401627
+      },
+      "L3_full": {
+        "solved": 3,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 403377
+      },
+      "L3_no_crosscheck": {
+        "solved": 2,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 410343
+      },
+      "L3_batch1": {
+        "solved": 2,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 401723
+      },
+      "L3_batch_all": {
+        "solved": 3,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 400237
+      }
+    },
+    "crosshare_SVMrAouNIcD42X1gNPYp": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 10750
+      },
+      "L1_fill_loop": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 23143
+      },
+      "L2_fill_repair": {
+        "solved": 2,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 53734
+      },
+      "L3_full": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 99498
+      },
+      "L3_no_crosscheck": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 86868
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 111352
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 98035
+      }
+    },
+    "crosshare_SjQFbZIsBhgIeE2OovGk": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 18435
+      },
+      "L1_fill_loop": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 19641
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 19326
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 93689
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 51754
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 109873
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 88694
+      }
+    },
+    "crosshare_UdFK2ioptD6GARNdR6E4": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 11720
+      },
+      "L1_fill_loop": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 26443
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 55462
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 83610
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 68686
+      },
+      "L3_batch1": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 141155
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 49859
+      }
+    },
+    "crosshare_V3vUBf1TSD4CFVlBFndR": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 31755
+      },
+      "L1_fill_loop": {
+        "solved": 1,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 61186
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 72077
+      },
+      "L3_full": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 203911
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 170999
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 269155
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 154735
+      }
+    },
+    "crosshare_WubIcuAOpI5z509UWVqq": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 23854
+      },
+      "L1_fill_loop": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 51085
+      },
+      "L2_fill_repair": {
+        "solved": 3,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 134392
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 181157
+      },
+      "L3_no_crosscheck": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 163357
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 241838
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 208211
+      }
+    },
+    "crosshare_YoMXTvPVKcJmXBAe3Ljt": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 10920
+      },
+      "L1_fill_loop": {
+        "solved": 2,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 12987
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 26470
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 72020
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 51682
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 106379
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 62557
+      }
+    },
+    "crosshare_ZPqisnPkDTHlm3KLcPEH": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 19316
+      },
+      "L1_fill_loop": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 17403
+      },
+      "L2_fill_repair": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 23961
+      },
+      "L3_full": {
+        "solved": 2,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 70513
+      },
+      "L3_no_crosscheck": {
+        "solved": 2,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 68591
+      },
+      "L3_batch1": {
+        "solved": 3,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 104992
+      },
+      "L3_batch_all": {
+        "solved": 3,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 77374
+      }
+    },
+    "crosshare_aAluOf1mksk1ZIZmdjY2": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 25701
+      },
+      "L1_fill_loop": {
+        "solved": 1,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 48353
+      },
+      "L2_fill_repair": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 100140
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 204051
+      },
+      "L3_no_crosscheck": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 127709
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 201405
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 191879
+      }
+    },
+    "crosshare_c3lGlRzHZ8Si29lZpAg5": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 9451
+      },
+      "L1_fill_loop": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 31315
+      },
+      "L2_fill_repair": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 33750
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 69740
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 72999
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 112879
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 51243
+      }
+    },
+    "crosshare_cyvaRcL2FnMeiYXlFGo9": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 24445
+      },
+      "L1_fill_loop": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 53638
+      },
+      "L2_fill_repair": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 83461
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 148413
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 129397
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 194861
+      },
+      "L3_batch_all": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 131276
+      }
+    },
+    "crosshare_hKQEt9xVfGMT8OUH5k0E": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 9802
+      },
+      "L1_fill_loop": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 33138
+      },
+      "L2_fill_repair": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 65908
+      },
+      "L3_full": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 91687
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 111770
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 155671
+      },
+      "L3_batch_all": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 147832
+      }
+    },
+    "crosshare_hpvIR05lnptSmPBBM62w": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 9196
+      },
+      "L1_fill_loop": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 10855
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 10707
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 46643
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 36031
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 83767
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 41151
+      }
+    },
+    "crosshare_iQUCPjBfH1rivm5LBrsm": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 9766
+      },
+      "L1_fill_loop": {
+        "solved": 3,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 11149
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 11262
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 54266
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 40602
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 90511
+      },
+      "L3_batch_all": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 47222
+      }
+    },
+    "crosshare_itBzKpOzVRtWBDJcFZMq": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 11577
+      },
+      "L1_fill_loop": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 14781
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 13034
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 54274
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 47425
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 104829
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 74794
+      }
+    },
+    "crosshare_jNj7hHHfZdqmYdH2t1rE": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 17365
+      },
+      "L1_fill_loop": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 19133
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 18713
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 68026
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 44587
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 100906
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 66663
+      }
+    },
+    "crosshare_nC4FAvya5ytCQbckejB6": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 11347
+      },
+      "L1_fill_loop": {
+        "solved": 3,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 27213
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 25776
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 70383
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 49846
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 138587
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 70609
+      }
+    },
+    "crosshare_nh3BToabM0zRkDh7cXLd": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 43601
+      },
+      "L1_fill_loop": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 66067
+      },
+      "L2_fill_repair": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 131762
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 159521
+      },
+      "L3_no_crosscheck": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 246646
+      },
+      "L3_batch1": {
+        "solved": 2,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 230751
+      },
+      "L3_batch_all": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 201527
+      }
+    },
+    "crosshare_qB4zC5LPVOZrPsBd0Hqb": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 24502
+      },
+      "L1_fill_loop": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 22115
+      },
+      "L2_fill_repair": {
+        "solved": 1,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 36433
+      },
+      "L3_full": {
+        "solved": 2,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 102675
+      },
+      "L3_no_crosscheck": {
+        "solved": 1,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 73345
+      },
+      "L3_batch1": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 163215
+      },
+      "L3_batch_all": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 82549
+      }
+    },
+    "crosshare_qrOGVlW41oaQ7eByCBZz": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 16039
+      },
+      "L1_fill_loop": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 18764
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 26751
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 58898
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 53728
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 84083
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 68078
+      }
+    },
+    "crosshare_rP9JWa3119Mua2ib6MKP": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 9034
+      },
+      "L1_fill_loop": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 11605
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 12039
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 47960
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 39124
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 90833
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 37690
+      }
+    },
+    "crosshare_uk0VO8JBu2ECzvLgFVzg": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 45466
+      },
+      "L1_fill_loop": {
+        "solved": 1,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 74451
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 84053
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 181290
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 115911
+      },
+      "L3_batch1": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 211248
+      },
+      "L3_batch_all": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 219781
+      }
+    },
+    "crosshare_usFpIboAR3KWzQLZqMQK": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 26327
+      },
+      "L1_fill_loop": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 95305
+      },
+      "L2_fill_repair": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 196646
+      },
+      "L3_full": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 221027
+      },
+      "L3_no_crosscheck": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 224550
+      },
+      "L3_batch1": {
+        "solved": 1,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 438520
+      },
+      "L3_batch_all": {
+        "solved": 2,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 245038
+      }
+    },
+    "crosshare_vj4fP4ctx6MEIHZVBDee": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 8844
+      },
+      "L1_fill_loop": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 12649
+      },
+      "L2_fill_repair": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 10826
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 76328
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 37174
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 84473
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 66769
+      }
+    },
+    "crosshare_xHmCEsOubBqFf8TiszIS": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 82507
+      },
+      "L1_fill_loop": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 322438
+      },
+      "L2_fill_repair": {
+        "solved": 2,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 401901
+      },
+      "L3_full": {
+        "solved": 2,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 404688
+      },
+      "L3_no_crosscheck": {
+        "solved": 1,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 409419
+      },
+      "L3_batch1": {
+        "solved": 1,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 415362
+      },
+      "L3_batch_all": {
+        "solved": 3,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 400087
+      }
+    },
+    "crosshare_yV02VXz9Y8UOuuFlvYBT": {
+      "L0_single_pass": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 27504
+      },
+      "L1_fill_loop": {
+        "solved": 0,
+        "runs": 5,
+        "puzzle_solved": false,
+        "tokens_median": 63617
+      },
+      "L2_fill_repair": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 82898
+      },
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 140881
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 81885
+      },
+      "L3_batch1": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 226750
+      },
+      "L3_batch_all": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 141583
+      }
+    }
+  },
+  "solve_rule": {
+    "runs": 5,
+    "min_exact": 3,
+    "incomplete": "excluded"
+  },
+  "paired_runs_vs_reference": {
+    "L0_single_pass": {
+      "puzzles": 50,
+      "delta_exact": -0.9,
+      "ci_low": -0.9520000000000001,
+      "ci_high": -0.836,
+      "puzzles_lower": 49,
+      "puzzles_higher": 0,
+      "puzzles_tied": 1,
+      "sign_test_p": 3.552713678800501e-15
+    },
+    "L1_fill_loop": {
+      "puzzles": 50,
+      "delta_exact": -0.58,
+      "ci_low": -0.68,
+      "ci_high": -0.484,
+      "puzzles_lower": 42,
+      "puzzles_higher": 0,
+      "puzzles_tied": 8,
+      "sign_test_p": 4.547473508864641e-13
+    },
+    "L2_fill_repair": {
+      "puzzles": 50,
+      "delta_exact": -0.10800000000000001,
+      "ci_low": -0.15600000000000003,
+      "ci_high": -0.064,
+      "puzzles_lower": 20,
+      "puzzles_higher": 1,
+      "puzzles_tied": 29,
+      "sign_test_p": 2.09808349609375e-05
+    },
+    "L3_no_crosscheck": {
+      "puzzles": 50,
+      "delta_exact": -0.048,
+      "ci_low": -0.096,
+      "ci_high": -0.008000000000000002,
+      "puzzles_lower": 10,
+      "puzzles_higher": 3,
+      "puzzles_tied": 37,
+      "sign_test_p": 0.09228515625
+    },
+    "L3_batch1": {
+      "puzzles": 50,
+      "delta_exact": -0.036000000000000004,
+      "ci_low": -0.084,
+      "ci_high": 0.008000000000000002,
+      "puzzles_lower": 11,
+      "puzzles_higher": 6,
+      "puzzles_tied": 33,
+      "sign_test_p": 0.332305908203125
+    },
+    "L3_batch_all": {
+      "puzzles": 50,
+      "delta_exact": -0.012,
+      "ci_low": -0.055999999999999994,
+      "ci_high": 0.027999999999999994,
+      "puzzles_lower": 7,
+      "puzzles_higher": 6,
+      "puzzles_tied": 37,
+      "sign_test_p": 1.0
+    }
+  },
+  "checks": [],
+  "attempts": {
+    "evaluated_runs": 1750,
+    "archived_attempts": 0,
+    "residual_infra_error_runs": [],
+    "tokens_all_attempts": 192585546
+  },
+  "memorization_probe": {
+    "crosshare": {
+      "puzzles": 50,
+      "slots": 3754,
+      "attempted": 3065,
+      "correct": 1
+    },
+    "crossword_nexus": {
+      "puzzles": 8,
+      "slots": 626,
+      "attempted": 504,
+      "correct": 0
+    }
+  }
+}

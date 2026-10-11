@@ -1,0 +1,308 @@
+{
+  "configs": {
+    "L3_full": {
+      "runs": 50,
+      "puzzles": 10,
+      "solved": {
+        "mean": 1.0,
+        "ci_low": 0.7224672001371107,
+        "ci_high": 0.9999999999999999,
+        "count": 10,
+        "puzzles": 10,
+        "pending": 0
+      },
+      "exact": {
+        "mean": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0
+      },
+      "clue": {
+        "mean": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0
+      },
+      "cell": {
+        "mean": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0
+      },
+      "false_accept": 0,
+      "crosscheck": {
+        "status": {
+          "completed": 33,
+          "incomplete": 17
+        },
+        "runs": {
+          "unchanged": 49,
+          "fixed": 1
+        },
+        "clues_fixed": 2,
+        "clues_broken": 0,
+        "coverage": {
+          "answered": 0.9729381443298969,
+          "second_opinion": 0.9108247422680412
+        }
+      },
+      "verified_submissions": 50,
+      "termination_of_verified": {
+        "complete_consistent_grid": 50
+      },
+      "tokens_total": 6872733,
+      "tokens_median": 104119.5,
+      "tokens_p90": 300135,
+      "tokens_per_exact": 137454.66,
+      "calls_median": 86.5,
+      "requests_median": 86.5,
+      "clues_per_request": 3.081929715117488,
+      "splits_per_run": 6.54,
+      "latency_median": 196.438,
+      "termination": {
+        "complete_consistent_grid": 50
+      },
+      "reliability": {
+        "all": 10,
+        "some": 0,
+        "none": 0
+      }
+    },
+    "L3_no_crosscheck": {
+      "runs": 50,
+      "puzzles": 10,
+      "solved": {
+        "mean": 1.0,
+        "ci_low": 0.7224672001371107,
+        "ci_high": 0.9999999999999999,
+        "count": 10,
+        "puzzles": 10,
+        "pending": 0
+      },
+      "exact": {
+        "mean": 0.9199999999999999,
+        "ci_low": 0.82,
+        "ci_high": 1.0
+      },
+      "clue": {
+        "mean": 0.9961923076923076,
+        "ci_low": 0.9923846153846154,
+        "ci_high": 1.0
+      },
+      "cell": {
+        "mean": 0.9986253992844691,
+        "ci_low": 0.9968320452090087,
+        "ci_high": 1.0
+      },
+      "false_accept": 1,
+      "crosscheck": {
+        "status": {
+          "disabled": 50
+        },
+        "runs": {},
+        "clues_fixed": 0,
+        "clues_broken": 0,
+        "coverage": null
+      },
+      "verified_submissions": 47,
+      "termination_of_verified": {
+        "complete_consistent_grid": 47
+      },
+      "tokens_total": 5654670,
+      "tokens_median": 75488.0,
+      "tokens_p90": 297094,
+      "tokens_per_exact": 122927.60869565218,
+      "calls_median": 62.0,
+      "requests_median": 62.0,
+      "clues_per_request": 2.9878290404755163,
+      "splits_per_run": 5.7,
+      "latency_median": 123.29599999999999,
+      "termination": {
+        "complete_consistent_grid": 47,
+        "budget_limit": 2,
+        "round_limit": 1
+      },
+      "reliability": {
+        "all": 7,
+        "some": 3,
+        "none": 0
+      }
+    }
+  },
+  "paired_vs_reference": {
+    "L3_no_crosscheck": {
+      "puzzles": 10,
+      "delta_solved": 0.0,
+      "ci_low": -0.27753279986288926,
+      "ci_high": 0.27753279986288926,
+      "puzzles_worse": 0,
+      "puzzles_better": 0,
+      "puzzles_tied": 10,
+      "sign_test_p": 1.0
+    }
+  },
+  "per_puzzle": {
+    "crosshare_1HxAk8NuE2bIaHO84OGL": {
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 142643
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 91388
+      }
+    },
+    "crosshare_1l0JEDYJnJiOX011A84x": {
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 109669
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 72066
+      }
+    },
+    "crossword_nexus_by_george": {
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 296809
+      },
+      "L3_no_crosscheck": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 194717
+      }
+    },
+    "crossword_nexus_fm": {
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 63252
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 51449
+      }
+    },
+    "crossword_nexus_garden_party": {
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 89031
+      },
+      "L3_no_crosscheck": {
+        "solved": 3,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 77611
+      }
+    },
+    "crossword_nexus_gino_the_manager": {
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 267769
+      },
+      "L3_no_crosscheck": {
+        "solved": 4,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 331462
+      }
+    },
+    "crossword_nexus_im_alright": {
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 69569
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 58775
+      }
+    },
+    "crossword_nexus_jesus_children_of_america": {
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 47262
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 38695
+      }
+    },
+    "crossword_nexus_the_cocoanuts": {
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 103729
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 87011
+      }
+    },
+    "crossword_nexus_what_a_fool_believes": {
+      "L3_full": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 95602
+      },
+      "L3_no_crosscheck": {
+        "solved": 5,
+        "runs": 5,
+        "puzzle_solved": true,
+        "tokens_median": 68889
+      }
+    }
+  },
+  "solve_rule": {
+    "runs": 5,
+    "min_exact": 3,
+    "incomplete": "excluded"
+  },
+  "paired_runs_vs_reference": {
+    "L3_no_crosscheck": {
+      "puzzles": 10,
+      "delta_exact": -0.07999999999999999,
+      "ci_low": -0.16,
+      "ci_high": 0.0,
+      "puzzles_lower": 3,
+      "puzzles_higher": 0,
+      "puzzles_tied": 7,
+      "sign_test_p": 0.25
+    }
+  },
+  "checks": [],
+  "attempts": {
+    "evaluated_runs": 100,
+    "archived_attempts": 0,
+    "residual_infra_error_runs": [],
+    "tokens_all_attempts": 12527403
+  },
+  "memorization_probe": {}
+}

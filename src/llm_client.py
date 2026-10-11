@@ -7,6 +7,8 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
+from . import config
+
 
 def load_env(path=".env"):
     if Path(path).exists():
@@ -21,15 +23,17 @@ class BudgetExceeded(RuntimeError):
 
 
 class Client:
-    def __init__(self, model=None, max_tokens=6000, max_calls=100, token_budget=180000):
+    def __init__(self, model=None, max_tokens=config.MAX_TOKENS, max_calls=config.MAX_CALLS,
+                 token_budget=config.TOKEN_BUDGET):
         load_env()
-        self.model = model or os.environ.get("NEBIUS_MODEL", "zai-org/GLM-5.3-Flash")
+        self.model = model or os.environ.get("NEBIUS_MODEL", config.MODEL)
         self.key = os.environ.get("NEBIUS_API_KEY")
         if not self.key:
             raise ValueError("Set NEBIUS_API_KEY in .env or the environment.")
         if min(max_tokens, max_calls, token_budget) < 1:
             raise ValueError("Token and call budgets must be positive.")
         self.max_tokens, self.max_calls, self.token_budget = max_tokens, max_calls, token_budget
+        # calls counts HTTP attempts (including transient retries), not logical requests.
         self.calls, self.tokens, self.http_retries = 0, 0, 0
         self.lock = threading.Lock()
 
@@ -71,5 +75,6 @@ class Client:
         choice = data["choices"][0]
         return {"text": choice["message"].get("content") or "",
                 "finish_reason": choice.get("finish_reason"), "usage": usage,
+                "served_model": data.get("model"),
                 "max_tokens": payload["max_tokens"], "http_attempts": attempt + 1,
                 "latency_seconds": round(time.monotonic() - started, 3)}

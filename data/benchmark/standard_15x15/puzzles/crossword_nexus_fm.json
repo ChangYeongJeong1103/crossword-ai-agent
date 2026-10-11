@@ -1,0 +1,818 @@
+{
+  "puzzle_id": "crossword_nexus_fm",
+  "rows": 15,
+  "columns": 15,
+  "grid": [
+    "#....#....#....",
+    ".....#....#....",
+    ".....#.........",
+    "....#...#....##",
+    ".........#.....",
+    "###...#....#...",
+    ".....#....##...",
+    "...............",
+    "...##....#.....",
+    "...#....#...###",
+    ".....#.........",
+    "##....#...#....",
+    ".........#.....",
+    "....#....#.....",
+    "....#....#....#"
+  ],
+  "metadata": {
+    "type": "standard_american_15x15",
+    "title": "FM (A Grid Charlemagne Puzzle)",
+    "author": "Alex Boisvert",
+    "source": "Crossword Nexus",
+    "source_page": "https://crosswordnexus.com/blog/2021/06/25/puzzle-4-fm-a-grid-charlemagne-puzzle/",
+    "source_url": "https://crosswordnexus.com/downloads/site_puzzles/FM.jpz",
+    "source_format": "jpz",
+    "source_license": "CC BY 4.0",
+    "source_sha256": "7ae245360cf4ef1cdc102fc6b088aa25cfd440edbbda9e282fb74e1c7097900a",
+    "published": "2021-06-25",
+    "selection_index": 6,
+    "post_number": 4
+  },
+  "clues": [
+    {
+      "id": "1A",
+      "direction": "across",
+      "text": "Survival video game that shares its name with oxidized iron",
+      "length": 4,
+      "start": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "1D",
+      "direction": "down",
+      "text": "Actress Ren\u00e9 who has ruined that first name for all the guys who share it",
+      "length": 5,
+      "start": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "2D",
+      "direction": "down",
+      "text": "\"___ next time!\"",
+      "length": 5,
+      "start": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "3D",
+      "direction": "down",
+      "text": "Break curfew surreptitiously",
+      "length": 8,
+      "start": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "4D",
+      "direction": "down",
+      "text": "Phalanx location",
+      "length": 3,
+      "start": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "5A",
+      "direction": "across",
+      "text": "Off in the distance",
+      "length": 4,
+      "start": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "5D",
+      "direction": "down",
+      "text": "Some Italian cars, familiarly",
+      "length": 5,
+      "start": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "6D",
+      "direction": "down",
+      "text": "Diplomatic type",
+      "length": 15,
+      "start": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "7D",
+      "direction": "down",
+      "text": "Any member of the family Hominidae",
+      "length": 3,
+      "start": [
+        0,
+        8
+      ]
+    },
+    {
+      "id": "8D",
+      "direction": "down",
+      "text": "Take a breather",
+      "length": 4,
+      "start": [
+        0,
+        9
+      ]
+    },
+    {
+      "id": "9A",
+      "direction": "across",
+      "text": "Send via FedEx",
+      "length": 4,
+      "start": [
+        0,
+        11
+      ]
+    },
+    {
+      "id": "9D",
+      "direction": "down",
+      "text": "Music style that evolved into Bossa Nova",
+      "length": 5,
+      "start": [
+        0,
+        11
+      ]
+    },
+    {
+      "id": "10D",
+      "direction": "down",
+      "text": "Singer with two songs in the \"Back to the Future\" soundtrack",
+      "length": 9,
+      "start": [
+        0,
+        12
+      ]
+    },
+    {
+      "id": "11D",
+      "direction": "down",
+      "text": "Roth ___",
+      "length": 3,
+      "start": [
+        0,
+        13
+      ]
+    },
+    {
+      "id": "12D",
+      "direction": "down",
+      "text": "ssorcA-64 eeS",
+      "length": 3,
+      "start": [
+        0,
+        14
+      ]
+    },
+    {
+      "id": "13A",
+      "direction": "across",
+      "text": "\"Beats me\"",
+      "length": 5,
+      "start": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "13D",
+      "direction": "down",
+      "text": "Unable to hear",
+      "length": 4,
+      "start": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "14A",
+      "direction": "across",
+      "text": "Stride gracefully",
+      "length": 4,
+      "start": [
+        1,
+        6
+      ]
+    },
+    {
+      "id": "15A",
+      "direction": "across",
+      "text": "Distinctive atmosphere",
+      "length": 4,
+      "start": [
+        1,
+        11
+      ]
+    },
+    {
+      "id": "16A",
+      "direction": "across",
+      "text": "Big name in cosmetics",
+      "length": 5,
+      "start": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "17A",
+      "direction": "across",
+      "text": "Newcomer",
+      "length": 9,
+      "start": [
+        2,
+        6
+      ]
+    },
+    {
+      "id": "18D",
+      "direction": "down",
+      "text": "\"Mr. Hockey\" Gordie",
+      "length": 4,
+      "start": [
+        2,
+        10
+      ]
+    },
+    {
+      "id": "19A",
+      "direction": "across",
+      "text": "\"Heat of the Moment\" band named for a continent",
+      "length": 4,
+      "start": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "20A",
+      "direction": "across",
+      "text": "Fannie ___",
+      "length": 3,
+      "start": [
+        3,
+        5
+      ]
+    },
+    {
+      "id": "20D",
+      "direction": "down",
+      "text": "Coffee, slangily",
+      "length": 3,
+      "start": [
+        3,
+        5
+      ]
+    },
+    {
+      "id": "21A",
+      "direction": "across",
+      "text": "Country singer Keith who sang \"Have I Got a Present for You\" on \"A Colbert Christmas\"",
+      "length": 4,
+      "start": [
+        3,
+        9
+      ]
+    },
+    {
+      "id": "22A",
+      "direction": "across",
+      "text": "Woody Guthrie compositions, e.g.",
+      "length": 9,
+      "start": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": "23D",
+      "direction": "down",
+      "text": "Restaurant handout",
+      "length": 4,
+      "start": [
+        4,
+        4
+      ]
+    },
+    {
+      "id": "24D",
+      "direction": "down",
+      "text": "Garment that may have a Bedazzlement Hex placed on it, in the Harry Potter universe",
+      "length": 5,
+      "start": [
+        4,
+        8
+      ]
+    },
+    {
+      "id": "25A",
+      "direction": "across",
+      "text": "Eagles member Joe who did not sing backup for Steely Dan on \"FM\"",
+      "length": 5,
+      "start": [
+        4,
+        10
+      ]
+    },
+    {
+      "id": "26D",
+      "direction": "down",
+      "text": "\"Fatale\" star Hilary",
+      "length": 5,
+      "start": [
+        4,
+        13
+      ]
+    },
+    {
+      "id": "27D",
+      "direction": "down",
+      "text": "Puts a spell on",
+      "length": 5,
+      "start": [
+        4,
+        14
+      ]
+    },
+    {
+      "id": "28A",
+      "direction": "across",
+      "text": "Source for many a Ben Zimmer citation",
+      "length": 3,
+      "start": [
+        5,
+        3
+      ]
+    },
+    {
+      "id": "29A",
+      "direction": "across",
+      "text": "TV show set at William McKinley High School",
+      "length": 4,
+      "start": [
+        5,
+        7
+      ]
+    },
+    {
+      "id": "30D",
+      "direction": "down",
+      "text": "\"Which came first?\" option",
+      "length": 3,
+      "start": [
+        5,
+        9
+      ]
+    },
+    {
+      "id": "31A",
+      "direction": "across",
+      "text": "Farm female",
+      "length": 3,
+      "start": [
+        5,
+        12
+      ]
+    },
+    {
+      "id": "32A",
+      "direction": "across",
+      "text": "German manufacturer of electric razors",
+      "length": 5,
+      "start": [
+        6,
+        0
+      ]
+    },
+    {
+      "id": "32D",
+      "direction": "down",
+      "text": "A-sharp equivalent",
+      "length": 5,
+      "start": [
+        6,
+        0
+      ]
+    },
+    {
+      "id": "33D",
+      "direction": "down",
+      "text": "It may make you red in the face",
+      "length": 5,
+      "start": [
+        6,
+        1
+      ]
+    },
+    {
+      "id": "34D",
+      "direction": "down",
+      "text": "Mythological sailors",
+      "length": 9,
+      "start": [
+        6,
+        2
+      ]
+    },
+    {
+      "id": "35A",
+      "direction": "across",
+      "text": "\"We were all so wild we used to ___ each other all the time.\" -- Mel B, on the Spice Girls",
+      "length": 4,
+      "start": [
+        6,
+        6
+      ]
+    },
+    {
+      "id": "35D",
+      "direction": "down",
+      "text": "Microsoft Sans ___ (font simiar to Helvetica)",
+      "length": 5,
+      "start": [
+        6,
+        6
+      ]
+    },
+    {
+      "id": "36A",
+      "direction": "across",
+      "text": "Vinyl records",
+      "length": 3,
+      "start": [
+        6,
+        12
+      ]
+    },
+    {
+      "id": "37A",
+      "direction": "across",
+      "text": "Publication that ranks companies by revenue",
+      "length": 15,
+      "start": [
+        7,
+        0
+      ]
+    },
+    {
+      "id": "38D",
+      "direction": "down",
+      "text": "Fresh",
+      "length": 3,
+      "start": [
+        7,
+        5
+      ]
+    },
+    {
+      "id": "39D",
+      "direction": "down",
+      "text": "Father of Cain and Abel",
+      "length": 4,
+      "start": [
+        7,
+        10
+      ]
+    },
+    {
+      "id": "40D",
+      "direction": "down",
+      "text": "Move hurriedly",
+      "length": 8,
+      "start": [
+        7,
+        11
+      ]
+    },
+    {
+      "id": "41A",
+      "direction": "across",
+      "text": "Tote",
+      "length": 3,
+      "start": [
+        8,
+        0
+      ]
+    },
+    {
+      "id": "42A",
+      "direction": "across",
+      "text": "USA Today crossword editor Agard",
+      "length": 4,
+      "start": [
+        8,
+        5
+      ]
+    },
+    {
+      "id": "43A",
+      "direction": "across",
+      "text": "Filled circles, in plane geometry",
+      "length": 5,
+      "start": [
+        8,
+        10
+      ]
+    },
+    {
+      "id": "44A",
+      "direction": "across",
+      "text": "Before now",
+      "length": 3,
+      "start": [
+        9,
+        0
+      ]
+    },
+    {
+      "id": "45A",
+      "direction": "across",
+      "text": "Cole or Dylan Sprouse",
+      "length": 4,
+      "start": [
+        9,
+        4
+      ]
+    },
+    {
+      "id": "45D",
+      "direction": "down",
+      "text": "Trolley",
+      "length": 4,
+      "start": [
+        9,
+        4
+      ]
+    },
+    {
+      "id": "46A",
+      "direction": "across",
+      "text": "nwoD-21 eeS",
+      "length": 3,
+      "start": [
+        9,
+        9
+      ]
+    },
+    {
+      "id": "46D",
+      "direction": "down",
+      "text": "Unoriginal nickname for someone from the Lone Star State",
+      "length": 3,
+      "start": [
+        9,
+        9
+      ]
+    },
+    {
+      "id": "47A",
+      "direction": "across",
+      "text": "Choir member",
+      "length": 5,
+      "start": [
+        10,
+        0
+      ]
+    },
+    {
+      "id": "48D",
+      "direction": "down",
+      "text": "Skateboarding leap",
+      "length": 5,
+      "start": [
+        10,
+        3
+      ]
+    },
+    {
+      "id": "49A",
+      "direction": "across",
+      "text": "Powered-up video game character",
+      "length": 9,
+      "start": [
+        10,
+        6
+      ]
+    },
+    {
+      "id": "50D",
+      "direction": "down",
+      "text": "Amy Winehouse hit",
+      "length": 5,
+      "start": [
+        10,
+        8
+      ]
+    },
+    {
+      "id": "51D",
+      "direction": "down",
+      "text": "Currency in India, The Seychelles, and Hyrule",
+      "length": 5,
+      "start": [
+        10,
+        12
+      ]
+    },
+    {
+      "id": "52D",
+      "direction": "down",
+      "text": "Couples",
+      "length": 5,
+      "start": [
+        10,
+        13
+      ]
+    },
+    {
+      "id": "53D",
+      "direction": "down",
+      "text": "Big name in heavy metal and reality TV",
+      "length": 4,
+      "start": [
+        10,
+        14
+      ]
+    },
+    {
+      "id": "54A",
+      "direction": "across",
+      "text": "Snape portrayer Rickman",
+      "length": 4,
+      "start": [
+        11,
+        2
+      ]
+    },
+    {
+      "id": "55D",
+      "direction": "down",
+      "text": "Pitcher Syndergaard or singer Cyrus",
+      "length": 4,
+      "start": [
+        11,
+        5
+      ]
+    },
+    {
+      "id": "56A",
+      "direction": "across",
+      "text": "God's joke on human beings, per Bette Davis",
+      "length": 3,
+      "start": [
+        11,
+        7
+      ]
+    },
+    {
+      "id": "57A",
+      "direction": "across",
+      "text": "Eponymous Austrian figure skater Alois",
+      "length": 4,
+      "start": [
+        11,
+        11
+      ]
+    },
+    {
+      "id": "58A",
+      "direction": "across",
+      "text": "Attribute that may cost you your job as a mall Santa",
+      "length": 9,
+      "start": [
+        12,
+        0
+      ]
+    },
+    {
+      "id": "58D",
+      "direction": "down",
+      "text": "It comes and goes in a flash",
+      "length": 3,
+      "start": [
+        12,
+        0
+      ]
+    },
+    {
+      "id": "59D",
+      "direction": "down",
+      "text": "Plastic ___ Band",
+      "length": 3,
+      "start": [
+        12,
+        1
+      ]
+    },
+    {
+      "id": "60D",
+      "direction": "down",
+      "text": "Employ",
+      "length": 3,
+      "start": [
+        12,
+        6
+      ]
+    },
+    {
+      "id": "61A",
+      "direction": "across",
+      "text": "Spanish surname derived from the Latin for \"wolf\"",
+      "length": 5,
+      "start": [
+        12,
+        10
+      ]
+    },
+    {
+      "id": "61D",
+      "direction": "down",
+      "text": "Actress Thompson of \"Howard the Duck\"",
+      "length": 3,
+      "start": [
+        12,
+        10
+      ]
+    },
+    {
+      "id": "62A",
+      "direction": "across",
+      "text": "Opposed",
+      "length": 4,
+      "start": [
+        13,
+        0
+      ]
+    },
+    {
+      "id": "63A",
+      "direction": "across",
+      "text": "On the ocean",
+      "length": 4,
+      "start": [
+        13,
+        5
+      ]
+    },
+    {
+      "id": "64A",
+      "direction": "across",
+      "text": "Foe",
+      "length": 5,
+      "start": [
+        13,
+        10
+      ]
+    },
+    {
+      "id": "65A",
+      "direction": "across",
+      "text": "Quantity of medicine",
+      "length": 4,
+      "start": [
+        14,
+        0
+      ]
+    },
+    {
+      "id": "66A",
+      "direction": "across",
+      "text": "Parsley, sage, rosemary, or thyme",
+      "length": 4,
+      "start": [
+        14,
+        5
+      ]
+    },
+    {
+      "id": "67A",
+      "direction": "across",
+      "text": "\"It's been ___!\"",
+      "length": 4,
+      "start": [
+        14,
+        10
+      ]
+    }
+  ]
+}

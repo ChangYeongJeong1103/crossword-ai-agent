@@ -1,0 +1,1372 @@
+{
+  "source": "Crosshare (crosshare.org)",
+  "snapshot_date": "2026-10-10",
+  "license_note": "Puzzles are 'Copyright <author>, all rights reserved' and are not included in this repository. This list records which puzzles were evaluated; only aggregate results are published.",
+  "selection_rule": "First 50 puzzles from /tags/featured,full, newest first, that satisfy every acceptance rule.",
+  "acceptance_rules": [
+    "tagged featured (curated by Crosshare) and full, walked newest-first",
+    "exactly 15 rows and 15 columns",
+    "180-degree rotational block symmetry",
+    "one connected playable-cell region",
+    "every playable cell belongs to one Across and one Down entry",
+    "every entry contains at least three letters",
+    "single A-Z character per solution cell (no rebus)",
+    "no circled, shaded, barred or hidden cells",
+    "clue numbers match standard row-major numbering; no empty clues",
+    "no tags in ['barred', 'colored-cells', 'contest', 'cryptic', 'downs-only', 'meta', 'puzzle-hunt', 'rebus', 'schrodinger', 'variety'] and no non-English language tag",
+    "manual review of theme entries: no answer-transforming gimmick such as reversed entries, and no news-recap theme that needs knowledge of recent events (exclusions listed with reasons)",
+    "no gimmick keywords in clues (circled, shaded, highlighted, rebus, unclued) or constructor notes (those plus meta, contest, cryptic, Schrodinger, barred)"
+  ],
+  "selected_puzzle_count": 50,
+  "selected": [
+    {
+      "selection_index": 1,
+      "crosshare_id": "9cxdtDBHx94ejvHpc8tE",
+      "title": "Visitor to children who have recently experienced a loss?",
+      "page_url": "https://crosshare.org/crosswords/9cxdtDBHx94ejvHpc8tE",
+      "listing_page": 0,
+      "puzzle_id": "crosshare_9cxdtDBHx94ejvHpc8tE",
+      "author": "Peaty n Oaty",
+      "published": "2026-10-08",
+      "source_sha256": "730cb2f7181a9838be64712ef099f3a7402d078bddef374875a0a0fbba7589ef",
+      "tags": [
+        "featured",
+        "full"
+      ],
+      "clue_count": 72,
+      "playable_cell_count": 193
+    },
+    {
+      "selection_index": 2,
+      "crosshare_id": "I1tiafCevmdJKjug0wXI",
+      "title": "Keep Your Eye on the Ballgame 261008",
+      "page_url": "https://crosshare.org/crosswords/I1tiafCevmdJKjug0wXI",
+      "listing_page": 0,
+      "puzzle_id": "crosshare_I1tiafCevmdJKjug0wXI",
+      "author": "Moose Dixon",
+      "published": "2026-10-06",
+      "source_sha256": "c28bd12b12e9a5dcc3edca315a23250925aa3fd69a00c9a8c5cf4570d57702e0",
+      "tags": [
+        "featured",
+        "full",
+        "themed"
+      ],
+      "clue_count": 76,
+      "playable_cell_count": 189
+    },
+    {
+      "selection_index": 3,
+      "crosshare_id": "Q0ZKSI2FvAm8ieyuzdkD",
+      "title": "The Witching Hour",
+      "page_url": "https://crosshare.org/crosswords/Q0ZKSI2FvAm8ieyuzdkD",
+      "listing_page": 0,
+      "puzzle_id": "crosshare_Q0ZKSI2FvAm8ieyuzdkD",
+      "author": "Herman Chau",
+      "published": "2026-10-07",
+      "source_sha256": "67e0fc4d72fcaf3ba9dbf5b28f925671a7da15fc63ad9597693496f5aeab152b",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800",
+        "themeless"
+      ],
+      "clue_count": 68,
+      "playable_cell_count": 178
+    },
+    {
+      "selection_index": 4,
+      "crosshare_id": "V3vUBf1TSD4CFVlBFndR",
+      "title": "Themed Wednesday #19 - Change of Fortune",
+      "page_url": "https://crosshare.org/crosswords/V3vUBf1TSD4CFVlBFndR",
+      "listing_page": 0,
+      "puzzle_id": "crosshare_V3vUBf1TSD4CFVlBFndR",
+      "author": "The Puzzle Pit",
+      "published": "2026-10-04",
+      "source_sha256": "5b1eec3447429a4a12538343f6f54aa30d469b7fe95f854c5add2e1af83f3184",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800"
+      ],
+      "clue_count": 78,
+      "playable_cell_count": 189
+    },
+    {
+      "selection_index": 5,
+      "crosshare_id": "AX9mYrlSCkBCS3dySePx",
+      "title": "Know Your Meme",
+      "page_url": "https://crosshare.org/crosswords/AX9mYrlSCkBCS3dySePx",
+      "listing_page": 0,
+      "puzzle_id": "crosshare_AX9mYrlSCkBCS3dySePx",
+      "author": "crossbirds",
+      "published": "2026-10-06",
+      "source_sha256": "077c15dcb4a63c22ab1d4939760c2ee738f29bc02b69ac1be3383cc21e1330b4",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800"
+      ],
+      "clue_count": 78,
+      "playable_cell_count": 185
+    },
+    {
+      "selection_index": 6,
+      "crosshare_id": "PcI2RV1pHWNLvNjNgdS7",
+      "title": "Kangaroo",
+      "page_url": "https://crosshare.org/crosswords/PcI2RV1pHWNLvNjNgdS7",
+      "listing_page": 0,
+      "puzzle_id": "crosshare_PcI2RV1pHWNLvNjNgdS7",
+      "author": "Marco Scibelli",
+      "published": "2026-10-06",
+      "source_sha256": "ef34b8f005aaebb20ad1b1df6d548a17368c1c65c0155cd118fc4089e07c7caa",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800"
+      ],
+      "clue_count": 74,
+      "playable_cell_count": 186
+    },
+    {
+      "selection_index": 7,
+      "crosshare_id": "WubIcuAOpI5z509UWVqq",
+      "title": "In a Rage Room",
+      "page_url": "https://crosshare.org/crosswords/WubIcuAOpI5z509UWVqq",
+      "listing_page": 0,
+      "puzzle_id": "crosshare_WubIcuAOpI5z509UWVqq",
+      "author": "Jen Pissgirl",
+      "published": "2026-10-06",
+      "source_sha256": "027200778d3f1caaf8129a7c6c6cd4da5652a836acc1565117954080d636cf28",
+      "tags": [
+        "featured",
+        "full",
+        "lang-en",
+        "rating-1500-1800",
+        "themed"
+      ],
+      "clue_count": 76,
+      "playable_cell_count": 189
+    },
+    {
+      "selection_index": 8,
+      "crosshare_id": "5vNf02sCzBMhgwq0JbgN",
+      "title": "Teehee!",
+      "page_url": "https://crosshare.org/crosswords/5vNf02sCzBMhgwq0JbgN",
+      "listing_page": 0,
+      "puzzle_id": "crosshare_5vNf02sCzBMhgwq0JbgN",
+      "author": "xdes",
+      "published": "2026-10-06",
+      "source_sha256": "cbf85b1af580e94ce2d533728125a232188164a4f9dfce7a4f6cc9f7920d61af",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1800-up",
+        "themed"
+      ],
+      "clue_count": 74,
+      "playable_cell_count": 192
+    },
+    {
+      "selection_index": 9,
+      "crosshare_id": "FsXwUAHTThc3yLd7g11e",
+      "title": "Oct. 7 2026 Crossword: In Good Taste",
+      "page_url": "https://crosshare.org/crosswords/FsXwUAHTThc3yLd7g11e",
+      "listing_page": 0,
+      "puzzle_id": "crosshare_FsXwUAHTThc3yLd7g11e",
+      "author": "Harry Zheng",
+      "published": "2026-10-05",
+      "source_sha256": "6a1e35c33493f5ea74001b829cd195561a2a0ec2da6573b4656a660ede20a3f3",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800"
+      ],
+      "clue_count": 78,
+      "playable_cell_count": 187
+    },
+    {
+      "selection_index": 10,
+      "crosshare_id": "I45iFumRQqyrkoTbLH34",
+      "title": "October 1 2026",
+      "page_url": "https://crosshare.org/crosswords/I45iFumRQqyrkoTbLH34",
+      "listing_page": 0,
+      "puzzle_id": "crosshare_I45iFumRQqyrkoTbLH34",
+      "author": "Willamette Collegian",
+      "published": "2026-10-05",
+      "source_sha256": "2d9cc9650a8fd8db2008fedc16c926bc930b5cdf53347fbfdb08fe532b0cd921",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800"
+      ],
+      "clue_count": 78,
+      "playable_cell_count": 188
+    },
+    {
+      "selection_index": 11,
+      "crosshare_id": "aAluOf1mksk1ZIZmdjY2",
+      "title": "Broken Bones",
+      "page_url": "https://crosshare.org/crosswords/aAluOf1mksk1ZIZmdjY2",
+      "listing_page": 0,
+      "puzzle_id": "crosshare_aAluOf1mksk1ZIZmdjY2",
+      "author": "xdes",
+      "published": "2026-10-05",
+      "source_sha256": "159bcf916ffa3205cd1e8eb60ae92fb49069196bef734875499e1704a1e5b658",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800",
+        "themed"
+      ],
+      "clue_count": 76,
+      "playable_cell_count": 189
+    },
+    {
+      "selection_index": 12,
+      "crosshare_id": "HrWzJJLLYz75nFVFJtu1",
+      "title": "Metal Monday #72 - Themeless",
+      "page_url": "https://crosshare.org/crosswords/HrWzJJLLYz75nFVFJtu1",
+      "listing_page": 1,
+      "puzzle_id": "crosshare_HrWzJJLLYz75nFVFJtu1",
+      "author": "The Puzzle Pit",
+      "published": "2026-10-05",
+      "source_sha256": "5c30c495ab6a8bd675a6760ab9a84a0ae6f392b3a08cfc8e9dc849e62a1ca277",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1800-up"
+      ],
+      "clue_count": 70,
+      "playable_cell_count": 195
+    },
+    {
+      "selection_index": 13,
+      "crosshare_id": "IxFrwllGnFQbuAqywLuy",
+      "title": "Themeless 15x15. ",
+      "page_url": "https://crosshare.org/crosswords/IxFrwllGnFQbuAqywLuy",
+      "listing_page": 1,
+      "puzzle_id": "crosshare_IxFrwllGnFQbuAqywLuy",
+      "author": "ElvenCatAccess",
+      "published": "2026-10-05",
+      "source_sha256": "266755630ec8ab2b24fb291f3075705c868ad0d0b2a0c1434c5da44480fb13fd",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800"
+      ],
+      "clue_count": 82,
+      "playable_cell_count": 188
+    },
+    {
+      "selection_index": 14,
+      "crosshare_id": "xHmCEsOubBqFf8TiszIS",
+      "title": "Trans critters",
+      "page_url": "https://crosshare.org/crosswords/xHmCEsOubBqFf8TiszIS",
+      "listing_page": 1,
+      "puzzle_id": "crosshare_xHmCEsOubBqFf8TiszIS",
+      "author": "CeruleanK",
+      "published": "2026-10-04",
+      "source_sha256": "4abc263adbb6b9adb5454f0ae165359ffc84ee336bf7d3159279977f7e1ebfe7",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1800-up",
+        "themed"
+      ],
+      "clue_count": 70,
+      "playable_cell_count": 189
+    },
+    {
+      "selection_index": 15,
+      "crosshare_id": "nC4FAvya5ytCQbckejB6",
+      "title": "Cool Cats",
+      "page_url": "https://crosshare.org/crosswords/nC4FAvya5ytCQbckejB6",
+      "listing_page": 1,
+      "puzzle_id": "crosshare_nC4FAvya5ytCQbckejB6",
+      "author": "xdes",
+      "published": "2026-10-04",
+      "source_sha256": "4c476458ed3e12f0e8bb392c0c3fe41826a4ee65ce46432b6941ca6c87428e7c",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800",
+        "themed"
+      ],
+      "clue_count": 78,
+      "playable_cell_count": 189
+    },
+    {
+      "selection_index": 16,
+      "crosshare_id": "jNj7hHHfZdqmYdH2t1rE",
+      "title": "Brunch Evite",
+      "page_url": "https://crosshare.org/crosswords/jNj7hHHfZdqmYdH2t1rE",
+      "listing_page": 1,
+      "puzzle_id": "crosshare_jNj7hHHfZdqmYdH2t1rE",
+      "author": "Nebraska Public Media Labs",
+      "published": "2026-10-02",
+      "source_sha256": "9525c7539dd13635da91fb033f2acb6d8519edf5db8c70371e906a6f0e61682b",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800"
+      ],
+      "clue_count": 78,
+      "playable_cell_count": 185
+    },
+    {
+      "selection_index": 17,
+      "crosshare_id": "2TDCb2vrPjfnF9DpZAIt",
+      "title": "Physicist's Nightmare",
+      "page_url": "https://crosshare.org/crosswords/2TDCb2vrPjfnF9DpZAIt",
+      "listing_page": 1,
+      "puzzle_id": "crosshare_2TDCb2vrPjfnF9DpZAIt",
+      "author": "Earth",
+      "published": "2026-10-02",
+      "source_sha256": "e831991104de3c66d887b50c8a0b1cb0f0bbb67b0cde7f104b9f1e6dcd0a2eb9",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1800-up"
+      ],
+      "clue_count": 68,
+      "playable_cell_count": 189
+    },
+    {
+      "selection_index": 18,
+      "crosshare_id": "BQSM8Jl1zPEKa5xC5fbs",
+      "title": "\ud83c\udfb6 Karen Carpenter and Phil Collins, among others \ud83c\udfb6",
+      "page_url": "https://crosshare.org/crosswords/BQSM8Jl1zPEKa5xC5fbs",
+      "listing_page": 1,
+      "puzzle_id": "crosshare_BQSM8Jl1zPEKa5xC5fbs",
+      "author": "Peaty n Oaty",
+      "published": "2026-10-02",
+      "source_sha256": "371387f11656144e8734c8367e1e7d6cf54449bf117eee022a28e514f0967aae",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800"
+      ],
+      "clue_count": 72,
+      "playable_cell_count": 193
+    },
+    {
+      "selection_index": 19,
+      "crosshare_id": "PoQ5Eai2SuIUjBdSapkN",
+      "title": "1976",
+      "page_url": "https://crosshare.org/crosswords/PoQ5Eai2SuIUjBdSapkN",
+      "listing_page": 1,
+      "puzzle_id": "crosshare_PoQ5Eai2SuIUjBdSapkN",
+      "author": "JeffsPuzzles",
+      "published": "2026-10-02",
+      "source_sha256": "5cf642324450257a3c127ab004f8f83c52a10aaaa6a50b36675e04128f95b33c",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800"
+      ],
+      "clue_count": 76,
+      "playable_cell_count": 185
+    },
+    {
+      "selection_index": 20,
+      "crosshare_id": "3hP6JNKMyKSdaYdcrvJG",
+      "title": "Pick a Card ",
+      "page_url": "https://crosshare.org/crosswords/3hP6JNKMyKSdaYdcrvJG",
+      "listing_page": 1,
+      "puzzle_id": "crosshare_3hP6JNKMyKSdaYdcrvJG",
+      "author": "Crossword Curiosities",
+      "published": "2026-09-23",
+      "source_sha256": "0bfc0ef794feebf80d1c5406e3ee5879fa3fe9ca9eb862376b932df7c51113be",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1800-up"
+      ],
+      "clue_count": 74,
+      "playable_cell_count": 185
+    },
+    {
+      "selection_index": 21,
+      "crosshare_id": "3OtijHE5IddDkmQ66hQW",
+      "title": "Bizarro Tribute 261001",
+      "page_url": "https://crosshare.org/crosswords/3OtijHE5IddDkmQ66hQW",
+      "listing_page": 1,
+      "puzzle_id": "crosshare_3OtijHE5IddDkmQ66hQW",
+      "author": "Moose Dixon",
+      "published": "2026-10-01",
+      "source_sha256": "29c34375e898515b337fb87d38bf4e9869175290c135983999b76680e25d5330",
+      "tags": [
+        "bizarro",
+        "featured",
+        "full",
+        "rating-1800-up"
+      ],
+      "clue_count": 74,
+      "playable_cell_count": 179
+    },
+    {
+      "selection_index": 22,
+      "crosshare_id": "JKOhW5Oxk1qXNHRMpz0X",
+      "title": "Autumn",
+      "page_url": "https://crosshare.org/crosswords/JKOhW5Oxk1qXNHRMpz0X",
+      "listing_page": 1,
+      "puzzle_id": "crosshare_JKOhW5Oxk1qXNHRMpz0X",
+      "author": "John Cowlishaw",
+      "published": "2026-09-30",
+      "source_sha256": "afba3abd2a45c92fc661719b39f0bb21746e95874877842c428a7debdde78644",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800"
+      ],
+      "clue_count": 76,
+      "playable_cell_count": 186
+    },
+    {
+      "selection_index": 23,
+      "crosshare_id": "F4h3Z1ADMuXzWODI34Pd",
+      "title": "Metal Monday #71 - \"Mash-Ups\"",
+      "page_url": "https://crosshare.org/crosswords/F4h3Z1ADMuXzWODI34Pd",
+      "listing_page": 2,
+      "puzzle_id": "crosshare_F4h3Z1ADMuXzWODI34Pd",
+      "author": "The Puzzle Pit",
+      "published": "2026-09-28",
+      "source_sha256": "3168ac454597e83c3f9042660af1aa702bccb050063f090da1875677e4d284b6",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1800-up"
+      ],
+      "clue_count": 78,
+      "playable_cell_count": 191
+    },
+    {
+      "selection_index": 24,
+      "crosshare_id": "qB4zC5LPVOZrPsBd0Hqb",
+      "title": "Be Patient",
+      "page_url": "https://crosshare.org/crosswords/qB4zC5LPVOZrPsBd0Hqb",
+      "listing_page": 2,
+      "puzzle_id": "crosshare_qB4zC5LPVOZrPsBd0Hqb",
+      "author": "Nebraska Public Media Labs",
+      "published": "2026-09-23",
+      "source_sha256": "0406440af56571243ee2378b97aa7d275c845b6c6bab12325f75223c4ea9bfa0",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1800-up"
+      ],
+      "clue_count": 78,
+      "playable_cell_count": 191
+    },
+    {
+      "selection_index": 25,
+      "crosshare_id": "c3lGlRzHZ8Si29lZpAg5",
+      "title": "Asimov's Three Laws of Robotics",
+      "page_url": "https://crosshare.org/crosswords/c3lGlRzHZ8Si29lZpAg5",
+      "listing_page": 2,
+      "puzzle_id": "crosshare_c3lGlRzHZ8Si29lZpAg5",
+      "author": "John Cowlishaw",
+      "published": "2026-09-26",
+      "source_sha256": "625aca5eaf1e923b866eea2ca8d8cb1f52c04e6514e86b5f4ea968fd07177f10",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800"
+      ],
+      "clue_count": 76,
+      "playable_cell_count": 182
+    },
+    {
+      "selection_index": 26,
+      "crosshare_id": "usFpIboAR3KWzQLZqMQK",
+      "title": "themeless 57",
+      "page_url": "https://crosshare.org/crosswords/usFpIboAR3KWzQLZqMQK",
+      "listing_page": 2,
+      "puzzle_id": "crosshare_usFpIboAR3KWzQLZqMQK",
+      "author": "ghana7",
+      "published": "2026-09-25",
+      "source_sha256": "b1cd4d045edb77dbd789b42733edad788a9a8a03ad78b6fa7ddeaf5716baabf7",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1800-up",
+        "themeless"
+      ],
+      "clue_count": 72,
+      "playable_cell_count": 187
+    },
+    {
+      "selection_index": 27,
+      "crosshare_id": "cyvaRcL2FnMeiYXlFGo9",
+      "title": "Themeless 137",
+      "page_url": "https://crosshare.org/crosswords/cyvaRcL2FnMeiYXlFGo9",
+      "listing_page": 2,
+      "puzzle_id": "crosshare_cyvaRcL2FnMeiYXlFGo9",
+      "author": "JeffsPuzzles",
+      "published": "2026-09-25",
+      "source_sha256": "91848ef8f837d27baafb9462ab1373972b39d2a2d0cd12a5434b3e71d2dbbeff",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1800-up"
+      ],
+      "clue_count": 70,
+      "playable_cell_count": 190
+    },
+    {
+      "selection_index": 28,
+      "crosshare_id": "SjQFbZIsBhgIeE2OovGk",
+      "title": "Childhood Cuisine 260924",
+      "page_url": "https://crosshare.org/crosswords/SjQFbZIsBhgIeE2OovGk",
+      "listing_page": 2,
+      "puzzle_id": "crosshare_SjQFbZIsBhgIeE2OovGk",
+      "author": "Moose Dixon",
+      "published": "2026-09-03",
+      "source_sha256": "9f5eb0edb010e72d7b7bcec40fa6aafb3ba3f2050a2e5e92c37c1cbbd76b6558",
+      "tags": [
+        "featured",
+        "full",
+        "nursery-rhyme",
+        "rating-1500-1800",
+        "themed"
+      ],
+      "clue_count": 82,
+      "playable_cell_count": 187
+    },
+    {
+      "selection_index": 29,
+      "crosshare_id": "38WSnHVDDBSZaLHE9zkH",
+      "title": "This Puzzle Sucks",
+      "page_url": "https://crosshare.org/crosswords/38WSnHVDDBSZaLHE9zkH",
+      "listing_page": 3,
+      "puzzle_id": "crosshare_38WSnHVDDBSZaLHE9zkH",
+      "author": "Crossword Curiosities",
+      "published": "2026-07-31",
+      "source_sha256": "d1270e65fbdb9052717043466cb903bc3a5e43005ea695c5e80ade1ba743a1b6",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800"
+      ],
+      "clue_count": 78,
+      "playable_cell_count": 187
+    },
+    {
+      "selection_index": 30,
+      "crosshare_id": "ZPqisnPkDTHlm3KLcPEH",
+      "title": "Bright Ideas",
+      "page_url": "https://crosshare.org/crosswords/ZPqisnPkDTHlm3KLcPEH",
+      "listing_page": 3,
+      "puzzle_id": "crosshare_ZPqisnPkDTHlm3KLcPEH",
+      "author": "crossbirds",
+      "published": "2026-09-21",
+      "source_sha256": "373e22629fd62229c8844642cee65a6155d8cc7f876ec0e2b747ef8fcc08caa1",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800"
+      ],
+      "clue_count": 78,
+      "playable_cell_count": 191
+    },
+    {
+      "selection_index": 31,
+      "crosshare_id": "hpvIR05lnptSmPBBM62w",
+      "title": "On a Roll",
+      "page_url": "https://crosshare.org/crosswords/hpvIR05lnptSmPBBM62w",
+      "listing_page": 3,
+      "puzzle_id": "crosshare_hpvIR05lnptSmPBBM62w",
+      "author": "John Cowlishaw",
+      "published": "2026-09-21",
+      "source_sha256": "00c43c40b002fe007a8a1364884f2c77dbeed9145b7e1b00ce088b893921e640",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800"
+      ],
+      "clue_count": 80,
+      "playable_cell_count": 187
+    },
+    {
+      "selection_index": 32,
+      "crosshare_id": "nh3BToabM0zRkDh7cXLd",
+      "title": "Metal Monday #70 - Themeless",
+      "page_url": "https://crosshare.org/crosswords/nh3BToabM0zRkDh7cXLd",
+      "listing_page": 3,
+      "puzzle_id": "crosshare_nh3BToabM0zRkDh7cXLd",
+      "author": "The Puzzle Pit",
+      "published": "2026-09-20",
+      "source_sha256": "ac049df4a118efe55e60f72a26191909358acb9c1f6ff0c3886016891a502a41",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1800-up"
+      ],
+      "clue_count": 70,
+      "playable_cell_count": 193
+    },
+    {
+      "selection_index": 33,
+      "crosshare_id": "itBzKpOzVRtWBDJcFZMq",
+      "title": "The Big Four",
+      "page_url": "https://crosshare.org/crosswords/itBzKpOzVRtWBDJcFZMq",
+      "listing_page": 3,
+      "puzzle_id": "crosshare_itBzKpOzVRtWBDJcFZMq",
+      "author": "Nebraska Public Media Labs",
+      "published": "2026-09-17",
+      "source_sha256": "6af96ed8449a10c444ec6f9ec00752902860d5792f2d94ab75ce06907e4154be",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800"
+      ],
+      "clue_count": 78,
+      "playable_cell_count": 181
+    },
+    {
+      "selection_index": 34,
+      "crosshare_id": "KaErsAaTMOURSGNnAPky",
+      "title": "Can of Corn",
+      "page_url": "https://crosshare.org/crosswords/KaErsAaTMOURSGNnAPky",
+      "listing_page": 3,
+      "puzzle_id": "crosshare_KaErsAaTMOURSGNnAPky",
+      "author": "Trey Johnson",
+      "published": "2026-05-07",
+      "source_sha256": "900c0ce3084da96dd8e62628b1e97cacf4e7d9ee5f9f7fe493b5004f93f50e96",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800",
+        "themed"
+      ],
+      "clue_count": 82,
+      "playable_cell_count": 183
+    },
+    {
+      "selection_index": 35,
+      "crosshare_id": "YoMXTvPVKcJmXBAe3Ljt",
+      "title": "It\u2019s Coming Down Hard",
+      "page_url": "https://crosshare.org/crosswords/YoMXTvPVKcJmXBAe3Ljt",
+      "listing_page": 3,
+      "puzzle_id": "crosshare_YoMXTvPVKcJmXBAe3Ljt",
+      "author": "txg88",
+      "published": "2026-09-18",
+      "source_sha256": "6d12f449b6bc53ea7643cbc752c89c3bc5844b63e115cdc2e9fb85b96705066b",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800",
+        "themed"
+      ],
+      "clue_count": 76,
+      "playable_cell_count": 183
+    },
+    {
+      "selection_index": 36,
+      "crosshare_id": "uk0VO8JBu2ECzvLgFVzg",
+      "title": "Face Value",
+      "page_url": "https://crosshare.org/crosswords/uk0VO8JBu2ECzvLgFVzg",
+      "listing_page": 3,
+      "puzzle_id": "crosshare_uk0VO8JBu2ECzvLgFVzg",
+      "author": "Trey Johnson",
+      "published": "2026-09-18",
+      "source_sha256": "09b0664a16f33ca0634ea8804f7f26959f49ec485ecc2f907ba8b407d30bc7ad",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800",
+        "themed"
+      ],
+      "clue_count": 82,
+      "playable_cell_count": 185
+    },
+    {
+      "selection_index": 37,
+      "crosshare_id": "rP9JWa3119Mua2ib6MKP",
+      "title": "Joe",
+      "page_url": "https://crosshare.org/crosswords/rP9JWa3119Mua2ib6MKP",
+      "listing_page": 4,
+      "puzzle_id": "crosshare_rP9JWa3119Mua2ib6MKP",
+      "author": "John Cowlishaw",
+      "published": "2026-09-18",
+      "source_sha256": "8c671839b4bff5272db287d1e8fe440428c2945db016f4d9d6a64d081b11b8e4",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800"
+      ],
+      "clue_count": 76,
+      "playable_cell_count": 185
+    },
+    {
+      "selection_index": 38,
+      "crosshare_id": "2611sUM7irDbvVzsqHJm",
+      "title": "Out of Africa",
+      "page_url": "https://crosshare.org/crosswords/2611sUM7irDbvVzsqHJm",
+      "listing_page": 4,
+      "puzzle_id": "crosshare_2611sUM7irDbvVzsqHJm",
+      "author": "JeffsPuzzles",
+      "published": "2026-09-18",
+      "source_sha256": "980de5ae407a8099cf84304bd20575e5845f78fc2e3ca8a4fa551b75fbc7df6a",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1800-up"
+      ],
+      "clue_count": 66,
+      "playable_cell_count": 189
+    },
+    {
+      "selection_index": 39,
+      "crosshare_id": "MvSrn2yKtMh97gcp7EN8",
+      "title": "Newborns",
+      "page_url": "https://crosshare.org/crosswords/MvSrn2yKtMh97gcp7EN8",
+      "listing_page": 4,
+      "puzzle_id": "crosshare_MvSrn2yKtMh97gcp7EN8",
+      "author": "John Hopkins",
+      "published": "2026-09-17",
+      "source_sha256": "8bb4fab04fc551b7678983405f49b8244828d24ed7c6c4d61323d3ec1aa8cecb",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1800-up",
+        "themeless"
+      ],
+      "clue_count": 80,
+      "playable_cell_count": 185
+    },
+    {
+      "selection_index": 40,
+      "crosshare_id": "OeRu1jTTpnFWnUW79BW8",
+      "title": "September 16th, 2026 Crossword: The Big Bang",
+      "page_url": "https://crosshare.org/crosswords/OeRu1jTTpnFWnUW79BW8",
+      "listing_page": 4,
+      "puzzle_id": "crosshare_OeRu1jTTpnFWnUW79BW8",
+      "author": "Swecha Agarwal and Tavan Bhatia",
+      "published": "2026-09-13",
+      "source_sha256": "09b0df9b428480dbb72421455741e2b38493146e726dc4b4a71c689101b1b89b",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1800-up"
+      ],
+      "clue_count": 72,
+      "playable_cell_count": 171
+    },
+    {
+      "selection_index": 41,
+      "crosshare_id": "JjM8LtnHATgVNUbr3uzU",
+      "title": "Byran's Crosswords - #1",
+      "page_url": "https://crosshare.org/crosswords/JjM8LtnHATgVNUbr3uzU",
+      "listing_page": 4,
+      "puzzle_id": "crosshare_JjM8LtnHATgVNUbr3uzU",
+      "author": "Byran",
+      "published": "2026-09-16",
+      "source_sha256": "9484b11c39c3567521142354cfd231da47bb27511903c7bb222f64d37efab104",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800"
+      ],
+      "clue_count": 78,
+      "playable_cell_count": 187
+    },
+    {
+      "selection_index": 42,
+      "crosshare_id": "SVMrAouNIcD42X1gNPYp",
+      "title": "Bird is the Word",
+      "page_url": "https://crosshare.org/crosswords/SVMrAouNIcD42X1gNPYp",
+      "listing_page": 4,
+      "puzzle_id": "crosshare_SVMrAouNIcD42X1gNPYp",
+      "author": "The Tufts Daily",
+      "published": "2026-09-13",
+      "source_sha256": "5af4a44a21e64de5bbf575e452b4016639863236314bc5832eb7867860527a72",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800"
+      ],
+      "clue_count": 78,
+      "playable_cell_count": 189
+    },
+    {
+      "selection_index": 43,
+      "crosshare_id": "hKQEt9xVfGMT8OUH5k0E",
+      "title": "9/13/26 Puzzle",
+      "page_url": "https://crosshare.org/crosswords/hKQEt9xVfGMT8OUH5k0E",
+      "listing_page": 4,
+      "puzzle_id": "crosshare_hKQEt9xVfGMT8OUH5k0E",
+      "author": "Shuuuze",
+      "published": "2026-09-13",
+      "source_sha256": "cd11c662875187a44c90954e7c1c524a672899fc3cfdc3e3bd3be83bcdc8fbca",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800",
+        "themed"
+      ],
+      "clue_count": 64,
+      "playable_cell_count": 183
+    },
+    {
+      "selection_index": 44,
+      "crosshare_id": "yV02VXz9Y8UOuuFlvYBT",
+      "title": "Snake Charmers and Cat Burglars",
+      "page_url": "https://crosshare.org/crosswords/yV02VXz9Y8UOuuFlvYBT",
+      "listing_page": 5,
+      "puzzle_id": "crosshare_yV02VXz9Y8UOuuFlvYBT",
+      "author": "Nebraska Public Media Labs",
+      "published": "2026-09-04",
+      "source_sha256": "41147ea33154433d2f220b2944b0c648904c1534a30de672ab8cd0631920635b",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800"
+      ],
+      "clue_count": 76,
+      "playable_cell_count": 187
+    },
+    {
+      "selection_index": 45,
+      "crosshare_id": "UdFK2ioptD6GARNdR6E4",
+      "title": "Say It Again",
+      "page_url": "https://crosshare.org/crosswords/UdFK2ioptD6GARNdR6E4",
+      "listing_page": 5,
+      "puzzle_id": "crosshare_UdFK2ioptD6GARNdR6E4",
+      "author": "crossbirds",
+      "published": "2026-09-11",
+      "source_sha256": "773103f1c1703346dc5ca225749307f3ef75fe4334fae0cf5a1a27bb72d98487",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800"
+      ],
+      "clue_count": 78,
+      "playable_cell_count": 187
+    },
+    {
+      "selection_index": 46,
+      "crosshare_id": "SQXiQ3ClGEt3UvYuErN6",
+      "title": "36A for making this puzzle",
+      "page_url": "https://crosshare.org/crosswords/SQXiQ3ClGEt3UvYuErN6",
+      "listing_page": 5,
+      "puzzle_id": "crosshare_SQXiQ3ClGEt3UvYuErN6",
+      "author": "Asa Karon",
+      "published": "2026-09-08",
+      "source_sha256": "3e3236b2c223dfec0d507aa6831b2bb68e8713f57aadcd5ab4871ea750c0ce47",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1800-up",
+        "themeless"
+      ],
+      "clue_count": 66,
+      "playable_cell_count": 189
+    },
+    {
+      "selection_index": 47,
+      "crosshare_id": "qrOGVlW41oaQ7eByCBZz",
+      "title": "Metal Monday #68 - Themeless",
+      "page_url": "https://crosshare.org/crosswords/qrOGVlW41oaQ7eByCBZz",
+      "listing_page": 5,
+      "puzzle_id": "crosshare_qrOGVlW41oaQ7eByCBZz",
+      "author": "The Puzzle Pit",
+      "published": "2026-09-06",
+      "source_sha256": "60c26993e4991de34826c8e4a03df7c408ec0eaa136b122226bde8bdc94cc927",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800"
+      ],
+      "clue_count": 68,
+      "playable_cell_count": 179
+    },
+    {
+      "selection_index": 48,
+      "crosshare_id": "vj4fP4ctx6MEIHZVBDee",
+      "title": "More or Less",
+      "page_url": "https://crosshare.org/crosswords/vj4fP4ctx6MEIHZVBDee",
+      "listing_page": 6,
+      "puzzle_id": "crosshare_vj4fP4ctx6MEIHZVBDee",
+      "author": "John Cowlishaw",
+      "published": "2026-09-07",
+      "source_sha256": "cd585bef647731cd804b843d19cd44213b574fd63162dfe17e318e261f152e7d",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800"
+      ],
+      "clue_count": 76,
+      "playable_cell_count": 184
+    },
+    {
+      "selection_index": 49,
+      "crosshare_id": "iQUCPjBfH1rivm5LBrsm",
+      "title": "Defence of Fort M\u2019Henry",
+      "page_url": "https://crosshare.org/crosswords/iQUCPjBfH1rivm5LBrsm",
+      "listing_page": 6,
+      "puzzle_id": "crosshare_iQUCPjBfH1rivm5LBrsm",
+      "author": "Nebraska Public Media Labs",
+      "published": "2026-09-02",
+      "source_sha256": "83e703d456644e0f0cacdca7b5c19e7a9146bfbe0b8b86e6e5500880a259c186",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1800-up"
+      ],
+      "clue_count": 78,
+      "playable_cell_count": 185
+    },
+    {
+      "selection_index": 50,
+      "crosshare_id": "4bNxlP8fUltvTdhTTEoK",
+      "title": "Themeless #34",
+      "page_url": "https://crosshare.org/crosswords/4bNxlP8fUltvTdhTTEoK",
+      "listing_page": 6,
+      "puzzle_id": "crosshare_4bNxlP8fUltvTdhTTEoK",
+      "author": "SporcleMirror",
+      "published": "2026-09-05",
+      "source_sha256": "79fc65f9d5427480dfc151a51f2866a305a18ac8be3e7e9f61a6580fa09be686",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800",
+        "themeless"
+      ],
+      "clue_count": 72,
+      "playable_cell_count": 195
+    }
+  ],
+  "development": [
+    {
+      "crosshare_id": "1HxAk8NuE2bIaHO84OGL",
+      "title": "I'm Walkin' Here!",
+      "page_url": "https://crosshare.org/crosswords/1HxAk8NuE2bIaHO84OGL",
+      "listing_page": 4,
+      "puzzle_id": "crosshare_1HxAk8NuE2bIaHO84OGL",
+      "author": "damefox",
+      "published": "2026-09-13",
+      "source_sha256": "bffc4c3e87929f02af56e209ca586dcb3b2b8ba804ec34bdbb177a7131189d9e",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1500-1800"
+      ],
+      "clue_count": 78,
+      "playable_cell_count": 189,
+      "reason": "reserved for the development set"
+    },
+    {
+      "crosshare_id": "1l0JEDYJnJiOX011A84x",
+      "title": "Themeless 136",
+      "page_url": "https://crosshare.org/crosswords/1l0JEDYJnJiOX011A84x",
+      "listing_page": 5,
+      "puzzle_id": "crosshare_1l0JEDYJnJiOX011A84x",
+      "author": "JeffsPuzzles",
+      "published": "2026-09-11",
+      "source_sha256": "971d33340d90abe6dbd5d4c3bd3851015bc8dae0c9971c73f4e31453774fd66d",
+      "tags": [
+        "featured",
+        "full",
+        "rating-1800-up"
+      ],
+      "clue_count": 72,
+      "playable_cell_count": 191,
+      "reason": "reserved for the development set"
+    }
+  ],
+  "rejected_15x15": [
+    {
+      "crosshare_id": "xJkh7M6lhMV5AZPpiZcY",
+      "title": "Fresh Lens",
+      "page_url": "https://crosshare.org/crosswords/xJkh7M6lhMV5AZPpiZcY",
+      "listing_page": 0,
+      "reason": "styled cells (circle/bar/hidden)"
+    },
+    {
+      "crosshare_id": "0py41jr19dDpYcG37fv6",
+      "title": "Coordinated Effort",
+      "page_url": "https://crosshare.org/crosswords/0py41jr19dDpYcG37fv6",
+      "listing_page": 0,
+      "reason": "styled cells (circle/bar/hidden)"
+    },
+    {
+      "crosshare_id": "JL3vuF3EwryCaqeWqCTC",
+      "title": "Ring Around the Rosie",
+      "page_url": "https://crosshare.org/crosswords/JL3vuF3EwryCaqeWqCTC",
+      "listing_page": 0,
+      "reason": "excluded tag: ['featured', 'full', 'meow', 'meta', 'rating-1500-1800']"
+    },
+    {
+      "crosshare_id": "uUJzoprjt1oafyet5Jgn",
+      "title": "Going in Circles",
+      "page_url": "https://crosshare.org/crosswords/uUJzoprjt1oafyet5Jgn",
+      "listing_page": 0,
+      "reason": "gimmick keyword in notes or clues"
+    },
+    {
+      "crosshare_id": "jyBpW51lgAIfGG1SWo9R",
+      "title": "Birds Of A Feather (Meta)",
+      "page_url": "https://crosshare.org/crosswords/jyBpW51lgAIfGG1SWo9R",
+      "listing_page": 0,
+      "reason": "excluded tag: ['downs-only', 'featured', 'full', 'meta', 'moat', 'pangram', 'rating-1800-up']"
+    },
+    {
+      "crosshare_id": "I84FaJs5ORINm88G8J3X",
+      "title": "Gather Round",
+      "page_url": "https://crosshare.org/crosswords/I84FaJs5ORINm88G8J3X",
+      "listing_page": 0,
+      "reason": "excluded tag: ['featured', 'full', 'meow', 'meta', 'rating-1500-1800']"
+    },
+    {
+      "crosshare_id": "DzKV77m31kAZ1BSOOASH",
+      "title": "Countries of the World: \"K\"",
+      "page_url": "https://crosshare.org/crosswords/DzKV77m31kAZ1BSOOASH",
+      "listing_page": 0,
+      "reason": "styled cells (circle/bar/hidden)"
+    },
+    {
+      "crosshare_id": "JaXvVZnejsZMnBpppEjI",
+      "title": "Less Salt 261005",
+      "page_url": "https://crosshare.org/crosswords/JaXvVZnejsZMnBpppEjI",
+      "listing_page": 1,
+      "reason": "styled cells (circle/bar/hidden)"
+    },
+    {
+      "crosshare_id": "Qr4kFSOauiV2b6qxQun8",
+      "title": "Doctor Who?",
+      "page_url": "https://crosshare.org/crosswords/Qr4kFSOauiV2b6qxQun8",
+      "listing_page": 1,
+      "reason": "excluded tag: ['featured', 'full', 'meta', 'mmm', 'rating-1500-1800']"
+    },
+    {
+      "crosshare_id": "c7JOW5HQeXgUtKy7rGG6",
+      "title": "Scully on Courage",
+      "page_url": "https://crosshare.org/crosswords/c7JOW5HQeXgUtKy7rGG6",
+      "listing_page": 1,
+      "reason": "asymmetric"
+    },
+    {
+      "crosshare_id": "aZocM5ah4602fW8EkF5Y",
+      "title": "Guys 'n Dolls",
+      "page_url": "https://crosshare.org/crosswords/aZocM5ah4602fW8EkF5Y",
+      "listing_page": 1,
+      "reason": "non A-Z solution cell 'MAN'"
+    },
+    {
+      "crosshare_id": "soH6mc5czeQ69Ge2Pwqz",
+      "title": "Wednesday September 30th Crossword: Once Upon a Time",
+      "page_url": "https://crosshare.org/crosswords/soH6mc5czeQ69Ge2Pwqz",
+      "listing_page": 1,
+      "reason": "asymmetric"
+    },
+    {
+      "crosshare_id": "waSWnJfQuDdpoPcg74Lv",
+      "title": "Back Street Boys",
+      "page_url": "https://crosshare.org/crosswords/waSWnJfQuDdpoPcg74Lv",
+      "listing_page": 1,
+      "reason": "excluded tag: ['featured', 'full', 'meow', 'meta', 'rating-1800-up']"
+    },
+    {
+      "crosshare_id": "HapVFoMZjFzDz2UuhfSf",
+      "title": "Mamma Mia! Here I Go Again (Meta)",
+      "page_url": "https://crosshare.org/crosswords/HapVFoMZjFzDz2UuhfSf",
+      "listing_page": 2,
+      "reason": "excluded tag: ['featured', 'full', 'meta', 'moat', 'rating-1500-1800']"
+    },
+    {
+      "crosshare_id": "AKx0YxyUS3e1RAUO1hIC",
+      "title": "\ud83d\udcac Douglas Adams Quip \ud83d\udcac",
+      "page_url": "https://crosshare.org/crosswords/AKx0YxyUS3e1RAUO1hIC",
+      "listing_page": 2,
+      "reason": "asymmetric"
+    },
+    {
+      "crosshare_id": "j3P5WDEtxUyumeTVBgGH",
+      "title": "Cast About (Meta)",
+      "page_url": "https://crosshare.org/crosswords/j3P5WDEtxUyumeTVBgGH",
+      "listing_page": 2,
+      "reason": "excluded tag: ['featured', 'full', 'meta', 'mmm', 'rating-1500-1800']"
+    },
+    {
+      "crosshare_id": "SGgSIJEHPK4TAi9eTCx9",
+      "title": "9/27/26; Made by Sam",
+      "page_url": "https://crosshare.org/crosswords/SGgSIJEHPK4TAi9eTCx9",
+      "listing_page": 2,
+      "reason": "styled cells (circle/bar/hidden)"
+    },
+    {
+      "crosshare_id": "fvRepRnuEkuyVJ2ZVL1n",
+      "title": "Clue Finder",
+      "page_url": "https://crosshare.org/crosswords/fvRepRnuEkuyVJ2ZVL1n",
+      "listing_page": 2,
+      "reason": "non A-Z solution cell 'AND'"
+    },
+    {
+      "crosshare_id": "Yi7azf9jonXc45e0kPCK",
+      "title": "#10: Squash and Stretch",
+      "page_url": "https://crosshare.org/crosswords/Yi7azf9jonXc45e0kPCK",
+      "listing_page": 2,
+      "reason": "styled cells (circle/bar/hidden)"
+    },
+    {
+      "crosshare_id": "QkMijy4PbkCy1r7YDn31",
+      "title": "hands out",
+      "page_url": "https://crosshare.org/crosswords/QkMijy4PbkCy1r7YDn31",
+      "listing_page": 2,
+      "reason": "styled cells (circle/bar/hidden)"
+    },
+    {
+      "crosshare_id": "xczsRtA0vQdApJusdlo5",
+      "title": "Full Cryptic #18!",
+      "page_url": "https://crosshare.org/crosswords/xczsRtA0vQdApJusdlo5",
+      "listing_page": 2,
+      "reason": "excluded tag: ['cryptic', 'featured', 'full', 'rating-1800-up']"
+    },
+    {
+      "crosshare_id": "A2DeZk84ymRlXQKXgbc7",
+      "title": "What I Heard At Midnight",
+      "page_url": "https://crosshare.org/crosswords/A2DeZk84ymRlXQKXgbc7",
+      "listing_page": 2,
+      "reason": "excluded tag: ['featured', 'full', 'meow', 'meta', 'rating-1800-up']"
+    },
+    {
+      "crosshare_id": "KZ2m6WKb3lmNhyHymdJg",
+      "title": "Track Record",
+      "page_url": "https://crosshare.org/crosswords/KZ2m6WKb3lmNhyHymdJg",
+      "listing_page": 3,
+      "reason": "styled cells (circle/bar/hidden)"
+    },
+    {
+      "crosshare_id": "Dwwpz0sRXdrHqH4djPKB",
+      "title": "\u2600Today, the days and nights are the same length\ud83c\udf11",
+      "page_url": "https://crosshare.org/crosswords/Dwwpz0sRXdrHqH4djPKB",
+      "listing_page": 3,
+      "reason": "excluded tag: ['cryptic', 'featured', 'full', 'rating-1800-up', 'themed']"
+    },
+    {
+      "crosshare_id": "0ZNLB2sw9x5zeBOYmaYo",
+      "title": "Second Thoughts (Meta)",
+      "page_url": "https://crosshare.org/crosswords/0ZNLB2sw9x5zeBOYmaYo",
+      "listing_page": 3,
+      "reason": "excluded tag: ['featured', 'full', 'meta', 'moat', 'rating-1500-1800']"
+    },
+    {
+      "crosshare_id": "6DaAj4BU8cqp5S5Omcm1",
+      "title": "Better Cull Sol",
+      "page_url": "https://crosshare.org/crosswords/6DaAj4BU8cqp5S5Omcm1",
+      "listing_page": 3,
+      "reason": "excluded tag: ['featured', 'full', 'meta', 'mmm', 'rating-1500-1800']"
+    },
+    {
+      "crosshare_id": "ECzVw1P3xYs4OLFOFao9",
+      "title": "Dolly Parton Day 9/25",
+      "page_url": "https://crosshare.org/crosswords/ECzVw1P3xYs4OLFOFao9",
+      "listing_page": 3,
+      "reason": "excluded tag: ['featured', 'full', 'meta', 'rating-1500-1800', 'sss']"
+    },
+    {
+      "crosshare_id": "fWniZWiHwr48kpqPTLjv",
+      "title": "Get Into Shape!",
+      "page_url": "https://crosshare.org/crosswords/fWniZWiHwr48kpqPTLjv",
+      "listing_page": 3,
+      "reason": "styled cells (circle/bar/hidden)"
+    },
+    {
+      "crosshare_id": "th9kGKXDGz0qFJrPLJmS",
+      "title": "Talk Like a Pirate Day 260919",
+      "page_url": "https://crosshare.org/crosswords/th9kGKXDGz0qFJrPLJmS",
+      "listing_page": 3,
+      "reason": "excluded tag: ['colored-cells', 'featured', 'full', 'quote', 'rating-1500-1800', 'talk-like-a-pirate', 'the-princess-bride']"
+    },
+    {
+      "crosshare_id": "6oArzigaRIX6teePj3kD",
+      "title": "Take Note",
+      "page_url": "https://crosshare.org/crosswords/6oArzigaRIX6teePj3kD",
+      "listing_page": 3,
+      "reason": "excluded tag: ['featured', 'full', 'meta', 'rating-1800-up']"
+    },
+    {
+      "crosshare_id": "iUayBvco1AuEsPyNRelF",
+      "title": "Things Are Looking Up!",
+      "page_url": "https://crosshare.org/crosswords/iUayBvco1AuEsPyNRelF",
+      "listing_page": 3,
+      "reason": "answer-transforming gimmick: theme entries are written backwards"
+    },
+    {
+      "crosshare_id": "gcHQvPTIqJbGweDx7uQs",
+      "title": "Triage",
+      "page_url": "https://crosshare.org/crosswords/gcHQvPTIqJbGweDx7uQs",
+      "listing_page": 3,
+      "reason": "excluded tag: ['featured', 'full', 'meta', 'rating-1500-1800']"
+    },
+    {
+      "crosshare_id": "ZOANmim53BTadzhZAFOh",
+      "title": "Just Add \"Smarts\"",
+      "page_url": "https://crosshare.org/crosswords/ZOANmim53BTadzhZAFOh",
+      "listing_page": 4,
+      "reason": "excluded tag: ['featured', 'full', 'rating-1500-1800', 'rebus', 'themed']"
+    },
+    {
+      "crosshare_id": "snILpTBBUIcZqZeQRX2i",
+      "title": "Summer Recap 2026",
+      "page_url": "https://crosshare.org/crosswords/snILpTBBUIcZqZeQRX2i",
+      "listing_page": 4,
+      "reason": "news-recap theme: answers require knowledge of 2026 events"
+    },
+    {
+      "crosshare_id": "n6AF1cU9cdTHdz4anZN2",
+      "title": "An Ageless Question 260917",
+      "page_url": "https://crosshare.org/crosswords/n6AF1cU9cdTHdz4anZN2",
+      "listing_page": 4,
+      "reason": "excluded tag: ['colored-cells', 'featured', 'full', 'lotr', 'quote', 'rating-1500-1800']"
+    },
+    {
+      "crosshare_id": "n19hGWFORm87qInm1RUe",
+      "title": "Finally Solved",
+      "page_url": "https://crosshare.org/crosswords/n19hGWFORm87qInm1RUe",
+      "listing_page": 4,
+      "reason": "excluded tag: ['featured', 'full', 'meow', 'meta', 'rating-1800-up']"
+    },
+    {
+      "crosshare_id": "Mbi8VpKlLy5gA1NvqlDD",
+      "title": "bags Themed Cryptic (Sept 2026)",
+      "page_url": "https://crosshare.org/crosswords/Mbi8VpKlLy5gA1NvqlDD",
+      "listing_page": 4,
+      "reason": "excluded tag: ['cryptic', 'featured', 'full', 'rating-1800-up', 'themed']"
+    },
+    {
+      "crosshare_id": "DS7WJfhJXvHUMMk1JCEx",
+      "title": "Contraband (Meta)",
+      "page_url": "https://crosshare.org/crosswords/DS7WJfhJXvHUMMk1JCEx",
+      "listing_page": 4,
+      "reason": "excluded tag: ['featured', 'full', 'meta', 'moat', 'rating-1800-up']"
+    },
+    {
+      "crosshare_id": "a6E40yq1v9mqHxkr3ENG",
+      "title": "Metal Monday #69 - \"Gift Horse\"",
+      "page_url": "https://crosshare.org/crosswords/a6E40yq1v9mqHxkr3ENG",
+      "listing_page": 4,
+      "reason": "asymmetric"
+    },
+    {
+      "crosshare_id": "7wnElDWG93N9u7UzyPXd",
+      "title": "One Of Each 260914",
+      "page_url": "https://crosshare.org/crosswords/7wnElDWG93N9u7UzyPXd",
+      "listing_page": 4,
+      "reason": "styled cells (circle/bar/hidden)"
+    },
+    {
+      "crosshare_id": "f32Y55k9rJBVacjgHnqt",
+      "title": "Once Is Enough",
+      "page_url": "https://crosshare.org/crosswords/f32Y55k9rJBVacjgHnqt",
+      "listing_page": 4,
+      "reason": "excluded tag: ['featured', 'full', 'meta', 'rating-1500-1800']"
+    },
+    {
+      "crosshare_id": "l3z7KbPob7V4Xv0P3lfA",
+      "title": "Spin Cycle",
+      "page_url": "https://crosshare.org/crosswords/l3z7KbPob7V4Xv0P3lfA",
+      "listing_page": 4,
+      "reason": "styled cells (circle/bar/hidden)"
+    },
+    {
+      "crosshare_id": "BzrmhUAo5AxzvJZjCtk0",
+      "title": "Digital Picture",
+      "page_url": "https://crosshare.org/crosswords/BzrmhUAo5AxzvJZjCtk0",
+      "listing_page": 5,
+      "reason": "excluded tag: ['featured', 'full', 'meta', 'rating-1800-up', 'sss']"
+    },
+    {
+      "crosshare_id": "iOtLMhuvelWta4qU4HiX",
+      "title": "Cryptic 28",
+      "page_url": "https://crosshare.org/crosswords/iOtLMhuvelWta4qU4HiX",
+      "listing_page": 5,
+      "reason": "excluded tag: ['cryptic', 'featured', 'full', 'rating-1500-1800']"
+    },
+    {
+      "crosshare_id": "VZAcYlYQ01UioDm15471",
+      "title": "Who's The Real Hero?",
+      "page_url": "https://crosshare.org/crosswords/VZAcYlYQ01UioDm15471",
+      "listing_page": 5,
+      "reason": "asymmetric"
+    },
+    {
+      "crosshare_id": "yz947kihNLAH40MsLtsJ",
+      "title": "Float On",
+      "page_url": "https://crosshare.org/crosswords/yz947kihNLAH40MsLtsJ",
+      "listing_page": 5,
+      "reason": "answer-transforming gimmick: theme entries drop every G"
+    },
+    {
+      "crosshare_id": "QvHbtq5ACloysWHqwL9w",
+      "title": "Cryptic 9/9",
+      "page_url": "https://crosshare.org/crosswords/QvHbtq5ACloysWHqwL9w",
+      "listing_page": 5,
+      "reason": "excluded tag: ['cryptic', 'featured', 'full', 'rating-1800-up']"
+    },
+    {
+      "crosshare_id": "r9jqJUgfdmKLrFo7zXoS",
+      "title": "Ad Out",
+      "page_url": "https://crosshare.org/crosswords/r9jqJUgfdmKLrFo7zXoS",
+      "listing_page": 5,
+      "reason": "excluded tag: ['featured', 'full', 'meow', 'meta', 'rating-1800-up']"
+    },
+    {
+      "crosshare_id": "QUi1NUVfUKkREy5UOhag",
+      "title": "Going Down A Storm",
+      "page_url": "https://crosshare.org/crosswords/QUi1NUVfUKkREy5UOhag",
+      "listing_page": 5,
+      "reason": "excluded tag: ['cryptic', 'featured', 'full', 'rating-1800-up', 'shakespeare', 'themed']"
+    },
+    {
+      "crosshare_id": "ns5EhMrYAMKaKTwv5lzP",
+      "title": "Why Would You Clue It Like That... #1",
+      "page_url": "https://crosshare.org/crosswords/ns5EhMrYAMKaKTwv5lzP",
+      "listing_page": 5,
+      "reason": "variety cluing: clues are joke instructions, not standard clues"
+    },
+    {
+      "crosshare_id": "hErOBs7nvTKLAEXuhHNy",
+      "title": "On The Hook (Meta)",
+      "page_url": "https://crosshare.org/crosswords/hErOBs7nvTKLAEXuhHNy",
+      "listing_page": 5,
+      "reason": "excluded tag: ['featured', 'full', 'meta', 'moat', 'rating-1500-1800']"
+    },
+    {
+      "crosshare_id": "7QpLY3KUIOATYxPJ3QjF",
+      "title": "A Whole Lot?",
+      "page_url": "https://crosshare.org/crosswords/7QpLY3KUIOATYxPJ3QjF",
+      "listing_page": 5,
+      "reason": "styled cells (circle/bar/hidden)"
+    },
+    {
+      "crosshare_id": "egmHjg1JzAK5HbC8SJuU",
+      "title": "X Marks the Spot 260907",
+      "page_url": "https://crosshare.org/crosswords/egmHjg1JzAK5HbC8SJuU",
+      "listing_page": 5,
+      "reason": "styled cells (circle/bar/hidden)"
+    },
+    {
+      "crosshare_id": "mamXllWvNeWCFMOJ2YzM",
+      "title": "Labor Unions (Meta)",
+      "page_url": "https://crosshare.org/crosswords/mamXllWvNeWCFMOJ2YzM",
+      "listing_page": 5,
+      "reason": "excluded tag: ['featured', 'full', 'meta', 'rating-1500-1800']"
+    },
+    {
+      "crosshare_id": "GdG2MqAqOeZpItTG5qA9",
+      "title": "Cryptic #34",
+      "page_url": "https://crosshare.org/crosswords/GdG2MqAqOeZpItTG5qA9",
+      "listing_page": 6,
+      "reason": "excluded tag: ['cryptic', 'featured', 'full']"
+    },
+    {
+      "crosshare_id": "uvfxHX7AvBK8is5F2mZx",
+      "title": "Bumper Crops",
+      "page_url": "https://crosshare.org/crosswords/uvfxHX7AvBK8is5F2mZx",
+      "listing_page": 6,
+      "reason": "excluded tag: ['featured', 'full', 'meta', 'rating-1500-1800', 'sss']"
+    }
+  ]
+}
