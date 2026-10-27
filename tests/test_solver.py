@@ -56,6 +56,101 @@ def test_recovery_with_crossing_feedback():
     assert evaluate(puzzle, result["answers"], path)["exact_solve"]
 
 
+def test_separate_reviewer_routes_retries_and_rechecks_solver_repairs(monkeypatch):
+    import io
+    from src import config
+    from src.llm_client import Client
+
+    reviewer = "nvidia/Nemotron-3.5-Super-VL"
+    monkeypatch.setenv("NEBIUS_API_KEY", "unit-test-placeholder")
+    puzzle, path, gold = fixture()
+    bad = {**gold, "1A": "X" + gold["1A"][1:], "1D": "X" + gold["1D"][1:]}
+    requests, reviewed_ids = [], set()
+    split_once = False
+    fixed = False
+
+    def response(request, **kwargs):
+        nonlocal split_once, fixed
+        payload = json.loads(request.data)
+        context = json.loads(payload["messages"][1]["content"])
+        mode = context["mode"]
+        ids = [c["id"] for c in context["clues"]]
+        requests.append((mode, payload["model"], ids))
+        expected = reviewer if mode == "review" else config.MODEL
+        assert payload["model"] == expected
+        assert ("reasoning_effort" in payload) is (mode != "review")
+        if mode == "review" and len(ids) > 1 and not split_once:
+            split_once = True
+            text = ""  # Retry/splitting must stay on the reviewer model.
+        else:
+            if mode == "repair":
+                fixed = True
+            if mode == "review":
+                if fixed:
+                    reviewed_ids.update(ids)
+                source = gold if fixed else {**gold, "1D": bad["1D"]}
+            else:
+                source = gold if fixed else bad
+            text = json.dumps({"answers": {k: source[k] for k in ids}})
+        return io.BytesIO(json.dumps({
+            "model": expected, "usage": {"total_tokens": 7},
+            "choices": [{"message": {"content": text}, "finish_reason": "stop"}],
+        }).encode())
+
+    monkeypatch.setattr("src.llm_client.urllib.request.urlopen", response)
+    client = Client(config.MODEL, review_model=reviewer)
+    result = solve(puzzle, client)
+    assert split_once and "1D" in reviewed_ids
+    assert {mode for mode, _, _ in requests} == {"fill", "review", "repair"}
+    assert result["crosscheck_status"] == "completed"
+    assert result["review_model"] == reviewer
+    assert result["calls"] == client.calls == len(requests)
+    assert result["tokens"] == client.tokens == 7 * len(requests)
+    for step in result["trace"]:
+        for record in step["responses"]:
+            expected = reviewer if record["mode"] == "review" else config.MODEL
+            assert record["requested_model"] == record["served_model"] == expected
+    assert evaluate(puzzle, result["answers"], path)["exact_solve"]
+
+
+@pytest.mark.parametrize("limits", [{"max_calls": 2}, {"token_budget": 6}])
+def test_solver_and_reviewer_share_one_budget(monkeypatch, limits):
+    import io
+    from src.llm_client import Client
+
+    monkeypatch.setenv("NEBIUS_API_KEY", "unit-test-placeholder")
+    requested = []
+
+    def response(request, **kwargs):
+        requested.append(json.loads(request.data)["model"])
+        return io.BytesIO(json.dumps({"usage": {"total_tokens": 3},
+            "choices": [{"message": {"content": "{}"}, "finish_reason": "stop"}]}).encode())
+
+    monkeypatch.setattr("src.llm_client.urllib.request.urlopen", response)
+    client = Client("solver", review_model="reviewer", **limits)
+    client.complete([])
+    client.complete([], model=client.review_model)
+    with pytest.raises(BudgetExceeded):
+        client.complete([], model=client.review_model)
+    assert requested == ["solver", "reviewer"]
+    assert (client.calls, client.tokens) == (2, 6)
+
+
+def test_review_model_default_and_environment_override(monkeypatch):
+    from src import config
+    from src.llm_client import Client
+
+    monkeypatch.setenv("NEBIUS_API_KEY", "unit-test-placeholder")
+    monkeypatch.setattr("src.llm_client.load_env", lambda: None)
+    monkeypatch.delenv("NEBIUS_MODEL", raising=False)
+    monkeypatch.delenv("NEBIUS_REVIEW_MODEL", raising=False)
+    client = Client()
+    assert client.model == client.review_model == config.MODEL == config.REVIEW_MODEL
+    monkeypatch.setenv("NEBIUS_REVIEW_MODEL", "env-reviewer")
+    assert Client().review_model == "env-reviewer"
+    assert Client(review_model="explicit-reviewer").review_model == "explicit-reviewer"
+
+
 def test_wrong_length_is_rejected_not_truncated():
     puzzle, _, _ = fixture()
     result = solve(puzzle, FakeClient(lambda clue: "SWAMPS"), max_rounds=1)
@@ -247,7 +342,8 @@ def test_fully_crossed_word_still_requires_confirmation():
     assert "1A" not in result["answers"]
 
 
-def test_http_retry_and_hard_call_limit(monkeypatch):
+@pytest.mark.parametrize("status", [429, 529])
+def test_http_retry_and_hard_call_limit(monkeypatch, status):
     import io
     from urllib.error import HTTPError
 
@@ -260,7 +356,7 @@ def test_http_retry_and_hard_call_limit(monkeypatch):
         attempts.append(1)
         if len(attempts) == 1:
             raise HTTPError(
-                "test", 429, "rate limited", {"Retry-After": "0"}, None
+                "test", status, "temporarily unavailable", {"Retry-After": "0"}, None
             )
         payload = {
             "choices": [{

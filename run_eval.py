@@ -18,6 +18,7 @@ def main():
     parser.add_argument("--puzzle", required=True, type=Path)
     parser.add_argument("--gold", type=Path)
     parser.add_argument("--model")
+    parser.add_argument("--review-model", help="semantic reviewer (default: NEBIUS_REVIEW_MODEL or GLM-5.3-Flash)")
     parser.add_argument("--max-rounds", type=int, default=config.MAX_ROUNDS)
     parser.add_argument("--max-tokens", type=int, default=config.MAX_TOKENS)
     parser.add_argument("--max-calls", type=int, default=config.MAX_CALLS)
@@ -50,7 +51,7 @@ def main():
             print(record["error"], flush=True)
 
     client = Client(
-        args.model, args.max_tokens, args.max_calls, args.token_budget
+        args.model, args.max_tokens, args.max_calls, args.token_budget, review_model=args.review_model
     )
     result = solve(puzzle, client, args.max_rounds, progress)
     result["created_at"] = datetime.now(timezone.utc).isoformat()
@@ -59,6 +60,7 @@ def main():
         "batch_size": config.BATCH_SIZE,
         "repair": True,
         "review": True,
+        "review_model": client.review_model,
         "crosscheck": True,
         "max_tokens": args.max_tokens,
         "max_calls": args.max_calls,

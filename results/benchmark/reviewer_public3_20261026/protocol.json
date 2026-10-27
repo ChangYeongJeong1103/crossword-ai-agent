@@ -1,0 +1,60 @@
+{
+  "purpose": "Small diagnostic development pilot; not a generalization estimate.",
+  "selection": "Three public CC BY 4.0 Crossword Nexus puzzles; no By George! or Gino.",
+  "solver_model": "zai-org/GLM-5.3-Flash",
+  "reviewers": {
+    "glm_review": "zai-org/GLM-5.3-Flash",
+    "nemotron_review": "nvidia/Nemotron-3.5-Super-VL"
+  },
+  "runs_per_puzzle_per_reviewer": 1,
+  "workers": 1,
+  "config_name": "L3_full",
+  "settings": {
+    "glm_review": {
+      "max_rounds": 15,
+      "batch_size": 4,
+      "repair": true,
+      "review": true,
+      "crosscheck": true,
+      "max_tokens": 6000,
+      "max_calls": 200,
+      "review_model": "zai-org/GLM-5.3-Flash",
+      "token_budget": 400000
+    },
+    "nemotron_review": {
+      "max_rounds": 15,
+      "batch_size": 4,
+      "repair": true,
+      "review": true,
+      "crosscheck": true,
+      "max_tokens": 6000,
+      "max_calls": 200,
+      "review_model": "nvidia/Nemotron-3.5-Super-VL",
+      "token_budget": 400000
+    }
+  },
+  "source_sha256": "8151e511bd7b531d333191aec10b78535503ad0e1307658051685cfe77a5de1c",
+  "runner_sha256": "2c03e134406f5dd36f24c7a7e2a2149c4ac373a9731e2bdc164f50958090641a",
+  "puzzles": [
+    {
+      "path": "data/benchmark/standard_15x15/puzzles/crossword_nexus_im_alright.json",
+      "puzzle_id": "crossword_nexus_im_alright",
+      "sha256": "1ee04a8085b4d45da3e8928821392d5414d373b205abf71cf5d7552cd02208f6"
+    },
+    {
+      "path": "data/benchmark/standard_15x15/puzzles/crossword_nexus_fm.json",
+      "puzzle_id": "crossword_nexus_fm",
+      "sha256": "4bff3087a83629c2c0d8372caa00995b533d7acb48b6aa1517f04cff28cc8e08"
+    },
+    {
+      "path": "data/benchmark/standard_15x15/puzzles/crossword_nexus_garden_party.json",
+      "puzzle_id": "crossword_nexus_garden_party",
+      "sha256": "5eadcdee82a1b0f3645af60442431c9609d9a65adffb1832f5922bd7cfd99e1f"
+    }
+  ],
+  "comparison": "Review model plus required reviewer confirmation of solver-side repair changes.",
+  "transport": "Shared bounded retries now include observed HTTP 529; one puzzle at a time.",
+  "statistics": "Descriptive paired puzzle outcomes (n=3); no reliability or equivalence claim.",
+  "infra_policy": "Stop before the next run if any request remains failed after HTTP retries.",
+  "created_at": "2026-10-27T04:55:13.408919+00:00"
+}

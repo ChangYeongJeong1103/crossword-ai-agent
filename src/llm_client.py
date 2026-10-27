@@ -24,23 +24,25 @@ class BudgetExceeded(RuntimeError):
 
 class Client:
     def __init__(self, model=None, max_tokens=config.MAX_TOKENS, max_calls=config.MAX_CALLS,
-                 token_budget=config.TOKEN_BUDGET):
+                 token_budget=config.TOKEN_BUDGET, review_model=None):
         load_env()
         self.model = model or os.environ.get("NEBIUS_MODEL", config.MODEL)
+        self.review_model = review_model or os.environ.get("NEBIUS_REVIEW_MODEL", config.REVIEW_MODEL)
         self.key = os.environ.get("NEBIUS_API_KEY")
         if not self.key:
             raise ValueError("Set NEBIUS_API_KEY in .env or the environment.")
         if min(max_tokens, max_calls, token_budget) < 1:
             raise ValueError("Token and call budgets must be positive.")
         self.max_tokens, self.max_calls, self.token_budget = max_tokens, max_calls, token_budget
-        # calls counts HTTP attempts (including transient retries), not logical requests.
+        # All requests share these counters and limits; calls includes HTTP retries.
         self.calls, self.tokens, self.http_retries = 0, 0, 0
         self.lock = threading.Lock()
 
-    def complete(self, messages, max_tokens=None):
-        payload = {"model": self.model, "messages": messages, "temperature": 0.2,
+    def complete(self, messages, max_tokens=None, model=None):
+        model = model or self.model
+        payload = {"model": model, "messages": messages, "temperature": 0.2,
                    "max_tokens": max_tokens or self.max_tokens}
-        if self.model.startswith("zai-org/GLM-5.3"):
+        if model.startswith("zai-org/GLM-5.3"):
             payload["reasoning_effort"] = "low"
         started = time.monotonic()
         for attempt in range(3):
@@ -59,7 +61,7 @@ class Client:
                     data = json.load(response)
                 break
             except urllib.error.HTTPError as error:
-                if error.code not in (429, 500, 502, 503, 504) or attempt == 2:
+                if error.code not in (429, 500, 502, 503, 504, 529) or attempt == 2:
                     raise RuntimeError(f"Token Factory HTTP {error.code}.") from None
                 try:
                     delay = min(30, max(delay, float((error.headers or {}).get("Retry-After", delay))))
@@ -75,6 +77,7 @@ class Client:
         choice = data["choices"][0]
         return {"text": choice["message"].get("content") or "",
                 "finish_reason": choice.get("finish_reason"), "usage": usage,
+                "requested_model": model,
                 "served_model": data.get("model"),
                 "max_tokens": payload["max_tokens"], "http_attempts": attempt + 1,
                 "latency_seconds": round(time.monotonic() - started, 3)}

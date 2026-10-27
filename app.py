@@ -43,6 +43,7 @@ def save_live_run(result):
         "max_tokens": MAX_TOKENS,
         "max_calls": MAX_CALLS,
         "token_budget": TOKEN_BUDGET,
+        "review_model": result.get("review_model"),
     })
     result.setdefault("source_sha256", source_sha256())
 
@@ -138,8 +139,12 @@ def main():
 
     load_env(ROOT / ".env")
     model = st.text_input(
-        "Model",
+        "Solver model",
         os.environ.get("NEBIUS_MODEL", config.MODEL),
+    )
+    review_model = st.text_input(
+        "Review model",
+        os.environ.get("NEBIUS_REVIEW_MODEL", config.REVIEW_MODEL),
     )
     st.caption(
         "**Solve live** makes real API calls, uses credits, and can range from "
@@ -185,6 +190,7 @@ def main():
                     max_tokens=MAX_TOKENS,
                     max_calls=MAX_CALLS,
                     token_budget=TOKEN_BUDGET,
+                    review_model=review_model,
                 ),
                 max_rounds=MAX_ROUNDS,
                 progress=update_progress,
@@ -234,7 +240,8 @@ def main():
 
     st.caption(
         f"{st.session_state['mode']} · "
-        f"{result['model']} · {result['termination']}"
+        f"Solver: {result['model']} · Review: {result.get('review_model', result['model'])} · "
+        f"{result['termination']}"
     )
     left, right = st.columns([1, 1])
     with left:

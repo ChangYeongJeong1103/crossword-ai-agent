@@ -52,16 +52,17 @@ def runner_sha256():
     return hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
 
 
-def settings_for(name):
+def settings_for(name, review_model=config.REVIEW_MODEL):
     """Solver keyword arguments and the full recorded config for one configuration."""
     settings = {"max_rounds": config.MAX_ROUNDS, "batch_size": config.BATCH_SIZE,
                 "repair": True, "review": True, "crosscheck": True, **CONFIGS[name]}
     max_calls = settings.pop("max_calls", config.MAX_CALLS)
     return settings, {**settings, "max_tokens": config.MAX_TOKENS, "max_calls": max_calls,
+                      "review_model": review_model if settings["review"] else None,
                       "token_budget": config.TOKEN_BUDGET}
 
 
-def mismatch(out, name, puzzle_path, model, source, run=None):
+def mismatch(out, name, puzzle_path, model, source, run=None, review_model=config.REVIEW_MODEL):
     """Why a saved run is not comparable with the current setup, or None."""
     try:
         saved = json.loads(out.read_text())
@@ -69,7 +70,9 @@ def mismatch(out, name, puzzle_path, model, source, run=None):
         return ["unreadable result"]
     if not isinstance(saved, dict):
         return ["invalid result object"]
-    expected = {"source_sha256": source, "model": model, "config": settings_for(name)[1],
+    recorded = settings_for(name, review_model)[1]
+    expected = {"source_sha256": source, "model": model, "review_model": recorded["review_model"],
+                "config": recorded,
                 "puzzle_sha256": hashlib.sha256(puzzle_path.read_bytes()).hexdigest()}
     problems = [key for key, value in expected.items() if saved.get(key) != value]
     if saved.get("config_name") != name:
@@ -122,10 +125,10 @@ def rerun_infra_errors(jobs, output, archive):
     return moved
 
 
-def run_one(name, puzzle_path, run, out, model, source):
-    settings, recorded = settings_for(name)
+def run_one(name, puzzle_path, run, out, model, source, review_model=config.REVIEW_MODEL):
+    settings, recorded = settings_for(name, review_model)
     puzzle = Puzzle.load(puzzle_path)
-    result = solve(puzzle, Client(model, max_calls=recorded["max_calls"]), **settings)
+    result = solve(puzzle, Client(model, max_calls=recorded["max_calls"], review_model=review_model), **settings)
     result["evaluation"] = evaluate(puzzle, result["answers"], puzzle_path.parents[1] / "gold" / puzzle_path.name)
     result.update(config_name=name, run=run, created_at=datetime.now(timezone.utc).isoformat(),
                   source_sha256=source, runner_sha256=runner_sha256(), config=recorded,
@@ -147,7 +150,8 @@ def main():
     parser.add_argument("--workers", type=int, default=6, help="puzzles solved concurrently")
     parser.add_argument("--limit", type=int, help="only the first N puzzles (quick checks)")
     parser.add_argument("--model")
-    parser.add_argument("--out", type=Path, default=ROOT / "results/benchmark/runs")
+    parser.add_argument("--review-model", help="semantic reviewer (default: NEBIUS_REVIEW_MODEL or GLM-5.3-Flash)")
+    parser.add_argument("--out", type=Path, default=ROOT / "results/benchmark/glm_review/runs")
     parser.add_argument("--rerun-infra-errors", action="store_true",
                         help="archive saved runs with infrastructure errors and run them again")
     args = parser.parse_args()
@@ -156,6 +160,7 @@ def main():
 
     load_env(ROOT / ".env")
     model = args.model or os.environ.get("NEBIUS_MODEL", config.MODEL)
+    review_model = args.review_model or os.environ.get("NEBIUS_REVIEW_MODEL", config.REVIEW_MODEL)
     source = source_sha256()
     puzzles = sorted((p for folder in args.puzzles for p in folder.glob("*.json")),
                      key=lambda p: p.name)[:args.limit]
@@ -172,17 +177,17 @@ def main():
         print(f"archived {moved} runs with infrastructure errors for another attempt", flush=True)
     done_jobs = [job for job in jobs if output(*job).exists()]
     conflicts = {output(*job): why for job in done_jobs
-                 if (why := mismatch(output(*job), job[0], job[1], model, source, job[2]))}
+                 if (why := mismatch(output(*job), job[0], job[1], model, source, job[2], review_model))}
     if conflicts:
         for path, why in conflicts.items():
             print(f"incompatible saved run {path}: {', '.join(why)} differ", flush=True)
         raise SystemExit("Saved runs differ from the current setup; use a new --out folder.")
     todo = [job for job in jobs if job not in done_jobs]
     print(f"{len(done_jobs)} of {len(jobs)} runs already done; {len(todo)} to go "
-          f"(source {source[:12]}, model {model})", flush=True)
+          f"(source {source[:12]}, solver {model}, reviewer {review_model})", flush=True)
     started, done, failed = time.monotonic(), 0, 0
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
-        futures = {pool.submit(run_one, name, path, run, output(name, path, run), model, source):
+        futures = {pool.submit(run_one, name, path, run, output(name, path, run), model, source, review_model):
                    (name, path.stem, run) for name, path, run in todo}
         for future in as_completed(futures):
             name, puzzle_id, run = futures[future]

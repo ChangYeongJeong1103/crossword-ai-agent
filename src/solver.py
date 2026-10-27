@@ -104,10 +104,15 @@ def ask(
         {"id": k, "clue": puzzle.clues[k]["text"], "length": puzzle.clues[k]["length"],
          "answer": answers.get(k, "")} for k in sorted(referenced) if k in puzzle.clues]
     records, updates, failed = [], {}, list(ids)
+    # Only semantic review uses the reviewer; repair and crosscheck stay with the solver.
+    reviewer = getattr(client, "review_model", None) if mode == "review" else None
+    request_options = {"model": reviewer} if reviewer else {}
+    requested_model = reviewer or client.model
     try:
         response = client.complete([{"role": "system", "content": SYSTEM},
-                                    {"role": "user", "content": json.dumps(context)}], max_tokens=max_tokens)
-        response.update({"ids": ids, "mode": mode, "rejected": {}})
+                                    {"role": "user", "content": json.dumps(context)}],
+                                   max_tokens=max_tokens, **request_options)
+        response.update({"ids": ids, "mode": mode, "rejected": {}, "requested_model": requested_model})
         records.append(response)
         text = response["text"].strip()
         parsed, _ = json.JSONDecoder().raw_decode(text[text.index("{"):])
@@ -131,14 +136,17 @@ def ask(
             else:
                 updates[k] = word
     except BudgetExceeded as error:
-        records.append({"text": "", "usage": {}, "ids": ids, "error": str(error), "budget_exhausted": True})
+        records.append({"text": "", "usage": {}, "ids": ids, "mode": mode,
+                        "requested_model": requested_model, "error": str(error), "budget_exhausted": True})
         return updates, records
     except RuntimeError as error:
-        records.append({"text": "", "usage": {}, "ids": ids, "error": str(error)})
+        records.append({"text": "", "usage": {}, "ids": ids, "mode": mode,
+                        "requested_model": requested_model, "error": str(error)})
         return updates, records
     except (ValueError, KeyError, TypeError) as error:
         if not records:
-            records.append({"text": "", "usage": {}, "ids": ids, "mode": mode})
+            records.append({"text": "", "usage": {}, "ids": ids, "mode": mode,
+                            "requested_model": requested_model})
         records[-1]["error"] = f"Invalid output: {error}"
     if failed:
         if len(ids) > 1:
@@ -185,12 +193,16 @@ def solve(puzzle, client, max_rounds=config.MAX_ROUNDS, progress=None,
     pairs that disagree with it in one or two cells; changed answers are reviewed
     again. The returned grid is the last one that passed verification, or the
     largest consistent partial grid if none did.
+
+    Semantic review uses client.review_model when supplied; every other request
+    uses client.model. One client keeps the call/token budget shared across both.
     """
     if not 1 <= max_rounds <= 30:
         raise ValueError("max_rounds must be between 1 and 30.")
     if batch_size is not None and batch_size < 1:
         raise ValueError("batch_size must be positive or None.")
     started = time.monotonic()
+    review_model = getattr(client, "review_model", client.model) if review else None
     answers, reviewed, forbidden, trace, best = {}, {}, {}, [], {}
     last_verified = None
     visits = Counter()
@@ -242,6 +254,7 @@ def solve(puzzle, client, max_rounds=config.MAX_ROUNDS, progress=None,
         changed = {k for k, word in updates.items() if before.get(k) != word}
         preferred = changed if mode != "fill" else set()
         proposed = {**before, **updates}
+        review_updates = dict(updates) if mode == "review" else {}
         # A semantic correction gets a joint check with its conflicting neighbor.
         if mode != "fill":
             pairs = sorted({tuple(sorted((c["a"], c["b"]))) for c in puzzle.check(proposed)[1]})
@@ -258,7 +271,9 @@ def solve(puzzle, client, max_rounds=config.MAX_ROUNDS, progress=None,
                     forbidden.setdefault(k, set()).add(before[k])
                 reviewed.pop(k, None)
             if mode == "review":
-                reviewed.update(updates)
+                # A separate reviewer must confirm solver-side repair changes.
+                # Same-model runs retain the original joint-review behavior.
+                reviewed.update(review_updates if review_model != client.model else updates)
             if preferred:
                 best = {}  # Never restore a state superseded by semantic corrections.
         answers = prune(puzzle, proposed, preferred)
@@ -305,6 +320,7 @@ def solve(puzzle, client, max_rounds=config.MAX_ROUNDS, progress=None,
     # Submit the last grid that passed verification rather than an unfinished edit of it.
     submitted = last_verified if last_verified is not None else best
     return {"puzzle_id": puzzle.id, "model": client.model, "answers": submitted,
+            "review_model": review_model,
             "grid": puzzle.render(submitted), "termination": reason, "trace": trace,
             "submitted_verified": last_verified is not None,
             "crosscheck_status": crosscheck_status,

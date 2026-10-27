@@ -67,11 +67,20 @@ def load(folder, golds=None):
         e = r["evaluation"]
         responses = [x for t in r["trace"] for x in t["responses"]]
         requests = [x for x in responses if not x.get("budget_exhausted")]
+        # Historical runs used the solver model for review too.
+        reviewer = r.get("review_model", r["model"] if r["config"].get("review", True) else None)
+        model_errors = []
+        for x in responses:
+            expected = reviewer if x.get("mode") == "review" else r["model"]
+            if any(x.get(key) and x[key] != expected for key in ("requested_model", "served_model")):
+                model_errors.append({"mode": x.get("mode"), "expected": expected,
+                                     "requested": x.get("requested_model"), "served": x.get("served_model")})
         runs.append({"config": r["config_name"], "puzzle": r["puzzle_id"], "run": r["run"],
                      "exact": e["exact_solve"], "clue": e["clue_accuracy"], "cell": e["cell_accuracy"],
                      "tokens": r["tokens"], "calls": r["calls"], "latency": r["latency_seconds"],
                      "rounds": len(r["trace"]), "termination": r["termination"],
                      "source": r["source_sha256"], "model": r["model"],
+                     "review_model": reviewer, "model_errors": model_errors,
                      "puzzle_hash": r.get("puzzle_sha256"),
                      "settings": json.dumps(r["config"], sort_keys=True),
                      "requests": len(requests),
@@ -129,9 +138,12 @@ def validate(runs, puzzles=None, expected_runs=None, expected_configs=None, puzz
     if pending:
         problems.append(f"{len(pending)} runs have infrastructure errors not yet rerun under the protocol "
                         f"(run_benchmark.py --rerun-infra-errors): {pending[:3]}")
-    served = {m for r in runs if r.get("served_models") for m in r["served_models"]} - {r["model"] for r in runs}
+    served = {m for r in runs for m in r.get("served_models", [])
+              if m not in {r["model"], r.get("review_model")}}
     if served:
         problems.append(f"responses served by a model other than the requested one: {sorted(served)}")
+    if any(r.get("model_errors") for r in runs):
+        problems.append("responses requested or served by a model other than the requested model for their phase")
     for key in ("source", "model"):
         if len({r[key] for r in runs}) > 1:
             problems.append(f"runs mix several {key} values: {sorted({r[key] for r in runs})}")
@@ -139,6 +151,8 @@ def validate(runs, puzzles=None, expected_runs=None, expected_configs=None, puzz
         rows = [r for r in runs if r["config"] == name]
         if len({r["settings"] for r in rows}) > 1:
             problems.append(f"{name}: runs mix several configs")
+        if len({r.get("review_model", r["model"]) for r in rows}) > 1:
+            problems.append(f"{name}: runs mix several review models")
         have = {(r["puzzle"], r["run"]) for r in rows}
         if expected_runs is not None and any(k > expected_runs for _, k in have):
             problems.append(f"{name}: run indices outside 1..{expected_runs}")
@@ -227,6 +241,7 @@ def summarize(runs, seed=0, expected_runs=5):
             solved[r["puzzle"]] += r["exact"]
         attempts = Counter(r["puzzle"] for r in rows)
         stats = {"runs": len(rows), "puzzles": len(attempts)}
+        stats.update(model=rows[0]["model"], review_model=rows[0].get("review_model", rows[0]["model"]))
         outcomes[name] = {p: solved[p] >= threshold for p in attempts
                           if attempts[p] == expected_runs
                           and {r["run"] for r in rows if r["puzzle"] == p} == set(range(1, expected_runs + 1))}
@@ -316,7 +331,11 @@ def markdown(summary, probe):
     pct = lambda s: "—" if s["mean"] is None else f"{s['mean']:.1%} [{s['ci_low']:.1%}, {s['ci_high']:.1%}]"
     rule = summary["solve_rule"]
     lines = [f"Puzzle solved: at least {rule['min_exact']} exact solves in {rule['runs']} runs. "
-             "Puzzles with unfinished runs are excluded from the solved rate and paired comparisons.", "",
+             "Puzzles with unfinished runs are excluded from the solved rate and paired comparisons.", ""]
+    lines += ["| Config | Solver model | Review model |", "|---|---|---|"]
+    for name, s in summary["configs"].items():
+        lines.append(f"| {name} | {s['model']} | {s['review_model'] or 'disabled'} |")
+    lines += ["",
              f"| Config | Runs | Completed / pending puzzles | Solved ≥{rule['min_exact']}/{rule['runs']} [95% Wilson CI] "
              "| Exact solve / run [95% cluster CI] | Clue accuracy | Cell accuracy | False accept "
              "| Tokens median / p90 | Tokens per exact | HTTP calls median | Latency median |",
@@ -380,8 +399,8 @@ def markdown(summary, probe):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--runs", type=Path, default=ROOT / "results/benchmark/runs")
-    parser.add_argument("--probe", type=Path, default=ROOT / "results/benchmark/probe")
+    parser.add_argument("--runs", type=Path, default=ROOT / "results/benchmark/glm_review/runs")
+    parser.add_argument("--probe", type=Path, help="optional probe results from the same model setup")
     parser.add_argument("--manifest", type=Path,
                         default=ROOT / "data/benchmark/crosshare_heldout/selection_manifest.json")
     parser.add_argument("--puzzle-dirs", type=Path, nargs="+",
@@ -390,7 +409,7 @@ def main():
     parser.add_argument("--expected-runs", type=int, default=5)
     parser.add_argument("--allow-incomplete", action="store_true",
                         help="summarize despite missing runs (interim look); mixing is never allowed")
-    parser.add_argument("--out", type=Path, default=ROOT / "results/benchmark")
+    parser.add_argument("--out", type=Path, default=ROOT / "results/benchmark/glm_review")
     args = parser.parse_args()
     if args.expected_runs < 1:
         parser.error("expected-runs must be positive")
@@ -422,7 +441,7 @@ def main():
         "evaluated_runs": len(runs), "archived_attempts": len(ledger),
         "residual_infra_error_runs": sorted([r["config"], r["puzzle"], r["run"]] for r in runs if r["infra_errors"]),
         "tokens_all_attempts": sum(r["tokens"] for r in runs) + sum(e["tokens"] for e in ledger)}
-    probe = probe_summary(args.probe) if args.probe.exists() else {}
+    probe = probe_summary(args.probe) if args.probe and args.probe.exists() else {}
     summary["memorization_probe"] = probe
     args.out.mkdir(parents=True, exist_ok=True)
     (args.out / "summary.json").write_text(json.dumps(summary, indent=2) + "\n")

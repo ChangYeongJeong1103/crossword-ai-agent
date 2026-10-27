@@ -27,6 +27,9 @@ results/benchmark/excluded_runs/
 results/benchmark/development/runs/*/crosshare_*/
 # Personal-use Crosshare tooling stays local.
 scripts/fetch_crosshare.py
+# Local review-only replay experiment.
+scripts/review_replay.py
+results/benchmark/review_replay/
 results/benchmark/logs/
 results/benchmark/**/runs_reruns/
 results/benchmark/runs_reruns/

@@ -1,5 +1,6 @@
 """Reported default configuration, shared by the client, solver, CLI and demo."""
 MODEL = "zai-org/GLM-5.3-Flash"
+REVIEW_MODEL = MODEL
 MAX_ROUNDS = 15
 BATCH_SIZE = 4
 MAX_TOKENS = 6000

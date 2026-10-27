@@ -1,6 +1,6 @@
 # How the AI Agent Solves a Crossword
 
-The model proposes answers. Python controls the solve, checks every proposal and decides what the model should reconsider.
+GLM-5.3-Flash handles fill, repair, semantic review and crosscheck. Python controls the solve, checks every proposal and decides what to reconsider. All requests share one call/token budget; the model never sees gold.
 
 ## Complete solving flow
 
@@ -18,7 +18,7 @@ flowchart TD
   F --> G
 
   G --> H["5. Send batches of 4 clues<br/>Up to 4 calls in parallel"]
-  H --> I["6. GLM returns JSON answers"]
+  H --> I["6. JSON answers<br/>from GLM-5.3-Flash"]
   I --> J["7. Validate each proposal<br/>normalize spaces, apostrophes and hyphens<br/>A-Z · exact length · fill-pattern match"]
 
   J -->|"Missing ID or<br/>unparseable JSON"| K["Retry only failed clue IDs<br/>Empty length-limited batch → single clues<br/>Larger retry only for original singleton"]
@@ -105,17 +105,19 @@ flowchart LR
 ### Review
 
 - Runs after the grid has an answer for every clue.
-- Asks the model to confirm clue meaning instead of trusting crossings alone.
+- Asks GLM to confirm clue meaning instead of trusting crossings alone.
 - Prevents a rejected answer from immediately returning through fill mode.
-- Immediately rechecks a semantic correction with any conflicting crossing answer.
+- GLM immediately rechecks a semantic correction with any conflicting crossing answer.
 - If pruning removes an answer, the next round fills the resulting gap.
+
+The reviewer can be overridden with `--review-model`. If it differs from the solver, answers changed by a solver-side joint repair need confirmation by that reviewer in a later review round. This optional path was used only for an [exploratory trial](EVALUATION.md#exploratory-reviewer-trial); GLM review remains the default and the basis of the main evaluation.
 
 ### Crosscheck
 
 A crossing pair can agree letter for letter and still be wrong when one wrong shared letter is absorbed by both answers. Review alone often accepts such a pair, because each answer looks plausible next to the other.
 
 - Runs once, after the grid is first verified, whenever review is on.
-- Re-solves every clue without crossing letters, in batches of four, as an independent second opinion. A blank answer only means the model has no confident answer without letters.
+- GLM re-solves every clue without crossing letters, in batches of four, as a crossing-free second opinion. A blank answer only means the model has no confident answer without letters.
 - Flags a crossing pair when an independent answer differs from the grid answer in one or two letters, including the shared cell.
 - Rechecks up to eight flagged pairs jointly, showing the current answers and the independent alternatives.
 - Reviews every changed answer again, together with any crossing answer whose shared letter changed, before the grid is accepted.
@@ -131,7 +133,7 @@ A crossing pair can agree letter for letter and still be wrong when one wrong sh
 - Preserves one larger retry for a request that started as a singleton.
 - Records each returned response, final error and provider usage report in the solve trace.
 - Summarizes transient HTTP retries with `http_attempts` rather than storing each intermediate HTTP error.
-- Records the model name the API reports for every response.
+- Records the requested and served model names for every response, with usage under the shared budget.
 
 ## Prompt context sent to the model
 
@@ -154,7 +156,7 @@ The model never receives the gold solution. Gold remains outside the solving loo
 ```mermaid
 flowchart LR
   P["Puzzle grid + clues"] --> S["Solver"]
-  S <-->|"Prompt context<br/>and JSON proposals"| M["GLM-5.3-Flash"]
+  S <-->|"Fill, repair, review, crosscheck"| M["GLM-5.3-Flash"]
   S --> A["Returned answers + trace"]
   A --> E["Evaluator"]
   G["Separate gold file"] --> E
@@ -178,4 +180,4 @@ flowchart LR
 | Benchmark | `run_benchmark.py`, `analyze_benchmark.py` | Run configurations × puzzles × repeated runs with resumable, hash-checked results; report puzzle-level statistics |
 | Memorization probe | `scripts/probe_memorization.py` | Ask for answers from puzzle identity and slot lengths only |
 
-The reported app and CLI configuration uses 15 rounds, up to 200 HTTP attempts and a 400,000 reported-token threshold per puzzle. The round limit is configurable up to 30. New requests stop at the token threshold; requests already in flight can take reported usage slightly above it. The controller uses no answer retrieval, candidate beam or constraint-satisfaction solver. A structurally complete grid can still be semantically wrong, so only the separate evaluator can establish an exact solve.
+The reported app and CLI configuration uses 15 rounds, up to 200 HTTP attempts and a 400,000 reported-token threshold per puzzle. The round limit is configurable up to 30. New requests stop at the token threshold; requests already in flight can take reported usage slightly above it. The controller uses no answer retrieval, candidate beam or constraint-satisfaction solver. The same model solves and reviews, so a plausible wrong answer can survive review. Only the separate evaluator comparing against gold can establish an exact solve.

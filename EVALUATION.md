@@ -1,5 +1,7 @@
 # Evaluation
 
+The main evaluation uses **GLM-5.3-Flash for fill, repair, semantic review and crosscheck**, which remains the default configuration. The results below come from the frozen evaluation runs.
+
 This evaluation answers four questions:
 
 1. What does each controller stage contribute?
@@ -35,7 +37,7 @@ Of the 108 full-size puzzles examined, 50 were selected, two were reserved for d
 | Manual review: joke-instruction cluing | 1 |
 | Manual review: news-recap theme | 1 |
 
-The 50 puzzles come from 27 constructors, contain 3,754 clues and 9,341 playable cells, and were published between 2026-05-07 and 2026-10-08; 48 of them appeared after GLM-5.3-Flash was released on 2026-08-26. Crosshare puzzles are "all rights reserved", so they are not included in this repository; [`data/benchmark/crosshare_heldout/selection_manifest.json`](data/benchmark/crosshare_heldout/selection_manifest.json) lists the selected puzzles, their hashes and every rejection with its reason.
+The 50 puzzles come from 27 constructors, contain 3,754 clues and 9,341 playable cells, and were published between 2026-05-07 and 2026-10-08. Crosshare puzzles are "all rights reserved", so they are not included in this repository; [`data/benchmark/crosshare_heldout/selection_manifest.json`](data/benchmark/crosshare_heldout/selection_manifest.json) lists the selected puzzles, their hashes and every rejection with its reason.
 
 ## 2. Gold isolation
 
@@ -176,22 +178,27 @@ The development runs used the same frozen code (full controller with and without
 ## 9. Limitations
 
 - **Scope.** One model and one puzzle source; Crosshare's featured puzzles are community-made and may differ from newspaper puzzles.
+- **Self-review.** The same model solves and reviews, so a plausible wrong answer can pass both review and crosscheck. Only post-solve comparison with gold establishes exactness.
 - **Repetition.** Five runs per puzzle estimate per-run reliability; they do not pin down rare failure modes.
 - **Selection.** The evaluation set includes a manual review step for answer-transforming themes and news recaps; all exclusions are listed with their reasons.
 - **Design.** The crosscheck step targets consistent-but-wrong crossing pairs, a failure type observed while developing the controller; its settings were chosen on the development set.
 - **Batch definitions.** Batch 1 does not update crossings after each clue, and batch all relies on fallback splitting.
 - **Token reporting.** Token counts are provider-reported; the threshold stops new requests rather than capping usage exactly.
 
+### Exploratory reviewer trial
+
+Nemotron 3.5 Super VL was tried as a separate reviewer on three public development puzzles, one fresh run per reviewer per puzzle. Both configurations solved 3/3; Nemotron used 2.36 times the median end-to-end latency and 4.98 times the estimated total API cost under the tested settings. This small trial does not establish a general accuracy difference. GLM remains the default; [trial details and artifacts](results/benchmark/reviewer_public3_20261026/README.md) are separate from the main evaluation.
+
 ## 10. Reproduce
 
-The eight Crossword Nexus development puzzles and their runs are included, so every step below runs on them as is; because the two Crosshare development puzzles and the evaluation puzzles are not redistributed, the reproduced development tables cover 8 puzzles rather than the 10 in section 7.
+The eight Crossword Nexus development puzzles and their runs are included. The commands below run the current GLM configuration into a separate folder; because the two Crosshare development puzzles and the evaluation puzzles are not redistributed, these development tables cover 8 puzzles rather than the 10 in section 7. These are fresh runs with the current code, separate from the frozen results above.
 
 ```bash
 python run_benchmark.py --puzzles data/benchmark/standard_15x15/puzzles data/benchmark/held_out/puzzles \
-  --configs L3_full L3_no_crosscheck --runs 5 --workers 10 --out results/benchmark/development/runs
-python analyze_benchmark.py --runs results/benchmark/development/runs \
+  --configs L3_full L3_no_crosscheck --runs 5 --workers 10 --out results/benchmark/glm_review/development/runs
+python analyze_benchmark.py --runs results/benchmark/glm_review/development/runs \
   --puzzle-dirs data/benchmark/standard_15x15/puzzles data/benchmark/held_out/puzzles \
-  --configs L3_full L3_no_crosscheck --out results/benchmark/development
+  --configs L3_full L3_no_crosscheck --out results/benchmark/glm_review/development
 ```
 
 `run_benchmark.py --rerun-infra-errors` applies the infrastructure-error rule, and `analyze_benchmark.py` refuses to summarize runs that are missing, duplicated, mixed across code or puzzle versions, or served by another model.

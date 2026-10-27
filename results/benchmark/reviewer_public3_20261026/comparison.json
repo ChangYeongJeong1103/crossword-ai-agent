@@ -1,0 +1,282 @@
+{
+  "scope": "Selected public development puzzles; diagnostic pilot, not held-out evaluation.",
+  "puzzles": [
+    "crossword_nexus_im_alright",
+    "crossword_nexus_fm",
+    "crossword_nexus_garden_party"
+  ],
+  "runs_per_puzzle": 1,
+  "cohorts": {
+    "glm_review": {
+      "runs": 3,
+      "puzzles": 3,
+      "model": "zai-org/GLM-5.3-Flash",
+      "review_model": "zai-org/GLM-5.3-Flash",
+      "solved": {
+        "mean": 1.0,
+        "ci_low": 0.4385029682449546,
+        "ci_high": 1.0,
+        "count": 3,
+        "puzzles": 3,
+        "pending": 0
+      },
+      "exact": {
+        "mean": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0
+      },
+      "clue": {
+        "mean": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0
+      },
+      "cell": {
+        "mean": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0
+      },
+      "false_accept": 0,
+      "crosscheck": {
+        "status": {
+          "completed": 3
+        },
+        "runs": {},
+        "clues_fixed": 0,
+        "clues_broken": 0,
+        "coverage": {
+          "answered": 1.0,
+          "second_opinion": 0.9188034188034188
+        }
+      },
+      "verified_submissions": 3,
+      "termination_of_verified": {
+        "complete_consistent_grid": 3
+      },
+      "tokens_total": 200651,
+      "tokens_median": 59696,
+      "tokens_p90": 84353,
+      "tokens_per_exact": 66883.66666666667,
+      "calls_median": 72,
+      "requests_median": 71,
+      "clues_per_request": 3.5866666666666664,
+      "splits_per_run": 1.6666666666666667,
+      "latency_median": 127.248,
+      "termination": {
+        "complete_consistent_grid": 3
+      },
+      "reliability": {
+        "all": 3,
+        "some": 0,
+        "none": 0
+      },
+      "exact_count": 3,
+      "per_puzzle": {
+        "crossword_nexus_im_alright": {
+          "solved": 1,
+          "runs": 1,
+          "puzzle_solved": true,
+          "tokens_median": 84353,
+          "latency_seconds": 300.11,
+          "estimated_cost_usd": 0.02385925,
+          "review_tokens": 25140,
+          "review_round_seconds": 10.274999999999977,
+          "review_reached": true,
+          "termination": "complete_consistent_grid"
+        },
+        "crossword_nexus_fm": {
+          "solved": 1,
+          "runs": 1,
+          "puzzle_solved": true,
+          "tokens_median": 59696,
+          "latency_seconds": 127.248,
+          "estimated_cost_usd": 0.014923299999999999,
+          "review_tokens": 27806,
+          "review_round_seconds": 30.197000000000003,
+          "review_reached": true,
+          "termination": "complete_consistent_grid"
+        },
+        "crossword_nexus_garden_party": {
+          "solved": 1,
+          "runs": 1,
+          "puzzle_solved": true,
+          "tokens_median": 56602,
+          "latency_seconds": 112.369,
+          "estimated_cost_usd": 0.01294545,
+          "review_tokens": 29851,
+          "review_round_seconds": 37.016,
+          "review_reached": true,
+          "termination": "complete_consistent_grid"
+        }
+      },
+      "estimated_cost_usd_total": 0.051727999999999996,
+      "estimated_cost_usd_median": 0.014923299999999999,
+      "review_tokens_median": 27806,
+      "review_round_seconds_median": 30.197000000000003,
+      "review_length_limited_responses": 0,
+      "http_retry_attempts": 5,
+      "usage_by_model": {
+        "zai-org/GLM-5.3-Flash": {
+          "input_tokens": 138850,
+          "output_tokens": 61801,
+          "responses": 225
+        }
+      },
+      "infra_errors": 0
+    },
+    "nemotron_review": {
+      "runs": 3,
+      "puzzles": 3,
+      "model": "zai-org/GLM-5.3-Flash",
+      "review_model": "nvidia/Nemotron-3.5-Super-VL",
+      "solved": {
+        "mean": 1.0,
+        "ci_low": 0.4385029682449546,
+        "ci_high": 1.0,
+        "count": 3,
+        "puzzles": 3,
+        "pending": 0
+      },
+      "exact": {
+        "mean": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0
+      },
+      "clue": {
+        "mean": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0
+      },
+      "cell": {
+        "mean": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0
+      },
+      "false_accept": 0,
+      "crosscheck": {
+        "status": {
+          "completed": 2,
+          "incomplete": 1
+        },
+        "runs": {},
+        "clues_fixed": 0,
+        "clues_broken": 0,
+        "coverage": {
+          "answered": 0.9957264957264957,
+          "second_opinion": 0.9102564102564102
+        }
+      },
+      "verified_submissions": 3,
+      "termination_of_verified": {
+        "complete_consistent_grid": 3
+      },
+      "tokens_total": 446541,
+      "tokens_median": 134343,
+      "tokens_p90": 183924,
+      "tokens_per_exact": 148847.0,
+      "calls_median": 88,
+      "requests_median": 87,
+      "clues_per_request": 3.128205128205128,
+      "splits_per_run": 5.333333333333333,
+      "latency_median": 300.888,
+      "termination": {
+        "complete_consistent_grid": 3
+      },
+      "reliability": {
+        "all": 3,
+        "some": 0,
+        "none": 0
+      },
+      "exact_count": 3,
+      "per_puzzle": {
+        "crossword_nexus_im_alright": {
+          "solved": 1,
+          "runs": 1,
+          "puzzle_solved": true,
+          "tokens_median": 134343,
+          "latency_seconds": 300.888,
+          "estimated_cost_usd": 0.07181920000000001,
+          "review_tokens": 72035,
+          "review_round_seconds": 41.149,
+          "review_reached": true,
+          "termination": "complete_consistent_grid"
+        },
+        "crossword_nexus_fm": {
+          "solved": 1,
+          "runs": 1,
+          "puzzle_solved": true,
+          "tokens_median": 128274,
+          "latency_seconds": 168.879,
+          "estimated_cost_usd": 0.07764609999999997,
+          "review_tokens": 94957,
+          "review_round_seconds": 68.196,
+          "review_reached": true,
+          "termination": "complete_consistent_grid"
+        },
+        "crossword_nexus_garden_party": {
+          "solved": 1,
+          "runs": 1,
+          "puzzle_solved": true,
+          "tokens_median": 183924,
+          "latency_seconds": 408.112,
+          "estimated_cost_usd": 0.10829074999999998,
+          "review_tokens": 115781,
+          "review_round_seconds": 87.26200000000003,
+          "review_reached": true,
+          "termination": "complete_consistent_grid"
+        }
+      },
+      "estimated_cost_usd_total": 0.25775604999999996,
+      "estimated_cost_usd_median": 0.07764609999999997,
+      "review_tokens_median": 94957,
+      "review_round_seconds_median": 68.196,
+      "review_length_limited_responses": 6,
+      "http_retry_attempts": 5,
+      "usage_by_model": {
+        "zai-org/GLM-5.3-Flash": {
+          "input_tokens": 74591,
+          "output_tokens": 89177,
+          "responses": 189
+        },
+        "nvidia/Nemotron-3.5-Super-VL": {
+          "input_tokens": 87528,
+          "output_tokens": 195245,
+          "responses": 84
+        }
+      },
+      "infra_errors": 0
+    }
+  },
+  "price_usd_per_million_tokens": {
+    "zai-org/GLM-5.3-Flash": {
+      "input": 0.15,
+      "output": 0.5
+    },
+    "nvidia/Nemotron-3.5-Super-VL": {
+      "input": 0.3,
+      "output": 0.9
+    }
+  },
+  "price_sources": [
+    "https://nebius.com/services/token-factory/models/glm-models-inference",
+    "https://nebius.com/blog/posts/three-new-open-weight-models-from-us-companies-give-builders-more-choice"
+  ],
+  "cost_basis": "Estimated uncached list price, including reported reasoning output tokens; excludes discounts.",
+  "price_checked_on": "2026-10-26",
+  "paired": {
+    "unit": "puzzle (n=3)",
+    "delta_exact_per_run": 0.0,
+    "cluster_ci95": [
+      0.0,
+      0.0
+    ],
+    "delta_puzzles_solved": 0.0,
+    "newcombe_ci95": [
+      -0.5614970317550454,
+      0.5614970317550454
+    ],
+    "exact_mcnemar_p": 1.0,
+    "before_only": 0,
+    "after_only": 0,
+    "note": "Selected development puzzles and small n; no general performance claim. An all-zero bootstrap interval with identical outcomes does not establish equivalence."
+  }
+}

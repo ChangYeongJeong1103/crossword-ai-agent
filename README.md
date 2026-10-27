@@ -4,11 +4,13 @@ The goal of this project is to test whether a small controller can turn a genera
 
 I kept the system deliberately simple:
 
-- GLM-5.3-Flash proposes and reviews answers through Nebius Token Factory.
+- GLM-5.3-Flash handles fill, repair, semantic review and crosscheck through Nebius Token Factory.
 - Python controls the loop and handles the deterministic checks: answer lengths, crossing letters, conflict removal, retries and budgets.
-- The model receives the same puzzle information a human receives. It never receives the gold solution and does not use an answer database.
+- The model receives the same puzzle information a human receives. It does not receive the gold solution or use an answer database.
 
 ## Results
+
+The main results use **GLM-5.3-Flash for every stage**, including review. This remains the default configuration.
 
 I evaluated the agent on 50 standard 15×15 puzzles it was not designed on, with five runs of every configuration on every puzzle: 1,750 runs. A puzzle counts as solved when at least 3 of its 5 runs are exact solves; intervals are 95% Wilson intervals over puzzles.
 
@@ -24,8 +26,8 @@ I evaluated the agent on 50 standard 15×15 puzzles it was not designed on, with
 - **Crosscheck helps on balance.** It solves four more puzzles and loses none (exact McNemar p = 0.125, not significant at the 5% level with 50 puzzles), raises exact solves per run by 4.8 points [0.8, 9.6] and cuts false accepts from 20 to 13 runs, for 25% more median tokens. In the traced runs it fixed four and broke none.
 - **Batch size changes cost more than accuracy.** Batches of 1, 4 and all clues are statistically indistinguishable. Batches of four are the most economical: one clue per request uses 37% more total tokens, and sending all clues at once is the slowest.
 - **What still fails.** Of the full controller's 25 failed runs, 13 accepted crossing answers that agree letter for letter but are wrong (12 of them a single pair), and 12 ran out of budget. 37 puzzles were solved in every run; one themeless puzzle full of cross-references was solved in none.
-- **No sign of memorization.** Given only a puzzle's identity and slot lengths, the model recovered 1 of 3,754 evaluation answers; 48 of the 50 puzzles were published after the model's release.
-- **Model:** `zai-org/GLM-5.3-Flash`, which served all 153,088 responses. **Offline verification:** 96 tests.
+- **No sign of memorization.** Given only a puzzle's identity and slot lengths, the model recovered 1 of 3,754 evaluation answers.
+- **Model:** `zai-org/GLM-5.3-Flash`, which served all 153,088 responses. The frozen evaluation version passed 96 offline tests; the current suite has 108.
 
 Exactness is computed only after solving, against a separate gold file. The method and statistics were fixed before the runs; see [EVALUATION.md](EVALUATION.md) for the puzzle selection, configurations, all tables and limitations.
 
@@ -46,9 +48,10 @@ Live solving, `run_eval.py` and the benchmark scripts need Nebius credentials. C
 ```text
 NEBIUS_API_KEY=your_api_key_here
 NEBIUS_MODEL=zai-org/GLM-5.3-Flash
+NEBIUS_REVIEW_MODEL=zai-org/GLM-5.3-Flash
 ```
 
-The model line is optional. Never commit `.env`; `.gitignore` already excludes it.
+Both model lines are optional; the solver and reviewer default to GLM-5.3-Flash. An optional `--review-model` argument or the demo's **Review model** field can override the reviewer. Never commit `.env`; `.gitignore` already excludes it.
 
 ## How the agent solves
 
@@ -57,11 +60,13 @@ The model line is optional. Never commit `.env`; `.gitignore` already excludes i
 3. **Validate proposals.** Python strips spaces, apostrophes and hyphens, rejects wrong lengths and pattern violations, and removes answers that create crossing conflicts.
 4. **Retry efficiently.** Missing IDs and unparseable responses are retried without restarting the puzzle; an empty, length-limited batch is retried as individual clues.
 5. **Repair blocked regions.** When progress stalls, the model reconsiders difficult entries together with their crossing clues. Existing letters stay tentative during repair.
-6. **Review meaning.** After the grid is full, the model checks every answer against its clue. A grid is not accepted just because all letters cross consistently.
-7. **Crosscheck.** Once the grid is verified, the model re-solves every clue without crossing letters. Where an independent answer differs from the grid answer in one or two letters at a crossing, the pair is rechecked with both versions, and changed answers are reviewed again. This targets a crossing pair that agrees letter for letter but is wrong.
+6. **Review meaning.** After the grid is full, GLM checks every answer against its clue and jointly rechecks any correction that conflicts with a crossing answer. A grid is not accepted just because all letters cross consistently.
+7. **Crosscheck.** Once the grid is verified, GLM re-solves every clue without crossing letters. Where a crossing-free answer differs from the grid answer in one or two letters at a crossing, GLM rechecks the pair with both versions, and changed answers go through review. This targets a crossing pair that agrees letter for letter but is wrong.
 8. **Evaluate separately.** Only after `solve()` returns does the evaluator open the gold file and compute exact, clue and cell accuracy.
 
 **Stopping.** The controller runs up to four requests concurrently. It stops after a verified, crosschecked grid, or when it reaches 15 rounds, 200 HTTP attempts or 400,000 reported tokens (new requests stop at the threshold; requests already in flight can go slightly over). It then submits the last grid that passed verification, if there is one. HTTP 429 and transient server errors get bounded retries with backoff.
+
+All requests share the same call/token budget. Results record the solver and reviewer, and each response records its requested model, served model and usage.
 
 For a visual walkthrough of Fill → Repair → Review → Crosscheck and the gold boundary, see [ARCHITECTURE.md](ARCHITECTURE.md).
 
@@ -129,7 +134,7 @@ For a visual walkthrough of Fill → Repair → Review → Crosscheck and the go
 
 </details>
 
-The model receives only what a solver sees plus solver state: clue text, required length, puzzle title, current letter patterns, relevant crossing clues, long-clue context and explicit cross-references. The project uses the pretrained GLM-5.3-Flash model as provided by Nebius, without fine-tuning.
+The model receives only what a solver sees plus solver state: clue text, required length, puzzle title, current letter patterns, relevant crossing clues, long-clue context and explicit cross-references. It is used as provided by Nebius, without fine-tuning.
 
 ## Reproduce
 
@@ -141,9 +146,11 @@ python run_eval.py \
   --gold data/benchmark/standard_15x15/gold/crossword_nexus_im_alright.json
 ```
 
-Optional arguments: `--model`, `--max-rounds`, `--max-tokens`, `--max-calls`, `--token-budget`. The defaults are in `src/config.py`.
+Optional arguments: `--model`, `--review-model`, `--max-rounds`, `--max-tokens`, `--max-calls`, `--token-budget`. The defaults are in `src/config.py`.
 
 **Run the benchmark.** `run_benchmark.py` runs configurations × puzzles × repeated runs on any folders of puzzles in this format, and `analyze_benchmark.py` produces the tables. The development puzzles are included; see [EVALUATION.md](EVALUATION.md#10-reproduce) for the exact commands. Saved runs are reused only when the source, model, configuration and puzzle hashes match.
+
+New benchmark runs and summaries default to `results/benchmark/glm_review/`, separate from the frozen main results. The reviewer is checked when resuming, and analysis checks the served model for each request mode. Probe results are included only with an explicit `analyze_benchmark.py --probe` path.
 
 ## Demo
 
@@ -196,7 +203,7 @@ Supporting documents:
 ## What I intentionally did not add
 
 - No answer retrieval or crossword answer database.
-- No model substitution, candidate beam or constraint-satisfaction solver.
+- No fallback model substitution, candidate beam or constraint-satisfaction solver.
 - No gold access before the solver returns.
 - `complete_consistent_grid` is a controller status, not proof of exactness.
 
@@ -206,8 +213,10 @@ The design was informed by "Language Models are Crossword Solvers" (Saha et al.,
 
 - **Scope.** One model and one puzzle source (Crosshare community puzzles); results may differ for newspaper puzzles or other models. With 50 puzzles, differences of a few puzzles are within the uncertainty.
 - **Stochastic output.** The full controller solves 90% of runs exactly; repeated runs can take different time and tokens or return a different grid.
-- **Review gaps.** A crossing pair that agrees letter for letter but is wrong is still the main failure; crosscheck catches some of them, not all.
+- **Review gaps.** The same model solves and reviews, so plausible wrong answers can survive both review and crosscheck. Only post-solve evaluation against gold establishes exactness.
 - **Cost.** The full controller uses a median of 106k tokens and about four minutes per puzzle. The 400,000-token threshold stops new requests, but requests already in flight can exceed it (the highest run reported 443,964).
 - **Usage reporting.** Token counts are provider-reported.
+
+An exploratory Nemotron 3.5 Super VL reviewer trial on three public puzzles solved 3/3 with either reviewer, with higher cost for Nemotron under the tested settings. GLM remains the default; see the [brief trial note](EVALUATION.md#exploratory-reviewer-trial).
 
 The Crossword Nexus fixtures are distributed under CC BY 4.0, and the Crosshare puzzles are not redistributed. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for authors, source links and attribution.

@@ -66,13 +66,13 @@ def test_run_one_saves_comparable_evaluated_runs(tmp_path, monkeypatch):
     class Fake:
         model, calls = "fake", 0
 
-        def __init__(self, model=None, max_calls=None):
-            pass
+        def __init__(self, model=None, max_calls=None, review_model=None):
+            self.review_model = review_model
 
-        def complete(self, messages, max_tokens=None):
+        def complete(self, messages, max_tokens=None, model=None):
             ids = [c["id"] for c in json.loads(messages[1]["content"])["clues"]]
             return {"text": json.dumps({"answers": {k: GOLD[k] for k in ids}}),
-                    "usage": {"total_tokens": 1}}
+                    "usage": {"total_tokens": 1}, "served_model": model or self.model}
 
     monkeypatch.setattr("run_benchmark.Client", Fake)
     for name in CONFIGS:
@@ -93,6 +93,7 @@ def test_run_one_saves_comparable_evaluated_runs(tmp_path, monkeypatch):
 
 def saved_run():
     return {"source_sha256": "hash", "model": "fake", "config": settings_for("L3_full")[1],
+            "review_model": settings_for("L3_full")[1]["review_model"],
             "config_name": "L3_full", "puzzle_id": "mini_001", "run": 1,
             "puzzle_sha256": hashlib.sha256(PUZZLE.read_bytes()).hexdigest(),
             "answers": GOLD, "evaluation": {"exact_solve": True, "clue_accuracy": 1.0, "cell_accuracy": 1.0},
@@ -235,7 +236,7 @@ def test_memorization_probe_survives_malformed_answers(text):
 def test_runner_reports_failed_runs_and_keeps_finished_ones(tmp_path, monkeypatch):
     import run_benchmark
 
-    def flaky(name, puzzle_path, run, out, model, source):
+    def flaky(name, puzzle_path, run, out, model, source, review_model):
         if name == "L3_full":
             raise RuntimeError("simulated crash")
         out.parent.mkdir(parents=True, exist_ok=True)
@@ -340,3 +341,45 @@ def test_newcombe_matches_method_10_in_the_original_paper(e, f, g, h, low, high)
     d, lower, upper = newcombe_paired(e, g, f, h)
     assert d == pytest.approx((f - g) / (e + f + g + h))
     assert (lower, upper) == (pytest.approx(low, abs=6e-5), pytest.approx(high, abs=6e-5))
+
+
+def test_resume_rejects_a_changed_reviewer(tmp_path):
+    out = tmp_path / "run1.json"
+    out.write_text(json.dumps(saved_run()))
+    assert set(mismatch(out, "L3_full", PUZZLE, "fake", "hash", review_model="another-reviewer")) == {
+        "config", "review_model"}
+
+
+@pytest.mark.parametrize("wrong_phase", [None, "fill", "review", "repair"])
+def test_analysis_checks_models_by_request_mode(tmp_path, wrong_phase):
+    run = saved_run()
+    reviewer = run["review_model"]
+    responses = []
+    for mode in ("fill", "review", "repair"):
+        expected = reviewer if mode == "review" else run["model"]
+        served = (run["model"] if mode == "review" else reviewer) if mode == wrong_phase else expected
+        responses.append({"mode": mode, "requested_model": expected, "served_model": served,
+                          "ids": ["1A"], "text": '{"answers": {"1A": "MAPLE"}}'})
+    # Joint repair occurs inside a review round but must use the solver model.
+    run["trace"] = [{"phase": "review", "responses": responses}]
+    out = tmp_path / "L3_full" / "mini_001" / "run1.json"
+    out.parent.mkdir(parents=True)
+    out.write_text(json.dumps(run))
+    problems = validate(load(tmp_path), ["mini_001"], 1)
+    assert bool(problems) is (wrong_phase is not None)
+    if wrong_phase:
+        assert any("for their phase" in p for p in problems)
+
+
+def test_analysis_keeps_historical_single_model_runs_readable(tmp_path):
+    run = saved_run()
+    del run["review_model"]
+    del run["config"]["review_model"]
+    run["trace"] = [{"phase": "review", "responses": [
+        {"mode": "review", "served_model": "fake", "ids": ["1A"], "text": "{}"}]}]
+    out = tmp_path / "L3_full" / "mini_001" / "run1.json"
+    out.parent.mkdir(parents=True)
+    out.write_text(json.dumps(run))
+    rows = load(tmp_path)
+    assert rows[0]["review_model"] == "fake"
+    assert validate(rows, ["mini_001"], 1) == []
